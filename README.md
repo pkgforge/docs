@@ -1,6 +1,6 @@
 ---
-description: The main Organizations Inside PkgForge
 icon: box-archive
+description: The main Organization Inside PkgForge
 cover: .gitbook/assets/pkgforge (1).png
 coverY: 0
 layout:

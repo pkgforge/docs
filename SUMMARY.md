@@ -32,3 +32,13 @@
   * [1. Shebang](sbuild/specification/1.-shebang.md)
   * [2. Pkg](sbuild/specification/2.-pkg.md)
 * [Instructions](sbuild/instructions.md)
+
+## Security
+
+* [Repos](security/repos/README.md)
+  * [pkgforge-community](security/repos/pkgforge-community.md)
+  * [pkgforge-edge](security/repos/pkgforge-edge.md)
+  * [pkgforge-stable](security/repos/pkgforge-stable.md)
+* [Soar](security/soar/README.md)
+  * [log](security/soar/log.md)
+  * [inspect](security/soar/inspect.md)
