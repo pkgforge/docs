@@ -10,3 +10,8 @@ It is a [<mark style="color:blue;">yaml file</mark>](https://web.archive.org/web
 {% content-ref url="specification/" %}
 [specification](specification/)
 {% endcontent-ref %}
+
+{% content-ref url="instructions/" %}
+[instructions](instructions/)
+{% endcontent-ref %}
+

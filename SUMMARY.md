@@ -79,7 +79,7 @@
   * [ENV\_VARS (x\_exec.run)](sbuild/instructions/env_vars-x_exec.run.md)
   * [ENV\_VARS (SBUILDER)](sbuild/instructions/env_vars-sbuilder.md)
   * [NEEDED\_FILES](sbuild/instructions/needed_files.md)
-* [Page](sbuild/page.md)
+  * [Examples](sbuild/instructions/examples.md)
 
 ## Repositories
 
