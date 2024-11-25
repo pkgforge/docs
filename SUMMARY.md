@@ -12,15 +12,17 @@
 
 ## Formats
 
-* [Archive](formats/archive.md)
-* [AppBundle](formats/appbundle.md)
-* [AppImage](formats/appimage.md)
-* [Dynamic](formats/dynamic.md)
-* [FlatImage](formats/flatimage.md)
-* [GameImage](formats/gameimage.md)
-* [NixAppImage](formats/nixappimage.md)
-* [RunImage](formats/runimage.md)
-* [Static](formats/static.md)
+* [Binaries](formats/binaries/README.md)
+  * [Dynamic](formats/binaries/dynamic.md)
+  * [Static](formats/binaries/static.md)
+* [Packages](formats/packages/README.md)
+  * [Archive](formats/packages/archive.md)
+  * [AppBundle](formats/packages/appbundle.md)
+  * [AppImage](formats/packages/appimage.md)
+  * [FlatImage](formats/packages/flatimage.md)
+  * [GameImage](formats/packages/gameimage.md)
+  * [NixAppImage](formats/packages/nixappimage.md)
+  * [RunImage](formats/packages/runimage.md)
 
 ***
 
