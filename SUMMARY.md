@@ -24,12 +24,11 @@
   * [NixAppImage](formats/packages/nixappimage.md)
   * [RunImage](formats/packages/runimage.md)
 
-***
+## SBUILD
 
-* [SBUILD](sbuild/README.md)
-  * [Introduction](sbuild/introduction.md)
-  * [Specification](sbuild/specification/README.md)
-    * [0. Prerequisite](sbuild/specification/0.-prerequisite.md)
-    * [1. Shebang](sbuild/specification/1.-shebang.md)
-    * [2. Pkg](sbuild/specification/2.-pkg.md)
-  * [Instructions](sbuild/instructions.md)
+* [Introduction](sbuild/introduction.md)
+* [Specification](sbuild/specification/README.md)
+  * [0. Prerequisite](sbuild/specification/0.-prerequisite.md)
+  * [1. Shebang](sbuild/specification/1.-shebang.md)
+  * [2. Pkg](sbuild/specification/2.-pkg.md)
+* [Instructions](sbuild/instructions.md)
