@@ -9,6 +9,13 @@
       * [About](orgs/pkgforge-core/projects/soarpkgs/about.md)
       * [Differences](orgs/pkgforge-core/projects/soarpkgs/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/soarpkgs/contribution.md)
+* [PkgForge-Community](orgs/pkgforge-community.md)
+* [PkgForge-Dev](orgs/pkgforge-dev/README.md)
+  * [Projects](orgs/pkgforge-dev/projects/README.md)
+    * [Anylinux-AppImages](orgs/pkgforge-dev/projects/anylinux-appimages.md)
+* [PkgForge-Security](orgs/pkgforge-security/README.md)
+  * [Projects](orgs/pkgforge-security/projects/README.md)
+    * [Anylinux-AppImages](orgs/pkgforge-security/projects/anylinux-appimages.md)
 
 ## Formats
 
@@ -51,12 +58,14 @@
   * [2. Pkg](sbuild/specification/2.-pkg.md)
 * [Instructions](sbuild/instructions.md)
 
-## Security
+## Repositories
 
-* [Repos](security/repos/README.md)
-  * [pkgforge-community](security/repos/pkgforge-community.md)
-  * [pkgforge-edge](security/repos/pkgforge-edge.md)
-  * [pkgforge-stable](security/repos/pkgforge-stable.md)
-* [Soar](security/soar/README.md)
-  * [log](security/soar/log.md)
-  * [inspect](security/soar/inspect.md)
+* [pkgforge-community](repositories/pkgforge-community/README.md)
+  * [Infra](repositories/pkgforge-community/infra.md)
+  * [Security](repositories/pkgforge-community/security.md)
+* [pkgforge-edge](repositories/pkgforge-edge/README.md)
+  * [Infra](repositories/pkgforge-edge/infra.md)
+  * [Security](repositories/pkgforge-edge/security.md)
+* [pkgforge-stable](repositories/pkgforge-stable/README.md)
+  * [Infra](repositories/pkgforge-stable/infra.md)
+  * [Security](repositories/pkgforge-stable/security.md)

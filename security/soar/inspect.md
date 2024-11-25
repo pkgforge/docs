@@ -1,6 +1,0 @@
----
-icon: magnifying-glass
----
-
-# inspect
-
