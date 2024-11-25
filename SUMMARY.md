@@ -16,6 +16,7 @@
 * [PkgForge-Security](orgs/pkgforge-security/README.md)
   * [Projects](orgs/pkgforge-security/projects/README.md)
     * [Anylinux-AppImages](orgs/pkgforge-security/projects/anylinux-appimages.md)
+* [Soar](https://soar.qaidvoid.dev/)
 
 ## Formats
 
@@ -69,7 +70,3 @@
 * [pkgforge-stable](repositories/pkgforge-stable/README.md)
   * [Infra](repositories/pkgforge-stable/infra.md)
   * [Security](repositories/pkgforge-stable/security.md)
-
-***
-
-* [Soar](https://soar.qaidvoid.dev/)
