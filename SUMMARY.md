@@ -69,3 +69,7 @@
 * [pkgforge-stable](repositories/pkgforge-stable/README.md)
   * [Infra](repositories/pkgforge-stable/infra.md)
   * [Security](repositories/pkgforge-stable/security.md)
+
+***
+
+* [Soar](https://soar.qaidvoid.dev/)
