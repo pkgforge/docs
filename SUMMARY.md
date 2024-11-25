@@ -61,6 +61,7 @@
   * [4.AppID](sbuild/specification/4.appid.md)
   * [5.BuildAsset](sbuild/specification/5.buildasset.md)
   * [6.BuildUtil](sbuild/specification/6.buildutil.md)
+  * [7.Category](sbuild/specification/7.category.md)
 * [Instructions](sbuild/instructions/README.md)
   * [ENV\_VARS (x\_exec.run)](sbuild/instructions/env_vars-x_exec.run.md)
   * [ENV\_VARS (SBUILDER)](sbuild/instructions/env_vars-sbuilder.md)
