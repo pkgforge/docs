@@ -2,6 +2,7 @@
 
 ## Orgs
 
+* [Soar (Package Manager)](https://soar.qaidvoid.dev/)
 * [PkgForge (Core)](README.md)
   * [About](orgs/pkgforge-core/about.md)
   * [Projects](orgs/pkgforge-core/projects/README.md)
@@ -16,7 +17,6 @@
 * [PkgForge-Security](orgs/pkgforge-security/README.md)
   * [Projects](orgs/pkgforge-security/projects/README.md)
     * [Anylinux-AppImages](orgs/pkgforge-security/projects/anylinux-appimages.md)
-* [Soar](https://soar.qaidvoid.dev/)
 
 ## Formats
 
