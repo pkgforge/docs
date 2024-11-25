@@ -54,11 +54,11 @@
 
 * [Introduction](sbuild/introduction.md)
 * [Specification](sbuild/specification/README.md)
-  * [4. AppID](sbuild/specification/4.-appid.md)
   * [0.Prerequisite](sbuild/specification/0.prerequisite.md)
   * [1.Shebang](sbuild/specification/1.shebang.md)
   * [2.Pkg](sbuild/specification/2.pkg.md)
   * [3.Version](sbuild/specification/3.version.md)
+  * [4. AppID](sbuild/specification/4.-appid.md)
 * [Instructions](sbuild/instructions.md)
 
 ## Repositories
