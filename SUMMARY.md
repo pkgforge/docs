@@ -65,9 +65,21 @@
   * [8.Description](sbuild/specification/8.description.md)
   * [9.Desktop](sbuild/specification/9.desktop.md)
   * [10.DistroPkg](sbuild/specification/10.distropkg.md)
+  * [11.HomePage](sbuild/specification/11.homepage.md)
+  * [12.Icon](sbuild/specification/12.icon.md)
+  * [13.License](sbuild/specification/13.license.md)
+  * [14.Maintainer](sbuild/specification/14.maintainer.md)
+  * [15.Note](sbuild/specification/15.note.md)
+  * [16.Provides](sbuild/specification/16.provides.md)
+  * [17.Repology](sbuild/specification/17.repology.md)
+  * [18.SourceURL](sbuild/specification/18.sourceurl.md)
+  * [19.Tag](sbuild/specification/19.tag.md)
+  * [20.x\_exec](sbuild/specification/20.x_exec.md)
 * [Instructions](sbuild/instructions/README.md)
   * [ENV\_VARS (x\_exec.run)](sbuild/instructions/env_vars-x_exec.run.md)
   * [ENV\_VARS (SBUILDER)](sbuild/instructions/env_vars-sbuilder.md)
+  * [NEEDED\_FILES](sbuild/instructions/needed_files.md)
+* [Page](sbuild/page.md)
 
 ## Repositories
 
