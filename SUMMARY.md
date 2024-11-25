@@ -58,8 +58,11 @@
   * [1.Shebang](sbuild/specification/1.shebang.md)
   * [2.Pkg](sbuild/specification/2.pkg.md)
   * [3.Version](sbuild/specification/3.version.md)
-  * [4. AppID](sbuild/specification/4.-appid.md)
-* [Instructions](sbuild/instructions.md)
+  * [4.AppID](sbuild/specification/4.appid.md)
+  * [5.BuildAsset](sbuild/specification/5.buildasset.md)
+* [Instructions](sbuild/instructions/README.md)
+  * [ENV\_VARS (x\_exec.run)](sbuild/instructions/env_vars-x_exec.run.md)
+  * [ENV\_VARS (SBUILDER)](sbuild/instructions/env_vars-sbuilder.md)
 
 ## Repositories
 
