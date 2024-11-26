@@ -17,6 +17,7 @@
       * [Package-Request](orgs/pkgforge-core/projects/toolpacks-bincache/package-request.md)
       * [DMCA | Copyright (Cease & Desist)](orgs/pkgforge-core/projects/toolpacks-bincache/dmca-or-copyright-cease-and-desist.md)
     * [PkgCache](orgs/pkgforge-core/projects/pkgcache/README.md)
+      * [Cache](orgs/pkgforge-core/projects/pkgcache/cache.md)
       * [Differences](orgs/pkgforge-core/projects/pkgcache/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/pkgcache/contribution.md)
       * [Package-Request](orgs/pkgforge-core/projects/pkgcache/package-request.md)
