@@ -11,7 +11,8 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
 
 * [x] <mark style="color:orange;">**`${SBUILD_SUCCESSFUL}`**</mark>
 
-> - **Description**: If the <mark style="color:blue;">**Build**</mark> Was <mark style="color:green;">**Successful**</mark> or <mark style="color:red;">**Failed**</mark>, if It <mark style="color:red;">**Failed**</mark> (<mark style="color:orange;">**`SBUILD_SUCCESSFUL`**</mark>**`==`**<mark style="color:red;">**`false`**</mark>) **Bail & Exit Immediately (Still Copy all Dirs to&#x20;**<mark style="color:orange;">**`SOAR_CACHE`**</mark>**)**
+> - **Description**: If the <mark style="color:blue;">**Build**</mark> Was <mark style="color:green;">**Successful**</mark> or <mark style="color:red;">**Failed**</mark>, if It <mark style="color:red;">**Failed**</mark> (<mark style="color:orange;">**`SBUILD_SUCCESSFUL`**</mark>**`==`**<mark style="color:red;">**`false`**</mark>) **Bail & Exit Immediately (Still Copy&#x20;**<mark style="color:orange;">**`${SBUILD_OUTDIR}`**</mark>**&#x20;to&#x20;**<mark style="color:orange;">**`SOAR_CACHE`**</mark>**) (**
+> - **Also Copy&#x20;**<mark style="color:orange;">**`${SBUILD_TMPDIR}`**</mark>(**PATH**: <mark style="color:orange;">**`${SBUILD_OUTDIR}/`**</mark><mark style="color:purple;">**`SBUILD_TEMP`**</mark>) if **used** <mark style="color:orange;">**`-k | --keep`**</mark>
 > - **Values**: <mark style="color:green;">**`true`**</mark> | <mark style="color:red;">**`false`**</mark>
 
 * [x] <mark style="color:orange;">**`${SBUILD_PKG}`**</mark>
