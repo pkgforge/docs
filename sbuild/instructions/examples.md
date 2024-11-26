@@ -1,6 +1,6 @@
 ---
-description: A Few Examples
 icon: clipboard-list
+description: A Few Examples
 ---
 
 # Examples
@@ -17,7 +17,7 @@ description: "Emulator of x86-based machines"
 src_url:
  - "https://github.com/86Box/86Box"
 x_exec:
-  shell: bash
+  shell: "bash"
   pkgver: |
     #This will fetch the version and <a data-footnote-ref href="#user-content-fn-1">save it as "./${SBUILD_PKG}.version" and env ${PKG_VER}</a>
     curl -qfsSL "https://api.github.com/repos/86Box/86Box/releases/latest" | jq -r '.tag_name'
@@ -26,10 +26,10 @@ x_exec:
     ##Download the file
     case "$(uname -m)" in
       aarch64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage|arm64" --exclude "x64|x86|zsync" -o "./${SBUILD_PKG}" --yes &#x26;&#x26; chmod +x "./${SBUILD_PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${SBUILD_PKG}" --yes &#x26;&#x26; chmod +x "./${SBUILD_PKG}"
         ;;
       x86_64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage|x86_64" --exclude "aarch64|arm|zsync" -o "./${SBUILD_PKG}" --yes &#x26;&#x26; chmod +x "./${SBUILD_PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${SBUILD_PKG}" --yes &#x26;&#x26; chmod +x "./${SBUILD_PKG}"
         ;;
     esac
     #We are done and can let the Runner take it from here
@@ -87,7 +87,7 @@ tag:
   - "game"
   - "system"
 x_exec:
-  shell: bash
+  shell: "bash"
   pkgver: |
     #This will fetch the version and save it as "./${SBUILD_PKG}.version" and env ${PKG_VER}
     curl -qfsSL "https://api.github.com/repos/86Box/86Box/releases/latest" | jq -r '.tag_name'
@@ -96,10 +96,10 @@ x_exec:
     ##Download the file
     case "$(uname -m)" in
       aarch64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage|arm64" --exclude "x64|x86|zsync" -o "./${SBUILD_PKG}" --yes && chmod +x "./${SBUILD_PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${SBUILD_PKG}" --yes && chmod +x "./${SBUILD_PKG}"
         ;;
       x86_64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage|x86_64" --exclude "aarch64|arm|zsync" -o "./${SBUILD_PKG}" --yes && chmod +x "./${SBUILD_PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${SBUILD_PKG}" --yes && chmod +x "./${SBUILD_PKG}"
         ;;
     esac
     #We are done and can let the Runner take it from here
