@@ -49,6 +49,10 @@
   * [RunImage](formats/packages/runimage/README.md)
     * [Install](formats/packages/runimage/install.md)
     * [UnInstall](formats/packages/runimage/uninstall.md)
+  * [Errors & Quirks](formats/packages/errors-and-quirks/README.md)
+    * [Namespaces](formats/packages/errors-and-quirks/namespaces.md)
+    * [Fonts](formats/packages/errors-and-quirks/fonts.md)
+    * [Fuse](formats/packages/errors-and-quirks/fuse.md)
 
 ## SBUILD
 
