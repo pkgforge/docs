@@ -1,6 +1,6 @@
 ---
-icon: github
 description: Contribution Guidelines
+icon: github
 ---
 
 # Contribution
