@@ -1,12 +1,12 @@
 ---
-description: Issues related to fonts
 icon: font-case
+description: Issues related to fonts
 ---
 
 # Fonts
 
 {% hint style="info" %}
-In attempt to **minimize size** & cater to all Locales/Fonts, [..](../ "mention")**aren't shipped with Fonts/Icons.**
+In attempt to **minimize size** & cater to all Locales/Fonts, [..](../ "mention") **aren't shipped with Fonts/Icons.**
 
 Instead, **they use the fonts from the Host**.
 {% endhint %}
