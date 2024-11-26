@@ -66,7 +66,8 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
  "description": ".description",
 <strong>//Empty Value, if SBUILD didn't have it
 </strong> "note": "[.note]",
-//Fetch from $SBUILD_OUTDIR/$pkg.version, if empty, create based on date as YYYYMMDD-HHMMSS (Example --> 20241126-062034)
+//Fetch, from SBUILD_OUTDIR/$pkg.version
+//if empty, create based on date as YYYYMMDD-HHMMSS (example: 20241126-062034)
  "version": "$PKG_VERSION",
 //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
  "download_url": "https://soarpkgs.pkgforge.dev/packages/$FILENAME_OF_SBUILD_INPUT_FILE",
