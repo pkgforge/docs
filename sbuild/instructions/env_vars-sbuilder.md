@@ -60,21 +60,21 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
  "pkg_type": ".pkg_type", //Will always exist (Use Magic Byte to determine if Empty)
  "description": ".description", //Will always exist (linter would exit if Empty)
  "note": ".note[]", //Empty Value, if SBUILD didn't have it
- "version": "$PKG_VERSION", //Fetch from ${SBUILD_OUTDIR}/$pkg.version, if empty, create based on: date --utc +"%Y%m%d-%H%M%S"
+ "version": ".$PKG_VERSION", //Fetch from ${SBUILD_OUTDIR}/$pkg.version, if empty, create based on: date --utc +"%Y%m%d-%H%M%S"
  "download_url": "https://soarpkgs.pkgforge.dev/packages/$FILENAME_OF_SBUILD_INPUT_FILE", //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
  "size": ".$SIZE_OF_$PKG", //Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
  "bsum": ".$B3SUM_OF_$PKG", //Calculated
  "shasum": ".$SHA256SUM_OF_$PKG", //Calculated, needed since b3sum is not a coreutil yet
- "build_date": "$BUILD_DATE", //Format: YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56)
+ "build_date": ".$BUILD_DATE", //Format: YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56)
  "repology": ".repology[]", //Empty Value, if SBUILD didn't have it
  "src_url": ".src_url[]", //Will always exist (linter would exit if Empty)
  "homepage": ".homepage[]", //Will always exist (linter would create it if Empty)
  "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ $VALID_PKGSRC", //If this was a local build, just point to local dir where the .SBUILD is stored (The Validated SBUILD file that built it, will copy it to install dir after installation)
- "build_log": "$PATH_TO_LOCAL_BUILD.log", //points to local dir where the $pkg.log is stored (The log file is saved to install dir after installation or in the OutDir)
+ "build_log": ".$PATH_TO_LOCAL_BUILD.log", //points to local dir where the $pkg.log is stored (The log file is saved to install dir after installation or in the OutDir)
  "appstream": ".appstream", //Empty Value, if SBUILD didn't have it
  "category": ".category[]", //Will always exist (linter would create it if Empty)
- "desktop": "$PKG.desktop", //Depending on Package type, may or may not exist, handled logically
- "icon": "$PKG.{DirIcon|png|Svg}", //Depending on Package type, may or may not exist, handled logically, using default icon as fallback
+ "desktop": ".$PKG.desktop", //Depending on Package type, may or may not exist, handled logically
+ "icon": ".$PKG.{DirIcon|png|Svg}", //Depending on Package type, may or may not exist, handled logically, using default icon as fallback
  "license" : ".license[]", //Empty Value, if SBUILD didn't have it
  "provides": ".provides[]", //Empty Value, if SBUILD didn't have it
  "snapshots": ".snapshots[]", //Empty, if was first Install, Otherwise (if user used option to backup), refers to previous snapshot
