@@ -9,6 +9,7 @@
     * [SoarPkgs](orgs/pkgforge-core/projects/soarpkgs/README.md)
       * [Differences](orgs/pkgforge-core/projects/soarpkgs/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/soarpkgs/contribution.md)
+  * [People](orgs/pkgforge-core/people.md)
 * [PkgForge-Community](orgs/pkgforge-community.md)
 * [PkgForge-Dev](orgs/pkgforge-dev/README.md)
   * [Projects](orgs/pkgforge-dev/projects/README.md)

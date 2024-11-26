@@ -16,7 +16,7 @@ description: AppImages created from NixOs Derivations & FHS
 {% hint style="info" %}
 [<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
 
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`niximage`**</mark>
+[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`nixappimage`**</mark>
 
 <mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.nixappimage`**</mark>
 {% endhint %}
