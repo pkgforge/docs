@@ -1,6 +1,6 @@
 ---
-icon: block-question
 description: How to request a new Package
+icon: block-question
 ---
 
 # Package-Request
@@ -11,6 +11,17 @@ description: How to request a new Package
 {% endhint %}
 
 ***
+
+### Criteria
+
+{% hint style="info" %}
+Exceptions Apply, [**Discussion**](https://github.com/pkgforge/pkgcache/issues) is encouraged
+{% endhint %}
+
+* [x] If on [**GitHub**](https://github.com/), must have at least **100 Stars**
+* [x] Must be **Portable**, i.e. must work on all **Libc** ([GLIBC](https://www.gnu.org/software/libc/), [MUSL](https://musl.libc.org/) etc) **Linux Distros**
+* [x] Must have **an entry on** [**RepoLogy**](https://repology.org/projects/)
+* [x] Must have **received an update** within the **last 6 Month** or, at the very extent, within the **last 12 Month**.
 
 ### Guide
 
