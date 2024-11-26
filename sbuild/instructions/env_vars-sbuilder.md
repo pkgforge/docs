@@ -50,7 +50,8 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
 ```json5
 // This json resembles same format as: https://soarpkgs.pkgforge.dev/metadata/METADATA.json
 // Replace & Fill based on the fields from SBUILD
-// Values ending in [] indicate that they are an array
+// Values enclosed in [] indicate that they are an array
+// Values that are (UPPERCASE) indicate they are Variables, and their values need to be replaced
 // Certain Fields like build_util, distro_pkg etc are not added in the metadata
 {
  "_disabled": "._disabled", //Will always exist (linter would exit if Empty)
@@ -60,8 +61,8 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
  "pkg_type": ".pkg_type", //Will always exist (Use Magic Byte to determine if Empty)
  "description": ".description", //Will always exist (linter would exit if Empty)
  "note": "[.note]", //Empty Value, if SBUILD didn't have it
- "version": "$PKG_VERSION", //Fetch from ${SBUILD_OUTDIR}/$pkg.version, if empty, create based on date --utc +"%Y%m%d-%H%M%S"
- "download_url": "https://soarpkgs.pkgforge.dev/packages/$FILENAME_OF_SBUILD_INPUT_FILE", //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
+ "version": "(PKG_VERSION)", //Fetch from ${SBUILD_OUTDIR}/$pkg.version, if empty, create based on date --utc +"%Y%m%d-%H%M%S"
+ "download_url": "https://soarpkgs.pkgforge.dev/packages/(FILENAME_OF_SBUILD_INPUT_FILE)", //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
  "size": "$SIZE_OF_$PKG", //Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
  "bsum": "$B3SUM_OF_$PKG", //Calculated
  "shasum": "$SHA256SUM_OF_$PKG", //Calculated, needed since b3sum is not a coreutil yet
