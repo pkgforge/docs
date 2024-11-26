@@ -14,6 +14,7 @@
 * [PkgForge-Dev](orgs/pkgforge-dev/README.md)
   * [Projects](orgs/pkgforge-dev/projects/README.md)
     * [Anylinux-AppImages](orgs/pkgforge-dev/projects/anylinux-appimages.md)
+  * [People](orgs/pkgforge-dev/people.md)
 * [PkgForge-Security](orgs/pkgforge-security/README.md)
   * [Projects](orgs/pkgforge-security/projects/README.md)
     * [Anylinux-AppImages](orgs/pkgforge-security/projects/anylinux-appimages.md)
