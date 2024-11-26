@@ -46,40 +46,65 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
 > - **Description**: **JSON Metadata file**, available at <mark style="color:orange;">**`${SBUILD_OUTDIR}/${SBUILD_PKG}.json`**</mark>
 > - This is **auto created** by the <mark style="color:purple;">**SBUILDER**</mark> at the end of a **BUILD (**<mark style="color:orange;">**`SBUILD_SUCCESSFUL`**</mark>**`==`**<mark style="color:green;">**`true`**</mark>**)**
 
-{% code overflow="wrap" %}
-```json5
-// This json resembles same format as: https://soarpkgs.pkgforge.dev/metadata/METADATA.json
-// Replace & Fill based on the fields from SBUILD
+<pre class="language-json5" data-overflow="wrap"><code class="lang-json5">// This json resembles same format as: https://soarpkgs.pkgforge.dev/metadata/METADATA.json
+// Replace &#x26; Fill based on the fields from SBUILD
 // Values enclosed in [] indicate that they are an array
 // Values that are $UPPERCASE indicate they are Variables, and their values need to be replaced
 // Certain Fields like build_util, distro_pkg etc are not added in the metadata
 {
- "_disabled": "._disabled", //Will always exist (linter would exit if Empty)
- "pkg": ".pkg", //Will always exist (linter would exit if Empty)
- "pkg_id": ".pkg_id", //Will always exist (linter would create it if Empty)
- "app_id": ".app_id", //Empty Value, if SBUILD didn't have it
- "pkg_type": ".pkg_type", //Will always exist (Use Magic Byte to determine if Empty)
- "description": ".description", //Will always exist (linter would exit if Empty)
- "note": "[.note]", //Empty Value, if SBUILD didn't have it
- "version": "$PKG_VERSION", //Fetch from $SBUILD_OUTDIR/$pkg.version), if empty, create based on date as YYYYMMDD-HHMMSS (Example --> 20241126-062034) 
- "download_url": "https://soarpkgs.pkgforge.dev/packages/(FILENAME_OF_SBUILD_INPUT_FILE)", //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
- "size": "$SIZE_OF_$PKG", //Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
- "bsum": "$B3SUM_OF_$PKG", //Calculated
- "shasum": "$SHA256SUM_OF_$PKG", //Calculated, needed since b3sum is not a coreutil yet
- "build_date": "$BUILD_DATE", //Format: YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56)
- "repology": ".repology[]", //Empty Value, if SBUILD didn't have it
- "src_url": ".src_url[]", //Will always exist (linter would exit if Empty)
- "homepage": ".homepage[]", //Will always exist (linter would create it if Empty)
- "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ $VALID_PKGSRC", //If this was a local build, just point to local dir where the .SBUILD is stored (The Validated SBUILD file that built it, will copy it to install dir after installation)
- "build_log": "$PATH_TO_LOCAL_BUILD.log", //points to local dir where the $pkg.log is stored (The log file is saved to install dir after installation or in the OutDir)
- "appstream": ".appstream", //Empty Value, if SBUILD didn't have it
- "category": ".category[]", //Will always exist (linter would create it if Empty)
- "desktop": "$PKG.desktop", //Depending on Package type, may or may not exist, handled logically
- "icon": "$PKG.{DirIcon|png|Svg}", //Depending on Package type, may or may not exist, handled logically, using default icon as fallback
- "license" : ".license[]", //Empty Value, if SBUILD didn't have it
- "provides": ".provides[]", //Empty Value, if SBUILD didn't have it
- "snapshots": ".snapshots[]", //Empty, if was first Install, Otherwise (if user used option to backup), refers to previous snapshot
- "tag": ".tag[]"  //Empty Value, if SBUILD didn't have it
+//Will always exist (linter would exit if Empty)
+ "_disabled": "._disabled",
+//Will always exist (linter would exit if Empty)
+ "pkg": ".pkg",
+//Will always exist (linter would create it if Empty)
+ "pkg_id": ".pkg_id",
+//Empty Value, if SBUILD didn't have it
+ "app_id": ".app_id",
+//Will always exist (Use Magic Byte to determine if Empty)
+ "pkg_type": ".pkg_type",
+//Will always exist (linter would exit if Empty)
+ "description": ".description",
+<strong>//Empty Value, if SBUILD didn't have it
+</strong> "note": "[.note]",
+//Fetch from $SBUILD_OUTDIR/$pkg.version, if empty, create based on date as YYYYMMDD-HHMMSS (Example --> 20241126-062034)
+ "version": "$PKG_VERSION",
+//This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
+ "download_url": "https://soarpkgs.pkgforge.dev/packages/$FILENAME_OF_SBUILD_INPUT_FILE",
+//Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
+ "size": "$SIZE_OF_$PKG",
+//Calculated 
+ "bsum": "$B3SUM_OF_$PKG",
+<strong>//Calculated, needed since b3sum is not a coreutil yet 
+</strong> "shasum": "$SHA256SUM_OF_$PKG",
+//Format: YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56) 
+ "build_date": "$BUILD_DATE",
+//Empty Value, if SBUILD didn't have it 
+ "repology": "[.repology]",
+//Will always exist (linter would exit if Empty) 
+ "src_url": "[.src_url]",
+//Will always exist (linter would create it if Empty) 
+ "homepage": "[.homepage]", 
+//If this was a local build, just point to local dir where the .SBUILD is stored
+//The Validated SBUILD file that built it, will copy it to install dir after installation) 
+ "build_script": "https://github.com/pkgforge/soarpkgs/blob/main/packages/ $VALID_PKGSRC",
+//points to local dir where the $pkg.log is stored
+//The log file is saved to install dir after installation or in the OutDir
+ "build_log": "$PATH_TO_LOCAL_BUILD.log",
+//Empty Value, if SBUILD didn't have it 
+ "appstream": ".appstream",
+//Will always exist (linter would create it if Empty) 
+ "category": "[.category]",
+//Depending on Package type, may or may not exist, handled logically 
+ "desktop": "$PKG.desktop",
+//Depending on Package type, may or may not exist, handled logically, using default icon as fallback 
+ "icon": "$PKG.{DirIcon|png|Svg}",
+//Empty Value, if SBUILD didn't have it 
+ "license" : "[.license]",
+//Empty Value, if SBUILD didn't have it 
+ "provides": "[.provides]",
+//Empty, if was first Install, Otherwise (if user used option to backup), refers to previous snapshot 
+ "snapshots": "[.snapshots]",
+//Empty Value, if SBUILD didn't have it 
+ "tag": "[.tag]"
 }
-```
-{% endcode %}
+</code></pre>
