@@ -7,7 +7,6 @@
   * [About](orgs/pkgforge-core/about.md)
   * [Projects](orgs/pkgforge-core/projects/README.md)
     * [SoarPkgs](orgs/pkgforge-core/projects/soarpkgs/README.md)
-      * [About](orgs/pkgforge-core/projects/soarpkgs/about.md)
       * [Differences](orgs/pkgforge-core/projects/soarpkgs/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/soarpkgs/contribution.md)
 * [PkgForge-Community](orgs/pkgforge-community.md)
@@ -50,9 +49,10 @@
     * [Install](formats/packages/runimage/install.md)
     * [UnInstall](formats/packages/runimage/uninstall.md)
   * [Errors & Quirks](formats/packages/errors-and-quirks/README.md)
-    * [Namespaces](formats/packages/errors-and-quirks/namespaces.md)
     * [Fonts](formats/packages/errors-and-quirks/fonts.md)
     * [Fuse](formats/packages/errors-and-quirks/fuse.md)
+    * [Namespaces](formats/packages/errors-and-quirks/namespaces.md)
+    * [Zsync](formats/packages/errors-and-quirks/zsync.md)
 
 ## SBUILD
 
