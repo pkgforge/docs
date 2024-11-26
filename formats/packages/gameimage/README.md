@@ -1,6 +1,0 @@
----
-icon: disc-drive
----
-
-# GameImage
-

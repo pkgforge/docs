@@ -1,6 +1,0 @@
----
-icon: box-taped
----
-
-# Archive
-

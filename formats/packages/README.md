@@ -7,8 +7,8 @@ description: Package Formats
 
 These are usually **GUI Applications** packaged in one of the following formats:
 
-{% content-ref url="archive/" %}
-[archive](archive/)
+{% content-ref url="archive-tbd/" %}
+[archive-tbd](archive-tbd/)
 {% endcontent-ref %}
 
 {% content-ref url="appbundle/" %}
@@ -23,15 +23,15 @@ These are usually **GUI Applications** packaged in one of the following formats:
 [flatimage](flatimage/)
 {% endcontent-ref %}
 
-{% content-ref url="gameimage/" %}
-[gameimage](gameimage/)
+{% content-ref url="gameimage-tbd/" %}
+[gameimage-tbd](gameimage-tbd/)
 {% endcontent-ref %}
 
 {% content-ref url="nixappimage/" %}
 [nixappimage](nixappimage/)
 {% endcontent-ref %}
 
-{% content-ref url="runimage/" %}
-[runimage](runimage/)
+{% content-ref url="runimage-tbd/" %}
+[runimage-tbd](runimage-tbd/)
 {% endcontent-ref %}
 

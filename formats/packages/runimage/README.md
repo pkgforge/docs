@@ -1,6 +1,0 @@
----
-icon: compact-disc
----
-
-# RunImage
-

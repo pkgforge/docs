@@ -1,18 +1,20 @@
 ---
-icon: compact-disc
-description: https://en.wikipedia.org/wiki/AppImage
+icon: disc-drive
 ---
 
-# AppImage
+# GameImage (TBD)
+
+* Author: [`@ruanformigoni`](https://github.com/gameimage)
+* Project Page: [https://github.com/ruanformigoni/gameimage](https://github.com/ruanformigoni/gameimage)
 
 ### Schema
 
 {% hint style="info" %}
 [<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
 
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`appimage`**</mark>
+[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`gameimage`**</mark>
 
-<mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.appimage`**</mark>
+<mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.gameimage`**</mark>
 {% endhint %}
 
 ***
@@ -33,5 +35,5 @@ description: https://en.wikipedia.org/wiki/AppImage
 <mark style="color:red;">**WARNINGS**</mark>
 
 * NEVER run **`strip`**, **`objcopy`** or any other binary rewriting tool as they will often just strip the **`squashfs|dwarfs`** archive, only preserving the **`runtime`**.
-* A typical <mark style="color:green;">**`.appimage`**</mark> file is not a real elf binary, thus will not survive this process.
+* A typical <mark style="color:green;">**`.gameimage`**</mark> file is not a real elf binary, thus will not survive this process.
 {% endhint %}
