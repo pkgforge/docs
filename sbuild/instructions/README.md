@@ -36,6 +36,8 @@ soar add 'bash/bash#base' \
 * [x] Read the [<mark style="color:blue;">**`Spec`**</mark>](https://docs.pkgforge.dev/sbuild/specification): [https://docs.pkgforge.dev/sbuild/specification](https://docs.pkgforge.dev/sbuild/specification)
 * [x] View [<mark style="color:blue;">**some Examples**</mark>](https://github.com/pkgforge/soarpkgs/tree/main/packages) <mark style="color:blue;">:</mark> [<mark style="color:blue;">https://github.com/pkgforge/soarpkgs/tree/main/packages</mark>](https://github.com/pkgforge/soarpkgs/tree/main/packages)
 
+***
+
 ### Write
 
 * [x] Copy the [**Generic Template**](https://github.com/pkgforge/soarpkgs/blob/main/templates/generic.SBUILD.yaml): [https://github.com/pkgforge/soarpkgs/blob/main/templates/generic.SBUILD.yaml](https://github.com/pkgforge/soarpkgs/blob/main/templates/generic.SBUILD.yaml)
@@ -94,9 +96,13 @@ curl -qfsSL "https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main
 > ```
 > {% endcode %}
 
-* If your <mark style="color:purple;">**`SBUILD`**</mark> gets validated successfully, <mark style="color:green;">**Congrats!**</mark> You can now create a [**`Pull Request`**](https://github.com/pkgforge/soarpkgs/compare) or an [**`Issue`**](https://github.com/pkgforge/soarpkgs/issues/new/choose), Remember to **Link/Copy\&Paste** the <mark style="color:orange;">**`.validated`**</mark> version of your <mark style="color:purple;">**`SBUILD`**</mark>
+* [x] If your <mark style="color:purple;">**`SBUILD`**</mark> gets validated successfully, <mark style="color:green;">**Congrats!**</mark> You can now create a [**`Pull Request`**](https://github.com/pkgforge/soarpkgs/compare) or an [**`Issue`**](https://github.com/pkgforge/soarpkgs/issues/new/choose), Remember to **Link/Copy\&Paste** the <mark style="color:orange;">**`.validated`**</mark> version of your <mark style="color:purple;">**`SBUILD`**</mark>
+
+***
 
 ### Build
+
+* [ ] To Do
 
 
 
