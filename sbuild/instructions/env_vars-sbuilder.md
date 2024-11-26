@@ -62,9 +62,9 @@ This is internal documentation meant for the **`SBUILDER`**, **not for humans** 
  "note": ".note[]", //Empty Value, if SBUILD didn't have it
  "version": "$PKG_VERSION", //Fetch from ${SBUILD_OUTDIR}/$pkg.version, if empty, create based on: date --utc +"%Y%m%d-%H%M%S"
  "download_url": "https://soarpkgs.pkgforge.dev/packages/$FILENAME_OF_SBUILD_INPUT_FILE", //This field would be pre-populated if user uses the pkgforge-community Repo (SoarPkgs)
- "size": "$SIZE_OF_$PKG", //Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
- "bsum": "$B3SUM_OF_$PKG", //Calculated
- "shasum": "$SHA256SUM_OF_$PKG", //Calculated, needed since b3sum is not a coreutil yet
+ "size": ".$SIZE_OF_$PKG", //Calculated, in KiB|MiB|GiB format: 1KB, 10MB, 100GB
+ "bsum": ".$B3SUM_OF_$PKG", //Calculated
+ "shasum": ".$SHA256SUM_OF_$PKG", //Calculated, needed since b3sum is not a coreutil yet
  "build_date": "$BUILD_DATE", //Format: YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56)
  "repology": ".repology[]", //Empty Value, if SBUILD didn't have it
  "src_url": ".src_url[]", //Will always exist (linter would exit if Empty)
