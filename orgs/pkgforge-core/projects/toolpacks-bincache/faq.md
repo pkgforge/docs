@@ -58,9 +58,34 @@ description: Frequently Asked Questions & Misc
 
 ### **Why not host on GitHub?**
 
+{% hint style="info" %}
+[**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) used to do just that back when there were only a few hundred binaries. All binaries were hosted on GitHub along with weekly releases containing all Binaries packed in tar/7z.
+
+* You can find this on the [WayBack Archive](https://web.archive.org/web/*/https://github.com/Azathothas/Toolpacks): [https://web.archive.org/web/\*/https://github.com/Azathothas/Toolpacks](https://web.archive.org/web/*/https://github.com/Azathothas/Toolpacks)
+* As number of packages grew, Git turned out to be not the right tool: [https://www.reddit.com/r/git/comments/ek4kv2/git\_is\_bad\_at\_binary\_file\_management\_but\_is\_it/](https://www.reddit.com/r/git/comments/ek4kv2/git_is_bad_at_binary_file_management_but_is_it/)
+{% endhint %}
+
 1. Because GitHub has very conservative limits: [https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
-2. [Hugging Face](https://huggingface.co/pricing) has [generous limits](https://huggingface.co/docs/hub/en/repositories-recommendations) & [inbuilt support for LFS](https://huggingface.co/docs/hub/en/repositories-getting-started)
+2. [**CloudFlare R2**](https://developers.cloudflare.com/r2/) is a [geo-distributed storage bucket](https://www.cloudflare.com/network/) & can scale up infinitely.&#x20;
+
+{% hint style="info" %}
+[**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) did an [indepth comparision & analysis](https://ajam.dev/affordable-performant-s3-compatible-storage-providers) a while ago, you can read it here: [https://ajam.dev/affordable-performant-s3-compatible-storage-providers](https://ajam.dev/affordable-performant-s3-compatible-storage-providers)
+{% endhint %}
+
 3. Last but not least, to avoid [https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/dmca-or-copyright-cease-and-desist](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/dmca-or-copyright-cease-and-desist)
+
+### Android Deprecation
+
+{% hint style="warning" %}
+Android Support was deprecated on [**`Nov 18, 2024`**](https://github.com/Azathothas/Toolpacks/issues/38#issuecomment-2482936345)
+{% endhint %}
+
+1. Android is [weird & very different from Linux](https://wiki.termux.com/wiki/Differences_from_Linux).
+2. Android has [known issues that are **won't fix | by design**](https://github.com/termux/termux-packages/wiki/Common-porting-problems)
+3. Android binaries [**CAN NOT BE COMPILED STATICALLY**](https://github.com/Zackptg5/Cross-Compiled-Binaries-Android/tree/master/build_script#dns-issues) without significant efforts & manual patching for each & every binary. This is not Automatable.
+4. [bin.pkgforge.dev/arm64\_v8a\_Android](https://bin.pkgforge.dev/arm64_v8a_Android/) only ever provided Tools/Pkgs (Only for **`arm64-v8a`**) that  [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) personally used to use but which weren't already available in [**termux-pkgs**](https://github.com/Azathothas/Termux-Packages) or broken.
+5. [**Termux**](https://termux.dev/en/) already [**ports thousands of packages**](https://github.com/termux/termux-packages)**,** Check the [Issues for your `pkg`](https://github.com/termux/termux-packages/issues)**. There's also a** [**near-complete list of all packages offically available on Termux**](https://github.com/Azathothas/Termux-Packages)
+6. Check [**@leleliu008**](https://github.com/leleliu008)'s project [**https://github.com/leleliu008/ndk-pkg**](https://github.com/leleliu008/ndk-pkg)**,** if you still don't want to use Termux.
 
 ***
 

@@ -22,8 +22,8 @@ soar search "${BIN_NAME}#base"
 ```
 
 * [x] Search it on [**Github**](https://github.com/pkgforge/soarpkgs/tree/main/packages): [https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts)
-* [x] [https://github.com/Azathothas/Toolpacks/blob/main/aarch64\_arm64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64_arm64_Linux/DETAILED.md)
-* [x] Detailed List: [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64_Linux/DETAILED.md)
+* [x] Detailed **`aarch64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/aarch64\_arm64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64_arm64_Linux/DETAILED.md)
+* [x] Detailed **`x86_64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64_Linux/DETAILED.md)
 {% endhint %}
 
 * [x] After you are really sure that it's not available, Read [BUILD\_NOTES.md](https://github.com/Azathothas/Toolpacks/blob/main/Docs/BUILD_NOTES.md). This contains notes on compiling static binaries. However, if there's already a static binary that's released, you can [**just use soar to fetch it**](https://github.com/pkgforge/soar).
