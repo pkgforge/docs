@@ -7,7 +7,7 @@ description: The Official pkgforge-community Repository
 
 <div align="center"><figure><img src="../../../../.gitbook/assets/bin.png" alt="" width="128"><figcaption><p><a href="https://github.com/Azathothas/Toolpacks"><strong>Toolpacks | BinCache</strong></a></p></figcaption></figure></div>
 
-* The **Largest Collection** of **Pre-Compiled** (**+ UPXed**) Linux **Static Binaries** (incl. Build Scripts) to [install & manage](https://soar.qaidvoid.dev/package-management) with [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
+* The **Largest Collection** of **Pre-Compiled** ([**+ UPXed**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#upx)) Linux **Static Binaries** (incl. Build Scripts) to [install & manage](https://soar.qaidvoid.dev/package-management) with [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
 
 {% hint style="warning" %}
 - This repository is still on [**@Azathothas**](https://github.com/Azathothas/Toolpacks) personal Github Account because of [**legacy reasons**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore)
