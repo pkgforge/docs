@@ -58,6 +58,6 @@ description: Frequently Asked Questions & Misc
 
 ### History & Lore
 
-* I created [Toolpacks](https://github.com/Azathothas/Toolpacks), the [largest collection](https://github.com/Azathothas/Toolpacks/blob/main/Docs/README.md#what--why) of Static Binaries on the web.
-* Life was fun & everything was okay until: [Azathothas/Toolpacks#28](https://github.com/Azathothas/Toolpacks/issues/28), this made me go down a rabbit hole where I discovered formats like: [AppBundles](https://github.com/xplshn/pelf/) `|` [AppImages](https://github.com/ivan-hc/AM) `|` [FlatImages](https://github.com/ruanformigoni/flatimage) `|` [RunImages](https://github.com/VHSgunzo)
-* Those didn't really fit the theme of [Toolpacks](https://github.com/Azathothas/Toolpacks), and thus this repo came into Existence.
+* [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) drafted repos & projects which would eventually become [Toolpacks](https://github.com/Azathothas/Toolpacks),  \~ **July, 2023**, You can read more about it here: [https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore)
+* Life was fun & everything was okay until: [Azathothas/Toolpacks#28](https://github.com/Azathothas/Toolpacks/issues/28), this made [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas)  go down a rabbit hole where he discovered formats like: [AppBundles](https://github.com/xplshn/pelf/) `|` [AppImages](https://github.com/ivan-hc/AM) `|` [FlatImages](https://github.com/ruanformigoni/flatimage) `|` [RunImages](https://github.com/VHSgunzo)
+* Those didn't really fit the theme of [Toolpacks](https://github.com/Azathothas/Toolpacks), and thus this repo came into Existence **\~ Sep 25, 2024**
