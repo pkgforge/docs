@@ -5,7 +5,7 @@ description: All Officially Supported Package Formats
 
 # Packages
 
-{% hint style="info" %}
+{% hint style="warning" %}
 You should be aware of these:
 
 * [x] [r/linux/are\_appimages\_always\_secure](https://www.reddit.com/r/linux/comments/14xww1m/are_appimages_always_secure/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/2/https://www.reddit.com/r/linux/comments/14xww1m/are_appimages_always_secure/)
