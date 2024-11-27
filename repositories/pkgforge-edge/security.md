@@ -73,7 +73,7 @@ If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](
 **Since, the builds aren't reproducible, it's unlikely you will end up with the same checksums if you rebuild/rerun the Build Script**
 {% endhint %}
 
-* [x] If it still doesn't inspire confidence, there's a [Docker Image](https://github.com/Azathothas/Toolpacks/tree/main/Docs#how-to-setup--configure-local-build-environment) you can Configure to [Run & Reproduce](https://github.com/Azathothas/Toolpacks/tree/main/Docs#how-to-setup--configure-local-build-environment) any [Binary/Build Script](https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts) on your own Secure System.
+* [x] If it still doesn't inspire confidence, there's a [Docker Image](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#setup-and-configure-local-build-environment) you can Configure to Run & Reproduce any Binary/Build Script on your own Secure System.
 
 > - **Dockerfiles**: [https://github.com/Azathothas/Toolpacks/tree/main/.github/runners](https://github.com/Azathothas/Toolpacks/tree/main/.github/runners)
 > - [https://github.com/pkgforge/pkgcache/tree/main/.github/scripts](https://github.com/pkgforge/pkgcache/tree/main/.github/scripts)
