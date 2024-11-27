@@ -6,9 +6,11 @@ description: Contribution Guidelines
 # Contribution
 
 {% hint style="info" %}
-There's no strict rules, exercise common sense & keep the following in Mind
+* **This is only for contributions NOT RELATED TO PACKAGE REQUEST**
+* For **Package Request**: [https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/package-request](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/package-request)
 {% endhint %}
 
-* [x] Read the [**SPEC**](broken-reference), the Build Guide & Some Examples at least once to understand what's what.
-* [x] Once you think you have a rough idea, feel free to [create an Issue](https://github.com/pkgforge/soarpkgs/issues/new/choose), [Discussion](https://github.com/pkgforge/soarpkgs/discussions/new/choose) or [Pull Request](https://github.com/pkgforge/soarpkgs/compare)
-* [x] We will **`edit/fix/patch`** any **`errors/mistakes`** you make along with providing helpful & detailed explanation of what went wrong or what could be better, so feel free to spam us.
+* [x] **First, Read & Understand** [**this entire repo**](https://github.com/pkgforge/pkgcache).&#x20;
+* [x] **Follow similar code/script** style to make changes & then [**create a pull request**](https://github.com/pkgforge/pkgcache/compare).
+* [x] **If your changes/pull request is not compatible with the rest of this repository's Code Style, it will probably involve a lot of back & forth (Merge/Squashing)**
+* [x] If it's not related to [**code**](https://github.com/pkgforge/pkgcache) | [**asking for more packages to be included**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/package-request), you can **contribute/help us by donating a build server**. See our Infra: [https://docs.pkgforge.dev/repositories/pkgforge-edge/infra](https://docs.pkgforge.dev/repositories/pkgforge-edge/infra)
