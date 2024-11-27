@@ -13,12 +13,13 @@ description: Frequently Asked Questions & Misc
 
 ***
 
-### **Why not contribute to AM?** <a href="#setup-and-configure-local-build-environment" id="setup-and-configure-local-build-environment"></a>
+### Why not contribute & collaborate with AM?
 
 1. [**AM**](https://github.com/ivan-hc/AM) is a giant beast, & is entirely in shell. This makes it very hard, if not impossible, to create **CLI**s/**GUI**s in a real programming language, as **there's no programmatic data format like JSON/YAML. Parsing strings from shell scripts is neither safe nor reliable.**
-2. The author also believes, it's better to rely on/contribute to upstream, even if upstream has no interest or provides broken packages. You can read, why we disagree: [#why-not-contribute-upstream](faq.md#why-not-contribute-upstream "mention")
-3. [**Soar**](https://github.com/pkgforge/soar) prioritizes security through its implementation in Rust, a memory-safe programming language. We are committed to maintaining rigorous security standards, including c**omprehensive build logs**, **robust checksum validation**, and s**ecure build and installation sandboxes**. These protective measures are **fundamental to our approach and non-negotiable**.
-4. A safer, saner, easier & richer alternative to hacky-shell script was created, it's called [<mark style="color:purple;">**`SBUILD`**</mark>](broken-reference), You can read about it here: [https://docs.pkgforge.dev/sbuild/introduction](https://docs.pkgforge.dev/sbuild/introduction)
+2. The author also believes, it's better to rely on/contribute to upstream, **even if upstream has no interest or provides broken packages**. You can read, why we disagree: [#why-not-contribute-upstream](faq.md#why-not-contribute-upstream "mention")
+3. [**Soar**](https://github.com/pkgforge/soar) **prioritizes security** through its implementation in Rust, a memory-safe programming language. We are committed to maintaining rigorous security standards, including c**omprehensive build logs**, **robust checksum validation**, and s**ecure build and installation sandboxes**. These protective measures are **fundamental to our approach and non-negotiable**.
+4. **A safer, saner, easier & richer alternative** to hacky-shell script was created, it's called [<mark style="color:purple;">**`SBUILD`**</mark>](broken-reference), You can read about it here: [https://docs.pkgforge.dev/sbuild/introduction](https://docs.pkgforge.dev/sbuild/introduction)
+5. The reasons, listed above, make [**PkgForge**](https://github.com/pkgforge)'s & [**AM**](https://github.com/ivan-hc/AM)'s **philosophy & goals incompatible** for a direct collaboration. However, [**AM**](https://github.com/ivan-hc/AM) **has added partial support for some of** [**PkgForge's Reposotories** ](broken-reference)since [**`Nov 10, 2024`**](https://github.com/ivan-hc/AM/pull/1096/files), thanks to this [**Issue**](https://github.com/ivan-hc/AM/issues/1079): [https://github.com/ivan-hc/AM/issues/1079](https://github.com/ivan-hc/AM/issues/1079)
 
 ***
 
