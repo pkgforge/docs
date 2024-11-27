@@ -1,9 +1,21 @@
 ---
 icon: compact-disc
-description: Package Formats
+description: All Officially Supported Package Formats
 ---
 
 # Packages
+
+{% hint style="info" %}
+You should be aware of these:
+
+* [x] [r/linux/are\_appimages\_always\_secure](https://www.reddit.com/r/linux/comments/14xww1m/are_appimages_always_secure/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/2/https://www.reddit.com/r/linux/comments/14xww1m/are_appimages_always_secure/)
+* [x] [boredsquirrel/dont-use-appimages](https://github.com/boredsquirrel/dont-use-appimages) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/2/https://github.com/boredsquirrel/dont-use-appimages)
+* [x] [Snaps vs Flatpaks vs Appimages](https://medium.com/@journalehsan/snap-flatpak-and-appimage-which-one-is-better-dc36f7ff1720) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/20240710140620/https://medium.com/@journalehsan/snap-flatpak-and-appimage-which-one-is-better-dc36f7ff1720)
+* [x] [YT/Snaps vs Flatpaks vs Appimages vs Packages](https://www.youtube.com/watch?v=ikBPnYwnUMU)
+* [x] [The security risks of Flathub](https://blog.frehi.be/2023/04/23/the-security-risks-of-flathub/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/20240925042807/https://blog.frehi.be/2023/04/23/the-security-risks-of-flathub/)
+* [x] [Flatpak - an insecurity nightmare](https://orowith2os.gitlab.io/posts/Flatpak-an-insecurity-nightmare/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/20240520001227/https://orowith2os.gitlab.io/posts/Flatpak-an-insecurity-nightmare/)
+* [x] [YT/Your favourite Linux packaging format isn’t as secure as you think…](https://www.youtube.com/watch?v=xw3NxIWpylc)
+{% endhint %}
 
 These are usually **GUI Applications** packaged in one of the following formats:
 
