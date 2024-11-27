@@ -1,6 +1,6 @@
 ---
-icon: message-question
 description: Frequently Asked Questions & Misc
+icon: message-question
 ---
 
 # FAQ

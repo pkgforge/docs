@@ -11,6 +11,7 @@
       * [Contribution](orgs/pkgforge-core/projects/soarpkgs/contribution.md)
       * [Package-Request](orgs/pkgforge-core/projects/soarpkgs/package-request.md)
       * [DMCA | Copyright (Cease & Desist)](orgs/pkgforge-core/projects/soarpkgs/dmca-or-copyright-cease-and-desist.md)
+      * [FAQ](orgs/pkgforge-core/projects/soarpkgs/faq.md)
     * [ToolPacks(BinCache)](orgs/pkgforge-core/projects/toolpacks-bincache/README.md)
       * [Differences](orgs/pkgforge-core/projects/toolpacks-bincache/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/toolpacks-bincache/contribution.md)
