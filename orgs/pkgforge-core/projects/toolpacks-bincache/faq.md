@@ -26,6 +26,24 @@ description: Frequently Asked Questions & Misc
 - **Tag**: <mark style="color:orange;">**`BUG`**</mark> + <mark style="color:blue;">**`$PLATFORM`**</mark>
 {% endhint %}
 
+### UPX
+
+* Binaries are also packed using [<mark style="color:orange;">**`upx --best`**</mark>](https://github.com/upx/upx/blob/devel/doc/upx-doc.txt#L114) after a [CI Build is Complete.](https://github.com/Azathothas/Toolpacks/actions)
+* These can be downloaded by either using <mark style="color:orange;">**`soar add "${BIN}" --prefer-upx`**</mark> or by simply adding a <mark style="color:orange;">**`.upx`**</mark> to any binary.
+
+{% hint style="warning" %}
+- There is no entry for <mark style="color:purple;">**`UPX`**</mark> Binaries in <mark style="color:blue;">**METADATA**</mark> & also no <mark style="color:red;">**CHECKSUMS**</mark>
+- <mark style="color:purple;">**`UPX`**</mark> Binaries can still be decompressed <mark style="color:orange;">**`upx -d $BIN.upx`**</mark> & then checked for original <mark style="color:red;">**CHECKSUMS**</mark>
+-   **Note**: If a build was completed recently, it's <mark style="color:purple;">**`UPX`**</mark> packed version may need some time to show up (Because it's done as post-build)
+
+    > * Hence, raw binary may be a newer version while it's `UPX` may still be from the old one. In this case, using `UPX` to decompress & verify checksum will fail.
+    > * `UPX` counterparts generally take **5-10** hrs to show up, packed fresh from the latest batch.
+
+
+- **Note**: **ALL Binaries may NOT have&#x20;**<mark style="color:purple;">**`UPX`**</mark> Versions
+- **Note**: AntiVirus Systems often detect<mark style="color:purple;">**`UPX`**</mark> as malicious, It is a known issue: [https://github.com/upx/upx/issues/437](https://github.com/upx/upx/issues/437)
+{% endhint %}
+
 ***
 
 ### **Setup & Configure Local Build Environment**
