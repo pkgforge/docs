@@ -107,6 +107,27 @@ Android Support was deprecated on [**`Nov 18, 2024`**](https://github.com/Azatho
 
 ***
 
+### Windows Deprecation
+
+{% hint style="warning" %}
+Windows Support was deprecated on [**`Nov 18, 2024`**](https://github.com/Azathothas/Toolpacks/issues/38#issuecomment-2482936345)
+{% endhint %}
+
+1. Windows is **centralized** & thus benefits from central App Stores like the [**Windows Store**](https://apps.microsoft.com/home?hl=en-US\&gl=US) & [**WinGet**](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+2. It has some of the same issues, Android has, i.e. can't be fully statically linked.
+3. There already exist [<mark style="color:purple;">**UniGetUI**</mark>](https://github.com/marticliment/UniGetUI) , which is a pretty & mature wrapper around [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/), [Scoop](https://scoop.sh/), [Chocolatey](https://chocolatey.org/), [Pip](https://pypi.org/), [Npm](https://www.npmjs.com/), [.NET Tool](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install), [PowerShell Gallery](https://www.powershellgallery.com/) and [**more**](https://github.com/marticliment/UniGetUI?tab=readme-ov-file#supported-package-managers)
+
+### More Architectures & OS
+
+* We would like to build binaries for other architectures like [**`riscv64`**](https://en.wikipedia.org/wiki/RISC-V), and the [BSD Family of OSes](https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems), however our time & especially **RESOURCES** are limited.
+* If you would like to see additional build targets prioritized, donating a <mark style="color:orange;">**Dedicated Build Server**</mark> would be the optimal encouragement.
+
+{% hint style="warning" %}
+- Note: <mark style="color:orange;">`32-Bit`</mark> Binaries will likely never be Supported/Added since that's now ancient and even embedded devices now ship with `64-Bit` **ARCH**
+{% endhint %}
+
+***
+
 ### History & Lore
 
 {% hint style="success" %}
