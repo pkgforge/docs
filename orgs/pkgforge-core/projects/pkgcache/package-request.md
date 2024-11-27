@@ -5,7 +5,7 @@ description: How to request a new Package
 
 # Package-Request
 
-{% hint style="info" %}
+{% hint style="danger" %}
 * This is **only for packages that have been selected & marked** as<mark style="color:orange;">**`.pkgcache`**</mark> at [**SoarPkgs (pkgforge-community)**](https://github.com/pkgforge/soarpkgs/blob/main/README.md)
 * **Any Issue related to Package-Request must be made at** [**pkgforge/soarpkgs**](https://github.com/pkgforge/soarpkgs) **, NOT at** [**pkgforge/pkgcache**](https://github.com/pkgforge/pkgcache)
 {% endhint %}
@@ -14,7 +14,7 @@ description: How to request a new Package
 
 ### Criteria
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Exceptions Apply, [**Discussion**](https://github.com/pkgforge/pkgcache/issues) is encouraged
 {% endhint %}
 
