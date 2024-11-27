@@ -5,9 +5,12 @@ description: The Official pkgforge-community Repository
 
 # ToolPacks(BinCache)
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/bin.png" alt="" width="128"><figcaption><p><a href="https://github.com/Azathothas/Toolpacks"><strong>Toolpacks | BinCache</strong></a></p></figcaption></figure></div>
+{% embed url="https://bin.pkgforge.dev/list.gif" %}
+[**Toolpacks | BinCache**](https://github.com/Azathothas/Toolpacks)
+{% endembed %}
 
 * The **Largest Collection** of **Pre-Compiled** ([**+ UPXed**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#upx)) Linux **Static Binaries** (incl. Build Scripts) to [install & manage](https://soar.qaidvoid.dev/package-management) with [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
+* This repository is one of the sources for the [**pkgforge-edge**](../../../../repositories/pkgforge-edge/) Repo.
 
 {% hint style="warning" %}
 - This repository is still on [**@Azathothas**](https://github.com/Azathothas/Toolpacks) personal Github Account because of [**legacy reasons**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore)
