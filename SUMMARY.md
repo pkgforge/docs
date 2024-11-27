@@ -21,6 +21,8 @@
       * [Differences](orgs/pkgforge-core/projects/pkgcache/differences.md)
       * [Contribution](orgs/pkgforge-core/projects/pkgcache/contribution.md)
       * [Package-Request](orgs/pkgforge-core/projects/pkgcache/package-request.md)
+      * [FAQ](orgs/pkgforge-core/projects/pkgcache/faq.md)
+      * [DMCA | Copyright (Cease & Desist)](orgs/pkgforge-core/projects/pkgcache/dmca-or-copyright-cease-and-desist.md)
   * [People](orgs/pkgforge-core/people.md)
 * [PkgForge-Community](orgs/pkgforge-community.md)
 * [PkgForge-Dev](orgs/pkgforge-dev/README.md)
