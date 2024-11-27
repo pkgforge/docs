@@ -26,6 +26,16 @@ description: Frequently Asked Questions & Misc
 - **Tag**: <mark style="color:orange;">**`BUG`**</mark> + <mark style="color:blue;">**`$PLATFORM`**</mark>
 {% endhint %}
 
+***
+
+### Baseutils
+
+{% hint style="info" %}
+Essentially [Baseutils is a collection](https://bin.pkgforge.dev/x86_64_Linux/Baseutils/) of Bins from CoreUtils + BusyBox + FindUtils + OpenSSH + Procps + ToyBox + UtilLinux + XZ-Utils & [`More`](https://bin.pkgforge.dev/x86_64_Linux/Baseutils/). Mostly meant for restricted environments like ephemeral [AWS Lambda](https://medium.com/clog/ssh-ing-into-your-aws-lambda-functions-c940cebf7646), [Google Cloud Functions](https://cloud.google.com/functions?hl=en) or anywhere really where there's a lack of coreutils or no privs to use pkg managers. This could also be _theoretically_ used to [bootstrap a linux distro](https://www.youtube.com/watch?v=0vOEcw_sPaM), however, some binaries may not work as we haven't tested all of them comprehensively. Stability & Reliability isn't Guaranteed.
+{% endhint %}
+
+***
+
 ### UPX
 
 * Binaries are also packed using [<mark style="color:orange;">**`upx --best`**</mark>](https://github.com/upx/upx/blob/devel/doc/upx-doc.txt#L114) after a [CI Build is Complete.](https://github.com/Azathothas/Toolpacks/actions)
@@ -125,6 +135,33 @@ Windows Support was deprecated on [**`Nov 18, 2024`**](https://github.com/Azatho
 {% hint style="warning" %}
 - Note: <mark style="color:orange;">`32-Bit`</mark> Binaries will likely never be Supported/Added since that's now ancient and even embedded devices now ship with `64-Bit` **ARCH**
 {% endhint %}
+
+***
+
+### bin.pkgforge.dev
+
+{% hint style="info" %}
+There's no public source code for the web frontend powering [https://bin.pkgforge.dev/](https://bin.pkgforge.dev/)
+{% endhint %}
+
+* [bin.pkgforge.dev](https://bin.pkgforge.dev/) is **NOT a web server**. It's a [web proxy](https://developers.cloudflare.com/r2/buckets/public-buckets/#connect-a-bucket-to-a-custom-domain) to an [R2 Bucket](https://developers.cloudflare.com/r2/buckets/public-buckets/)
+* Internally, it uses a fork of [cmj2002/r2-dir-list](https://github.com/cmj2002/r2-dir-list) with [Hardcoded Cloudflare Credentials](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)
+* The content can always be verified by comparing **CHECKSUMS**, published on GitHub (via Publicly Auditable & Log Viewable) Actions & on the Bucket. See [security.md](../../../../repositories/pkgforge-edge/security.md "mention")
+
+***
+
+### Public Tools Search
+
+* [**GitHub Search**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse+lang%3Ac+lang%3Acrystal+lang%3Ago+lang%3Anim+lang%3Arust+lang%3Azig+stars%3A%3E5+cli+OR+tool+OR+utility\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false lang:c lang:crystal lang:go lang:nim lang:rust lang:zig stars:>5 cli OR tool OR utility`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
+* [GitHub Issues](https://github.com/Azathothas/Toolpacks/blob/main/.github/pub_issues.txt): [https://github.com/Azathothas/Toolpacks/blob/main/.github/pub\_issues.txt](https://github.com/Azathothas/Toolpacks/blob/main/.github/pub_issues.txt)
+* **List**: [https://github.com/stars/Azathothas/lists/toolpacks-tba](https://github.com/stars/Azathothas/lists/toolpacks-tba)
+
+***
+
+### Public Code Search
+
+* [**GitHub Search**](https://github.com/search?q=NOT+user%3AAzathothas+NOT+user%3Axplshn+NOT+user%3Ametis-os+NOT+user%3Apkgforge+NOT+user%3Apkgforge-community+NOT+user%3Apkgforge-dev+NOT+user%3Apkgforge-security+NOT+is%3Afork+pkgforge.dev\&type=code): <mark style="color:orange;">`NOT user:Azathothas NOT user:xplshn NOT user:metis-os NOT user:pkgforge NOT user:pkgforge-community NOT user:pkgforge-dev NOT user:pkgforge-security NOT is:fork pkgforge.dev`</mark>
+* [**Google**](https://www.google.com)**|**[**Bing**](https://www.bing.com/)**|**[**Baidu**](https://www.baidu.com): <mark style="color:orange;">`"*pkgforge.dev" -site:pkgforge.dev -site:ajam.dev`</mark>
 
 ***
 
