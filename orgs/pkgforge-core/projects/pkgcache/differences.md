@@ -1,6 +1,6 @@
 ---
 icon: not-equal
-description: Differences from bincache/pkgcache
+description: Differences from Bincache & SoarPkgs
 ---
 
 # Differences
