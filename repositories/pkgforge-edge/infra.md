@@ -5,6 +5,10 @@ description: Build & CI Servers
 
 # Infra
 
+{% hint style="info" %}
+Same Infra is shared with [pkgforge-stable](../pkgforge-stable/ "mention")
+{% endhint %}
+
 ### Cost
 
 * Servers & Storage cost money, right now all financial cost is covered solely by [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas)&#x20;
