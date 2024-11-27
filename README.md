@@ -21,10 +21,9 @@ layout:
 
 # PkgForge (Core)
 
-<figure><img src=".gitbook/assets/pkgforge (1).png" alt="" width="375"><figcaption></figcaption></figure>
-
-
+{% embed url="https://bin.pkgforge.dev/list.gif" %}
 
 ## About
 
 Welcome to [Package Forge](https://github.com/pkgforge), Improving Package Management for `*Unix` Systems with [Thousands of Statically Compiled Binaries](formats/binaries/), [Portable Packages like AppImage & More](formats/packages/) and a [Package Manager written in Blazingly 🚀🚀 Fast 🦀 Rust](https://github.com/pkgforge/soar)
+
