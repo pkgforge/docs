@@ -13,7 +13,7 @@ description: The Official Repository containing the latest bleeding edge binarie
 
 ### Config
 
-<pre class="language-json"><code class="lang-json">{
+<pre class="language-jsonp"><code class="lang-jsonp">{
   "repositories": [
 <strong>    {
 </strong>      "name": "pkgforge-edge",

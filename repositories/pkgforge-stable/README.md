@@ -16,7 +16,7 @@ description: The Official Repository containing stable/versioned binaries/packag
 ### Config
 
 {% code overflow="wrap" %}
-```json
+```jsonp
 {
   "repositories": [
     {
