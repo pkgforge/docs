@@ -50,6 +50,7 @@
       * [GoLang](formats/binaries/static/build-notes/golang.md)
       * [Make](formats/binaries/static/build-notes/make.md)
       * [Nim](formats/binaries/static/build-notes/nim.md)
+      * [Nix](formats/binaries/static/build-notes/nix.md)
       * [Vlang](formats/binaries/static/build-notes/vlang.md)
       * [Zig (Musl)](formats/binaries/static/build-notes/zig-musl.md)
     * [Build Tests](formats/binaries/static/build-tests.md)
