@@ -5,17 +5,18 @@ description: The Official Repository containing the latest bleeding edge binarie
 
 # pkgforge-edge
 
-{% hint style="info" %}
+{% hint style="success" %}
 * [x] This repo combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
 * [x] This is the bleeding-edge version i.e all packages are latest & contain no snapshots
 * [x] For stability, versioning & snapshots, Please refer to [pkgforge-stable](../pkgforge-stable/ "mention")
 {% endhint %}
 
-```json5
-{
+### Config
+
+<pre class="language-json5"><code class="lang-json5">{
   "repositories": [
-    {
-      "name": "pkgforge-edge",
+<strong>    {
+</strong>      "name": "pkgforge-edge",
       "url": "https://bin.pkgforge.dev/x86_64",
       "metadata": "METADATA.AIO.json",
       "sources": {
@@ -26,4 +27,5 @@ description: The Official Repository containing the latest bleeding edge binarie
     }
   ]
 }
-```
+</code></pre>
+
