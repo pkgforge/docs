@@ -87,11 +87,12 @@ If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](
 {% hint style="warning" %}
 * For [Binaries](../../formats/binaries/), Debug Symbols, Comments are stripped, this will change the checksum
 * For [Packages](../../formats/packages/), Icons, Desktops (& even repacking) are edited/fixed & patched, this will change the checksum&#x20;
+* **To preserve checksums wherever possible, we don't sign any of our binaries as we already have Logs + Checksums**
 {% endhint %}
 
 2. Fork our repos, read & audit our code, setup all the infrastructure, & run all the scripts & build on your own servers
 
-
+***
 
 ### Spooky Things
 

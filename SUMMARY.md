@@ -120,6 +120,7 @@
   * [Security](repositories/pkgforge-community/security.md)
 * [pkgforge-edge](repositories/pkgforge-edge/README.md)
   * [Infra](repositories/pkgforge-edge/infra.md)
+  * [Metadata](repositories/pkgforge-edge/metadata.md)
   * [Security](repositories/pkgforge-edge/security.md)
 * [pkgforge-stable](repositories/pkgforge-stable/README.md)
   * [Infra](repositories/pkgforge-stable/infra.md)
