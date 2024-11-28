@@ -1,4 +1,9 @@
-# Page
+---
+description: Tests to perform after compiling a Binary
+icon: vial-virus
+---
+
+# Build Tests
 
 ### [File](https://man7.org/linux/man-pages/man1/file.1.html)
 
