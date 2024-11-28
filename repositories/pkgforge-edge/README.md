@@ -5,6 +5,12 @@ description: The Official Repository containing the latest bleeding edge binarie
 
 # pkgforge-edge
 
+{% hint style="info" %}
+* [x] This repo combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
+* [x] This is the bleeding-edge version i.e all packages are latest & contain no snapshots
+* [x] For stability, versioning & snapshots, Please refer to [pkgforge-stable](../pkgforge-stable/ "mention")
+{% endhint %}
+
 ```json5
 {
   "repositories": [
@@ -21,9 +27,3 @@ description: The Official Repository containing the latest bleeding edge binarie
   ]
 }
 ```
-
-{% hint style="info" %}
-* [x] This repo combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
-* [x] This is the bleeding-edge version i.e all packages are latest & contain no snapshots
-* [x] For stability, versioning & snapshots, Please refer to [pkgforge-stable](../pkgforge-stable/ "mention")
-{% endhint %}

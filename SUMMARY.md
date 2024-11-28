@@ -123,8 +123,9 @@
   * [Metadata](repositories/pkgforge-edge/metadata.md)
   * [Security](repositories/pkgforge-edge/security.md)
 * [pkgforge-stable](repositories/pkgforge-stable/README.md)
-  * [Infra](repositories/pkgforge-stable/infra.md)
   * [Security](repositories/pkgforge-stable/security.md)
+  * [Metadata](repositories/pkgforge-stable/metadata.md)
+  * [Infra](repositories/pkgforge-stable/infra.md)
 
 ## Contact
 
