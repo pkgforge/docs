@@ -174,12 +174,13 @@ This is a basic example demonstrating how easy it is to work with the Metadata
 {% code overflow="wrap" %}
 ```bash
 
-# Append `| jq -r '.$TYPE[].$PROPERTY'` to filter them, for example:
-!# Simple example to: list all Pkgs in .pkg
+#Append `| jq -r '.$TYPE[].$PROPERTY'` to filter them, for example:
+#Simple example to: list all Pkgs in .pkg
 curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" | jq -r '.pkg[] | .pkg'
 
-!#To pretty print anything that matches qbittorrent from .pkg
-curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" | jq -r '.pkg[] | select(.pkg | test("qbittorrent"; "i")) | "---------------------------\n" + (. | to_entries | map("\(.key): \(.value)") | join("\n"))'
+#To pretty print anything that matches qbittorrent from .pkg
+curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
+| jq -r '.pkg[] | select(.pkg | test("qbittorrent"; "i")) | "---------------------------\n" + (. | to_entries | map("\(.key): \(.value)") | join("\n"))'
 ```
 {% endcode %}
 {% endhint %}
