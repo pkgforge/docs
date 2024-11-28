@@ -1,6 +1,6 @@
 ---
-description: It is NEVER a good idea to install random binaries from random sources.
 icon: shield-quartered
+description: It is NEVER a good idea to install random binaries from random sources.
 ---
 
 # Security
@@ -94,6 +94,10 @@ If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](
 
 
 ### Spooky Things
+
+{% hint style="info" %}
+[We](https://docs.pkgforge.dev/orgs/pkgforge-core/people) have been in the cyber-security/infosec field, [long before pkgforge was ever conceived](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore). This is to say, we know how to break & secure things. However, we are not perfect so occassional mistakes either by a dumb mess we ourselves made or by something entirely out of our control. So **if you ever find anything malicious or suspicious, this section serves as a guide on what to do**.
+{% endhint %}
 
 {% hint style="danger" %}
 Follow this guide to analyze a malicious binary/package: [https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/malware-analysis](https://book.hacktricks.xyz/generic-methodologies-and-resources/basic-forensic-methodology/malware-analysis)
