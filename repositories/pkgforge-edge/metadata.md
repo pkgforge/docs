@@ -46,7 +46,7 @@ pkg: "@string",
 //Contains the Main Family, the package is a part of
 pkg_family: "@string",
 
-//Contains the Application ID, usually from appstream files, [Otherwise Empty/Non-Existent]
+//Contains the Application ID, generated from source URL [Otherwise Empty/Non-Existent]
 //IF THIS IS MISSING, assume pkg_id==app_id
 <strong>pkg_id: "@string",
 </strong><strong>
@@ -174,13 +174,27 @@ This is a basic example demonstrating how easy it is to work with the Metadata
 {% code overflow="wrap" %}
 ```bash
 
-#Append `| jq -r '.$TYPE[].$PROPERTY'` to filter them, for example:
+#Append `| jq -r '.$TYPE[].$PROPERTY'` to filter them
+#$TYPE == .base , .bin , .pkg
 #Simple example to: list all Pkgs in .pkg
-curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" | jq -r '.pkg[] | .pkg'
+curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
+| jq -r '
+  .pkg[] 
+  | .pkg
+'
 
 #To pretty print anything that matches qbittorrent from .pkg
 curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
-| jq -r '.pkg[] | select(.pkg | test("qbittorrent"; "i")) | "---------------------------\n" + (. | to_entries | map("\(.key): \(.value)") | join("\n"))'
+| jq -r '
+  .pkg[] 
+  | select(.pkg | test("qbittorrent"; "i")) 
+  | "---------------------------\n" + (
+      . 
+      | to_entries 
+      | map("\(.key): \(.value)") 
+      | join("\n")
+    )
+'
 ```
 {% endcode %}
 {% endhint %}
