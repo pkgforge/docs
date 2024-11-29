@@ -5,13 +5,17 @@ description: The Official Repository containing the latest bleeding edge binarie
 
 # pkgforge-edge
 
+{% hint style="warning" %}
+By [<mark style="color:purple;">**Repo**</mark>](https://soar.qaidvoid.dev/configuration#repository-configuration), **we mean** [**Soar's repository**](https://soar.qaidvoid.dev/configuration#repository-configuration) **& NOT GitHub Repository**
+{% endhint %}
+
 {% hint style="success" %}
-* [x] This repo combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
-* [x] This is the bleeding-edge version i.e all packages are latest & contain no snapshots
+* [x] This [repo](https://soar.qaidvoid.dev/configuration#repository-configuration) combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
+* [x] This is the **bleeding-edge** version i.e all packages are latest & contain no snapshots
 * [x] For stability, versioning & snapshots, Please refer to [pkgforge-stable](../pkgforge-stable/ "mention")
 {% endhint %}
 
-### Config
+### [Config](https://soar.qaidvoid.dev/configuration#repository-configuration)
 
 <pre class="language-jsonp"><code class="lang-jsonp">{
   "repositories": [
@@ -28,4 +32,3 @@ description: The Official Repository containing the latest bleeding edge binarie
   ]
 }
 </code></pre>
-

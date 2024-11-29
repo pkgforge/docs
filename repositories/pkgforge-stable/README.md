@@ -5,15 +5,19 @@ description: The Official Repository containing stable/versioned binaries/packag
 
 # pkgforge-stable
 
-{% hint style="success" %}
-* This repo combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
-* This is the **stable** version, i.e. all packages are stable with **versions** & **snapshots**
-* Workflow: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import\_sync.yaml](https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import_sync.yaml)
-* Scripts: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts)
-* For the **bleeding-edge** latest & greatest, Please refer to [pkgforge-edge](../pkgforge-edge/ "mention")
+{% hint style="warning" %}
+By [<mark style="color:purple;">**Repo**</mark>](https://soar.qaidvoid.dev/configuration#repository-configuration), **we mean** [**Soar's repository**](https://soar.qaidvoid.dev/configuration#repository-configuration) **& NOT GitHub Repository**
 {% endhint %}
 
-### Config
+{% hint style="success" %}
+* [x] This [repo](https://soar.qaidvoid.dev/configuration#repository-configuration) combines [toolpacks-bincache](../../orgs/pkgforge-core/projects/toolpacks-bincache/ "mention") & [pkgcache](../../orgs/pkgforge-core/projects/pkgcache/ "mention")
+* [x] This is the **stable** version, i.e. all packages are stable with **versions** & **snapshots**
+* [x] Workflow: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import\_sync.yaml](https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import_sync.yaml)
+* [x] Scripts: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts)
+* [x] For the **bleeding-edge** latest & greatest, Please refer to [pkgforge-edge](../pkgforge-edge/ "mention")
+{% endhint %}
+
+### [Config](https://soar.qaidvoid.dev/configuration#repository-configuration)
 
 {% code overflow="wrap" %}
 ```jsonp
@@ -33,4 +37,3 @@ description: The Official Repository containing stable/versioned binaries/packag
 }
 ```
 {% endcode %}
-
