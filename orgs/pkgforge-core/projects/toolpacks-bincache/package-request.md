@@ -22,12 +22,12 @@ soar search "${BIN_NAME}#base"
 ```
 
 * [x] Search it on [**Github**](https://github.com/pkgforge/soarpkgs/tree/main/packages): [https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts)
-* [x] Detailed **`aarch64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/aarch64\_arm64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64_arm64_Linux/DETAILED.md)
-* [x] Detailed **`x86_64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64\_Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64_Linux/DETAILED.md)
+* [x] Detailed **`aarch64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/DETAILED.md)
+* [x] Detailed **`x86_64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64-Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64-Linux/DETAILED.md)
 {% endhint %}
 
-* [x] After you are really sure that it's not available, Read [BUILD\_NOTES.md](https://github.com/Azathothas/Toolpacks/blob/main/Docs/BUILD_NOTES.md). This contains notes on compiling static binaries. However, if there's already a static binary that's released, you can [**just use soar to fetch it**](https://github.com/pkgforge/soar).
-* [x] After you have successfully **`built/compiled/fetched`** a **static** binary, you must check that it's truly static : [**Tests**](https://github.com/Azathothas/Toolpacks/blob/main/Docs/BUILD_NOTES.md#tests)
+* [x] After you are really sure that it's not available, Read our [Build Notes](https://docs.pkgforge.dev/formats/binaries/static/build-notes). This contains notes on compiling static binaries. However, if there's already a static binary that's released, you can [**just use soar to fetch it**](https://github.com/pkgforge/soar).
+* [x] After you have successfully **`built/compiled/fetched`** a **static** binary, you must check that it's truly static : [**Tests**](https://docs.pkgforge.dev/formats/binaries/static/build-tests)
 * [x] After all this, finally describe & provide step-by-step instruction by [creating a new issue](https://github.com/Azathothas/Toolpacks/issues/new) Make sure to include **ALL Steps** (Including getting source code). Be as verbose as possible. Include output of **`file` | `ldd` | `readelf`**. Optionally, also test the binary with **`qemu-$ARCH-static`** or a minimal VM/Docker Image (Preferably alpine) to ensure that it really does work.
 * [x] If you can not (don't know how to) compile, [**create a new issue**](https://github.com/Azathothas/Toolpacks/issues/new) with **links to the PKG/Tool's homepage/source-code along with a brief description on what it does.**
 

@@ -1,36 +1,25 @@
 ---
-icon: brackets-curly
 description: Metadata Spec
+icon: brackets-curly
 ---
 
 # Metadata
 
-The Best way to learn it, is to view it ([https://bin.pkgforge.dev/x86\_64/METADATA.AIO.json](https://bin.pkgforge.dev/x86_64/METADATA.AIO.json)) & and then read the sections below:
+The best way to learn it, is to view it ([https://soarpkgs.pkgforge.dev/metadata/METADATA.json](https://soarpkgs.pkgforge.dev/metadata/METADATA.json)) & and then read the sections below:
 
 ### Fields
 
 ```json5
 //The Structure is like:
- {
-   "base": [
-      {
-         // ${Binaries from bincache(Toolpacks)/${ARCH}/**/Baseutils/**}
-      }
-   ],
-   "bin" : [
-      {
-         // ${Binaries are from core bincache(Toolpacks)/$ARCH}/**}
-      }
-   ],
-   "pkg" : [
-      {
-         // ${Binaries, or rather pkgs are from pkgforge/pkgcache}
-      }
-   ]
+ [
+  {
+   // ${Entries}
+  }
+ ]
 ```
 
-{% hint style="info" %}
-<mark style="color:purple;">**.bin**</mark> & <mark style="color:purple;">**.base**</mark> don't have all the fields (<mark style="color:purple;">**.pkg**</mark> is the richest), so a less strict parsing is recommended
+{% hint style="warning" %}
+The metadata doesn't have all the fields (Most are empty/placeholders) as these are autofilled after a build is successful.
 {% endhint %}
 
 <pre class="language-json5" data-overflow="wrap"><code class="lang-json5">// @string --> Single String Value
@@ -135,31 +124,17 @@ tag: "@array"
 {% hint style="info" %}
 * [x] Add (at end)  <mark style="color:orange;">**`.xz`**</mark> OR <mark style="color:orange;">**`.zstd`**</mark> to get Compressed Versions
 * [x] Add (at end)<mark style="color:purple;">**`.bsum`**</mark> to get Checksums, useful to check if Remote has Changed
-* [x] <mark style="color:purple;">**`${ARCH}`**</mark> == <mark style="color:orange;">**`arm64_linux`**</mark>, <mark style="color:orange;">**`aarch64`**</mark>, <mark style="color:orange;">**`aarch64-Linux`**</mark>, <mark style="color:orange;">**`amd64_linux`**</mark>, <mark style="color:orange;">**`x86_64`**</mark>, <mark style="color:orange;">**`x86_64-Linux`**</mark>
 {% endhint %}
 
 {% hint style="info" %}
-Metadata File is Stored on R2 (99% Uptime) \[<mark style="color:green;">**RECOMMENDED**</mark>]
+Metadata File is Stored on [GitHub](https://github.com/pkgforge/soarpkgs/tree/main/metadata) (99% Uptime)
 
-```bash
-https://bin.pkgforge.dev/${ARCH}/METADATA.AIO.json
-https://bin.pkgforge.dev/${ARCH}/METADATA.AIO.min.json
-https://bin.pkgforge.dev/${ARCH}/METADATA.AIO.toml
-https://bin.pkgforge.dev/${ARCH}/METADATA.AIO.yaml
-```
-{% endhint %}
-
-{% hint style="info" %}
-Metadata File is Stored on HF (Sometimes goes Down)
-
-* <mark style="color:blue;">https://pkg.pkgforge.dev/</mark><mark style="color:orange;">${PATH}</mark> is just a redirect to <mark style="color:blue;">https://huggingface.co/datasets/pkgforge/pkgcache/resolve/main/</mark><mark style="color:orange;">${PATH}</mark>
+* <mark style="color:blue;">https://soarpkgs.pkgforge.dev/</mark><mark style="color:orange;">${PATH}</mark> is just a redirect to <mark style="color:blue;">https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/</mark><mark style="color:orange;">${PATH}</mark>
 
 {% code overflow="wrap" %}
 ```bash
-https://pkg.pkgforge.dev/${ARCH}/METADATA.AIO.json
-https://pkg.pkgforge.dev/${ARCH}/METADATA.AIO.min.json
-https://pkg.pkgforge.dev/${ARCH}/METADATA.AIO.toml
-https://pkg.pkgforge.dev/${ARCH}/METADATA.AIO.yaml
+https://soarpkgs.pkgforge.dev/metadata/METADATA.json
+https://raw.githubusercontent.com/pkgforge/soarpkgs/refs/heads/main/metadata/METADATA.json
 ```
 {% endcode %}
 {% endhint %}
@@ -174,20 +149,27 @@ This is a basic example demonstrating how easy it is to work with the Metadata
 {% code overflow="wrap" %}
 ```bash
 
-#Append `| jq -r '.$TYPE[].$PROPERTY'` to filter them
-#$TYPE == .base , .bin , .pkg
+#Append `| jq -r '.[].$PROPERTY'` to filter them
 #Simple example to: list all Pkgs in .pkg
-curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
+curl -qfsSL "https://soarpkgs.pkgforge.dev/metadata/METADATA.json" \
 | jq -r '
-  .pkg[] 
+  .[] 
   | .pkg
 '
 
-#To pretty print anything that matches qbittorrent from .pkg
-curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
+#Example to list in .pkg (.pkg_type) [.pkg_id]
+curl -qfsSL "https://soarpkgs.pkgforge.dev/metadata/METADATA.json" \
 | jq -r '
-  .pkg[] 
-  | select(.pkg | test("qbittorrent"; "i")) 
+    .[] | 
+    "\(.pkg) (\(.pkg_type)) [\(.pkg_id)]"
+' \
+| sort -u 
+
+#To pretty print anything that matches vlc from .pkg
+curl -qfsSL "https://soarpkgs.pkgforge.dev/metadata/METADATA.json" \
+| jq -r '
+  .[] 
+  | select(.pkg | test("vlc"; "i")) 
   | "---------------------------\n" + (
       . 
       | to_entries 
@@ -198,4 +180,3 @@ curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
 ```
 {% endcode %}
 {% endhint %}
-

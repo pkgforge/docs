@@ -117,6 +117,7 @@
 
 * [pkgforge-community](repositories/pkgforge-community/README.md)
   * [Infra](repositories/pkgforge-community/infra.md)
+  * [Metadata](repositories/pkgforge-community/metadata.md)
   * [Security](repositories/pkgforge-community/security.md)
 * [pkgforge-edge](repositories/pkgforge-edge/README.md)
   * [Infra](repositories/pkgforge-edge/infra.md)

@@ -1,11 +1,11 @@
 ---
-description: Metadata Spec
 icon: brackets-curly
+description: Metadata Spec
 ---
 
 # Metadata
 
-Best way to learn it, is to view it ([https://bincache.pkgforge.dev/x86\_64/METADATA.AIO.json](https://bincache.pkgforge.dev/x86_64/METADATA.AIO.json)) & and then read the sections below:
+The Best way to learn it, is to view it ([https://bincache.pkgforge.dev/x86\_64/METADATA.AIO.json](https://bincache.pkgforge.dev/x86_64/METADATA.AIO.json)) & and then read the sections below:
 
 ### Fields
 
