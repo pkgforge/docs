@@ -2,7 +2,7 @@
 
 ## Orgs
 
-* [Soar (Package Manager)](https://github.com/pkgforge/soar)
+* [Soar (Package Manager)](https://soar.qaidvoid.dev/)
 * [PkgForge (Core)](README.md)
   * [About](orgs/pkgforge-core/about.md)
   * [Projects](orgs/pkgforge-core/projects/README.md)
