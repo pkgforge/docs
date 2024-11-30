@@ -1,0 +1,99 @@
+name: 🐧🧹 HealthChecks 🖳🗑️
+
+on:
+  #push:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 0 * * *" #12:15 AM UTC --> 06:00 AM NPT
+env:
+  RCLONE_CF_R2_PUB: "${{ secrets.RCLONE_CF_R2_PUB }}"
+#------------------------------------------------------------------------------------#
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: main
+          filter: "blob:none"
+
+      - name: Setup Env
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          ##CoreUtils
+          sudo apt update -y
+          sudo apt install bc coreutils curl dos2unix fdupes jq moreutils wget -y
+          sudo apt-get install apt-transport-https apt-utils ca-certificates coreutils dos2unix gnupg2 jq moreutils p7zip-full rename rsync software-properties-common texinfo tmux util-linux wget -y 2>/dev/null ; sudo apt-get update -y 2>/dev/null
+          #binutils
+          sudo apt install binutils-aarch64-linux-gnu -y
+          #libguestfs-tools
+          sudo apt install libguestfs-tools -y
+          #qemu
+          sudo apt install qemu qemu-user-static qemu-utils -y
+          #temp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          ##Setup GHDIRS
+          mkdir -pv "${GITHUB_WORKSPACE}/main/metadata"
+          ##Setup rClone
+          mkdir -p "${HOME}/.config/rclone"
+          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "${HOME}/.config/rclone/rclone.conf"
+          export RCLONE_STATS="120s" ; echo "RCLONE_STATS=${RCLONE_STATS}" >> "${GITHUB_ENV}"
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://pub.ajam.dev/repos/Azathothas/Wordlists/Misc/User-Agents/ua_chrome_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Install Addons
+        run: |
+          ##presets
+          set +x ; set +e
+          #-------------#
+          bash <(curl -qfsSL "https://pub.ajam.dev/repos/Azathothas/Arsenal/misc/Linux/install_dev_tools.sh")
+        continue-on-error: true
+
+      - name: Fix GIFs
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          cd "${GITHUB_WORKSPACE}/main" && git pull origin main || git pull origin main --ff-only || git merge --no-ff -m "Merge & Sync"
+          find "${GITHUB_WORKSPACE}/main" -type f -name "*.md" -not -path '*/.*' -print0 | xargs -0 sed -i -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g"
+        continue-on-error: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./main        
+          commit_user_name: Azathothas
+          commit_user_email: AjamX101@gmail.com
+          commit_message: "‎‎‏‏‎ ‎"
+          #commit_message: "✅ Updated (Metadata) 🛍️ <-- ${{ env.UTC_TIME }} ⌚"
+          #push_options: '--force'
+        continue-on-error: true
+#------------------------------------------------------------------------------------#
+      - name: rClone BackUp Repo ("https://pub.ajam.dev/repos/${GITHUB_REPOSITORY}")
+        run: |
+          # Presets
+          set +x ; set +e
+          #--------------#
+          #touch "${HOME}/.rclone.conf"
+          echo "${{ secrets.RCLONE_CF_R2_PUB }}" > "${HOME}/.rclone.conf"
+          #chdir to Repo
+          cd "${GITHUB_WORKSPACE}/main"
+          #Git pull
+          git pull origin main --no-edit 2>/dev/null
+          #Del Bloat
+          rm -rf "$(pwd)/.git"
+          #Upload to Pub
+          echo -e "[+] Syncing ${GITHUB_REPOSITORY} to pub.ajam.dev/repos/${GITHUB_REPOSITORY} \n"
+          rclone sync "." "r2:/pub/repos/${GITHUB_REPOSITORY}/" --user-agent="${USER_AGENT}" --buffer-size="100M" --s3-upload-concurrency="500" --s3-chunk-size="100M" --multi-thread-streams="500" --checkers="2000" --transfers="1000" --check-first --checksum --copy-links --fast-list --progress
+        continue-on-error: true
+#------------------------------------------------------------------------------------#
