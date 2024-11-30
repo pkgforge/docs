@@ -13,8 +13,8 @@ description: Frequently Asked Questions & Misc
 
 {% hint style="warning" %}
 1. There's an automated CI which checks for these
-2. &#x20;[aarch64-Linux](https://github.com/Azathothas/Toolpacks/blob/main/aarch64_arm64_Linux/BUILD_ERROR.log.md) : [https://github.com/Azathothas/Toolpacks/blob/main/aarch64\_arm64\_Linux/BUILD\_ERROR.log.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64_arm64_Linux/BUILD_ERROR.log.md)
-3. &#x20;[x86\_64-Linux](https://github.com/Azathothas/Toolpacks/blob/main/x86_64_Linux/BUILD_ERROR.log.md) : [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64\_Linux/BUILD\_ERROR.log.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64_Linux/BUILD_ERROR.log.md)
+2. &#x20;[aarch64-Linux](https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/BUILD_ERROR.log.md) : [https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/BUILD\_ERROR.log.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/BUILD_ERROR.log.md)
+3. &#x20;[x86\_64-Linux](https://github.com/Azathothas/Toolpacks/blob/main/x86_64-Linux/BUILD_ERROR.log.md) : [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64-Linux/BUILD\_ERROR.log.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64-Linux/BUILD_ERROR.log.md)
 4. So if it's already there, it will eventually be fixed.
 {% endhint %}
 
