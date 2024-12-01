@@ -22,6 +22,6 @@ description: Who are we?
 ### [@ahqsoftwares](https://github.com/ahqsoftwares)
 
 * **Role**: <mark style="color:blue;">**Lead Developer**</mark> for [<mark style="color:purple;">**Soar-Store**</mark>](https://github.com/pkgforge/soar-store), the <mark style="color:orange;">**GUI**</mark> for [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
-* **Homepage**:&#x20;
-* **Contact**:&#x20;
+* **Homepage**: [<mark style="color:green;">**https://github.com/ahqsoftwares**</mark>](https://github.com/ahqsoftwares)
+* **Contact**: [**ahqsecret@gmail.com**](mailto:ahqsecret@gmail.com)
 * **Joined**: <mark style="color:orange;">`2024-12-01`</mark>
