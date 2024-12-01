@@ -7,7 +7,7 @@ description: Who are we?
 
 ### [@QaidVoid](https://github.com/QaidVoid)&#x20;
 
-* **Role**: <mark style="color:blue;">**Lead Developer**</mark> & the one who created [<mark style="color:green;">**Soar**</mark>](https://github.com/pkgforge/soar)
+* **Role**: <mark style="color:blue;">**Lead Developer**</mark> & the one who created [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
 * **Homepage**: [<mark style="color:green;">**https://qaidvoid.dev**</mark>](https://qaidvoid.dev/)
 * **Contact**: [<mark style="color:blue;">**https://qaidvoid.dev/contact**</mark>](https://qaidvoid.dev/contact)
 * **Joined**: <mark style="color:orange;">`2024-10-03`</mark>
