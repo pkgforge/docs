@@ -17,6 +17,11 @@ description: List of Environment Variables that are Accessible Inside x_exec.run
 
 > - **Description**: The raw value of [<mark style="color:purple;">**`.pkg_type`**</mark>](../specification/2.pkg.md) from <mark style="color:purple;">**`.SBUILD`**</mark> <<mark style="color:red;">**Empty**</mark> _if not Available_>
 
+* [x] <mark style="color:orange;">**`${pkg_ver}`**</mark> | <mark style="color:orange;">**`${PKG_VER}`**</mark>
+
+> - **Description**: The raw value of [<mark style="color:purple;">**`.pkgver`**</mark>](../specification/3.version.md) **OR** the output produced by [<mark style="color:purple;">**`x_exec.pkgver`**</mark>](../specification/20.x_exec.md)from<mark style="color:purple;">**`.SBUILD`**</mark> <<mark style="color:green;">**ALWAYS**</mark> _Available_>
+> - &#x20;This is the same as the raw content of <mark style="color:orange;">**${SBUILD\_PKG}.version**</mark> file
+
 * [x] <mark style="color:orange;">**`${SBUILD_PKG}`**</mark>
 
 > - **Description**: The raw value of [<mark style="color:purple;">**`.pkg`**</mark>](../specification/2.pkg.md) + [<mark style="color:purple;">**.pkg\_type**</mark>](../specification/2.pkg.md) from <mark style="color:purple;">**`.SBUILD`**</mark> <<mark style="color:green;">**ALWAYS**</mark> _Available_>
