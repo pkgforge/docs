@@ -20,7 +20,7 @@ description: https://en.wikipedia.org/wiki/AppImage
 ### **Prerequisites (`HOST)`**
 
 {% hint style="info" %}
-* [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
+* [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images (Can still be run with [<mark style="color:orange;">`--appimage-extract-and-run`</mark> | <mark style="color:orange;">`APPIMAGE_EXTRACT_AND_RUN=1`</mark>](https://docs.appimage.org/user-guide/troubleshooting/fuse.html#fallback-if-fuse-can-t-be-made-working))
 * [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
 * [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
 {% endhint %}
