@@ -55,7 +55,7 @@
       * [Zig (Musl)](formats/binaries/static/build-notes/zig-musl.md)
     * [Build Tests](formats/binaries/static/build-tests.md)
 * [Packages](formats/packages/README.md)
-  * [Archive (TBD)](formats/packages/archive-tbd/README.md)
+  * [Archive](formats/packages/archive-tbd/README.md)
     * [Install](formats/packages/archive-tbd/install.md)
     * [UnInstall](formats/packages/archive-tbd/uninstall.md)
   * [AppBundle](formats/packages/appbundle/README.md)
