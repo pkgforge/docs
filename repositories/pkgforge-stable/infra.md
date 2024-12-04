@@ -10,8 +10,8 @@ description: Build & CI Servers
 * Either [Github-Runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners) OR [Self-Hosted Runners](infra.md#cost) are configured and kicked off every 5-6 Days.
 * The stack runs on a combination of [Podman](https://podman.io/) + [Docker](https://www.docker.com/)
 
-> - [ToolPacks (BinCache)](../../orgs/pkgforge-core/projects/toolpacks-bincache/): [https://github.com/Azathothas/Toolpacks/tree/main/.github/runners](https://github.com/Azathothas/Toolpacks/tree/main/.github/runners)
-> - [PkgCache](../../orgs/pkgforge-core/projects/pkgcache/): [https://github.com/pkgforge/pkgcache/tree/main/.github/scripts](https://github.com/pkgforge/pkgcache/tree/main/.github/scripts)
+> - [ToolPacks (BinCache)](broken-reference): [https://github.com/Azathothas/Toolpacks/tree/main/.github/runners](https://github.com/Azathothas/Toolpacks/tree/main/.github/runners)
+> - [PkgCache](broken-reference): [https://github.com/pkgforge/pkgcache/tree/main/.github/scripts](https://github.com/pkgforge/pkgcache/tree/main/.github/scripts)
 
 ### Cost
 

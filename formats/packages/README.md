@@ -19,8 +19,8 @@ You should be aware of these:
 
 These are usually **GUI Applications** packaged in one of the following formats:
 
-{% content-ref url="archive-tbd/" %}
-[archive-tbd](archive-tbd/)
+{% content-ref url="archive/" %}
+[archive](archive/)
 {% endcontent-ref %}
 
 {% content-ref url="appbundle/" %}

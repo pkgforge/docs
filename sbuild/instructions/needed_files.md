@@ -1,6 +1,6 @@
 ---
-description: Files produced at end of a successful SBUILD
 icon: list-check
+description: Files produced at end of a successful SBUILD
 ---
 
 # NEEDED\_FILES
@@ -9,7 +9,7 @@ icon: list-check
 
 {% hint style="info" %}
 - [x] **Description**: The actual <mark style="color:orange;">**binary/package**</mark> that was built
-- [x] **Min\_Size**: <mark style="color:orange;">**`> 100KB`**</mark>
+- [x] **Min\_Size**: <mark style="color:orange;">**`> 10KB`**</mark>
 {% endhint %}
 
 * [x] <mark style="color:orange;">**`${SBUILD_OUTDIR}/.desktop`**</mark> | <mark style="color:orange;">**`${SBUILD_OUTDIR}/${SBUILD_PKG}.desktop`**</mark>
