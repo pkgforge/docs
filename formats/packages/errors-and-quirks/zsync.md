@@ -69,6 +69,6 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 
 * [x] Notice the <mark style="color:orange;">**`Size`**</mark> of <mark style="color:blue;">**Original AppImage**</mark> & <mark style="color:orange;">**Total Bandwidth**</mark> used
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>QBittorrent using full bandwidth regardless of "delta" updates</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.jpg" alt=""><figcaption><p>QBittorrent using full bandwidth regardless of "delta" updates</p></figcaption></figure>
 
 * [x] Re Run the entire test, but this time use <mark style="color:orange;">**`soar update`**</mark> & notice i**t only uses little to no bandwidth to compare the version to our** [**remote repositories**](https://docs.pkgforge.dev/repositories)
