@@ -31,7 +31,7 @@ Applies only **if you didn't install it systemwide** & used soar
 <pre class="language-bash" data-overflow="wrap"><code class="lang-bash">#Get the Default Config
 curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.conf" -o "./vnstat.conf"
 
-#Run this in a terminal
+#Run this in a terminal, call it Terminal 1
 <strong>sudo "$(which vnstatd)" --alwaysadd --nodaemon --sync --config "./vnstat.conf"
 </strong></code></pre>
 {% endhint %}
@@ -42,7 +42,7 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 
 > {% code overflow="wrap" %}
 > ```bash
-> #This will start  
+> #Run this in another terminal, call it Terminal 2
 > vnstat --live
 > ```
 > {% endcode %}
@@ -56,7 +56,7 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 > #Get the Size of your AppImage (NOTE this somewhere)
 > du -sh "/path/to/your/appimage"
 >
-> #Run appimageupdatetool
+> #Run appimageupdatetool (while still keeping Terminal 1 & 2 Running)
 > appimageupdatetool "/path/to/your/appimage"
 > ```
 > {% endcode %}
@@ -71,4 +71,11 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 
 <figure><img src="../../../.gitbook/assets/image.jpg" alt=""><figcaption><p>QBittorrent using full bandwidth regardless of "delta" updates</p></figcaption></figure>
 
-* [x] Re Run the entire test, but this time use <mark style="color:orange;">**`soar update`**</mark> & notice i**t only uses little to no bandwidth to compare the version to our** [**remote repositories**](https://docs.pkgforge.dev/repositories)
+* [x] Re Run the entire test, but this time use <mark style="color:orange;">**`soar update`**</mark>&#x20;
+
+{% hint style="info" %}
+- Notice, **it only uses little to no bandwidth to compare the version to our** [**remote repositories**](https://docs.pkgforge.dev/repositories)
+- Notice, **if update is found, both&#x20;**<mark style="color:orange;">**zsync-appimages**</mark>**&#x20;&&#x20;**<mark style="color:orange;">**soar update**</mark>**&#x20;use&#x20;**<mark style="color:orange;">**equal**</mark> <mark style="color:purple;">**bandwidth**</mark>. There's no [<mark style="color:orange;">**`Delta Update`**</mark>](https://en.wikipedia.org/wiki/Delta_update)
+{% endhint %}
+
+* [ ] &&#x20;
