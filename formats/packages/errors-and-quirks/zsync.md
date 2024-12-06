@@ -76,5 +76,5 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 
 {% hint style="info" %}
 - Notice, **it only uses little to no bandwidth to compare the version to our** [**remote repositories**](https://docs.pkgforge.dev/repositories)
-- Notice, **if update is found, both&#x20;**<mark style="color:orange;">**zsync-appimages**</mark>**&#x20;&&#x20;**<mark style="color:orange;">**soar update**</mark>**&#x20;use&#x20;**<mark style="color:orange;">**equal**</mark> <mark style="color:purple;">**bandwidth**</mark>. <mark style="color:red;">**There's no actual**</mark> [<mark style="color:orange;">**`Delta Update`**</mark>](https://en.wikipedia.org/wiki/Delta_update)for <mark style="color:orange;">**zsync-appimages**</mark>
+- Notice, **if update is found, both&#x20;**<mark style="color:orange;">**zsync-appimages**</mark>**&#x20;&&#x20;**<mark style="color:orange;">**soar update**</mark>**&#x20;use&#x20;**<mark style="color:orange;">**equal**</mark> <mark style="color:purple;">**bandwidth**</mark>. <mark style="color:red;">**There's no actual**</mark> [<mark style="color:orange;">**`Delta Update`**</mark>](https://en.wikipedia.org/wiki/Delta_update) for <mark style="color:orange;">**zsync-appimages**</mark>
 {% endhint %}
