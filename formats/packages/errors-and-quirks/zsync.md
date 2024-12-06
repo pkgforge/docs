@@ -10,9 +10,10 @@ description: Zsync based Delta Updates
 {% hint style="warning" %}
 We have been asked why <mark style="color:green;">**we prefer**</mark> <mark style="color:orange;">**`soar update`**</mark>**&#x20;over&#x20;**<mark style="color:orange;">**`appimageupdatetool`**</mark>**&#x20;or&#x20;**<mark style="color:orange;">**`zsync`**</mark>
 
-1. In our testing, **we found almost all appimages that have zsync updateinfo embedded, use the&#x20;**<mark style="color:red;">**full**</mark> <mark style="color:purple;">**bandwidth**</mark>**&#x20;regardless**
-2. <mark style="color:orange;">**`Soar Update`**</mark> is not only better, but **actually checks for&#x20;**<mark style="color:green;">**version**</mark> prior to wasting any bandwidth along with comparing <mark style="color:purple;">**Checksums**</mark>
-3. &#x20;Below, you can verify it yourself
+1. The statment [here](https://github.com/AppImageCommunity/AppImageUpdate/blob/d08e085cc6d40bcda85c4ff4ff275a0b0ce444cc/README.md?plain=1#L39) is **misleading**: [https://github.com/AppImageCommunity/AppImageUpdate/blob/d08e085cc6d40bcda85c4ff4ff275a0b0ce444cc/README.md?plain=1#L39](https://github.com/AppImageCommunity/AppImageUpdate/blob/d08e085cc6d40bcda85c4ff4ff275a0b0ce444cc/README.md?plain=1#L39)
+2. In our testing, **we found almost all appimages that have zsync updateinfo embedded, use the&#x20;**<mark style="color:red;">**full**</mark> <mark style="color:purple;">**bandwidth**</mark>**&#x20;regardless**
+3. <mark style="color:orange;">**`Soar Update`**</mark> is not only better, but **actually checks for&#x20;**<mark style="color:green;">**version**</mark> prior to wasting any bandwidth along with comparing <mark style="color:purple;">**Checksums**</mark>
+4. &#x20;Below, you can verify it yourself
 {% endhint %}
 
 * [x] Install [**VNStat**](https://github.com/vergoh/vnstat) from your [distro](https://command-not-found.com/vnstat), or from [source](https://github.com/vergoh/vnstat/blob/master/INSTALL.md) or just **use** [**Soar**](https://github.com/pkgforge/soar)
@@ -75,7 +76,5 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 
 {% hint style="info" %}
 - Notice, **it only uses little to no bandwidth to compare the version to our** [**remote repositories**](https://docs.pkgforge.dev/repositories)
-- Notice, **if update is found, both&#x20;**<mark style="color:orange;">**zsync-appimages**</mark>**&#x20;&&#x20;**<mark style="color:orange;">**soar update**</mark>**&#x20;use&#x20;**<mark style="color:orange;">**equal**</mark> <mark style="color:purple;">**bandwidth**</mark>. There's no [<mark style="color:orange;">**`Delta Update`**</mark>](https://en.wikipedia.org/wiki/Delta_update)
+- Notice, **if update is found, both&#x20;**<mark style="color:orange;">**zsync-appimages**</mark>**&#x20;&&#x20;**<mark style="color:orange;">**soar update**</mark>**&#x20;use&#x20;**<mark style="color:orange;">**equal**</mark> <mark style="color:purple;">**bandwidth**</mark>. <mark style="color:red;">**There's no actual**</mark> [<mark style="color:orange;">**`Delta Update`**</mark>](https://en.wikipedia.org/wiki/Delta_update)for <mark style="color:orange;">**zsync-appimages**</mark>
 {% endhint %}
-
-* [ ] &&#x20;
