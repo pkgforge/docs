@@ -92,7 +92,7 @@ jobs:
           fi
           #https://github.com/leleliu008/ppkg-formula-repository-official-core/tree/master/formula
           PPKG_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/leleliu008/ppkg-formula-repository-official-core/contents/formula" | jq -r '.[] | select(.type == "file") | .name' | grep -Ei '\.(yml|yaml)$' | sort -u | wc -l | tr -d '[:space:]')"
-          if [ "${PPKG_PKGNUM}" -gt 1000 ]; then
+          if [ "${PPKG_PKGNUM}" -gt 900 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
           fi
           ##https://docs.pkgforge.dev/repositories/pkgforge-edge/metadata
