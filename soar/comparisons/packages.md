@@ -28,7 +28,7 @@ The following Caveats were applied:
 ### Portability
 
 {% hint style="success" %}
-This specifies if any of the packages offered by the package manager are usable **standalone** aka **without using the packagemanager** & **just using curl/wget** or **just downloading from the browser**.
+This specifies if any of the packages offered by the package managers are usable **standalone,** aka **without using the package manager** & **just using curl/wget** or **just downloading from the browser**.
 {% endhint %}
 
 | Package Manager                                                                                 | Is it Standalone?                                                        |
@@ -43,8 +43,8 @@ This specifies if any of the packages offered by the package manager are usable 
 
 ### Prebuilt Cache
 
-{% hint style="info" %}
-This specifies if the **package repository** contain **prebuilts** i.e. packages are **directly&#x20;**<mark style="color:green;">**downloadable**</mark>**&#x20;without&#x20;**<mark style="color:orange;">**building/fixing/patching**</mark>**&#x20;anything**.&#x20;
+{% hint style="success" %}
+This specifies if the **package repository** contain **prebuilds,** i.e. packages are **directly&#x20;**<mark style="color:green;">**downloadable**</mark>**&#x20;without&#x20;**<mark style="color:orange;">**building/fixing/patching**</mark>**&#x20;anything**.&#x20;
 {% endhint %}
 
 | Package Manager                                                                                 | Provides Prebuilts?                                                                                                                                                                                                 |
@@ -79,6 +79,10 @@ This specifies if the **package repository** contain **prebuilts** i.e. packages
 ***
 
 ### Total
+
+{% hint style="info" %}
+The total number of packages (each recipe is counted individually) auto updated every 2hrs
+{% endhint %}
 
 <table data-full-width="false"><thead><tr><th width="97" data-type="number">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2613</td><td>7256</td><td>658</td><td>995</td><td>4748</td></tr></tbody></table>
 
