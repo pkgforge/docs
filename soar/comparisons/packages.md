@@ -97,7 +97,7 @@ The total number of packages (each recipe is counted individually) auto updated 
 [^5]: Needs to parse, & build the formula themselves. The generated bundle is standalone
 
 [^6]: You can use any of our **`prebuilt`** packages just by downloading it & without using soar at all. \
-    Even the SBUILD packages can be bundled with <mark style="color:orange;">`--bundle`</mark>
+    Even the [<mark style="color:purple;">**SBUILD**</mark>](https://github.com/pkgforge/soarpkgs) packages can be bundled with <mark style="color:orange;">`--bundle`</mark>
 
 [^7]: AM mostly redownloads prebuilt packages from other sources. It has no prebuilt central cache. But We can't say NO, since it does download prebuilds, albeit from other sources.
 
