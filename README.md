@@ -1,6 +1,6 @@
 ---
 icon: not-equal
-description: How does Soar compare with its peers
+description: Comparing Soar with all the major pre-existing Package Managers
 ---
 
 # Comparisons
