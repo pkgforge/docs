@@ -10,6 +10,7 @@ description: It is NEVER a good idea to install random binaries from random sour
 {% hint style="info" %}
 Check these **`HackerNews Discussions`**
 
+* [x] [https://blogs.gentoo.org/mgorny/2021/02/19/the-modern-packagers-security-nightmare/](https://blogs.gentoo.org/mgorny/2021/02/19/the-modern-packagers-security-nightmare/) (HN: [https://news.ycombinator.com/item?id=26203853](https://news.ycombinator.com/item?id=26203853))
 * [x] [A cautionary tale from the decline of SourceForge](https://news.ycombinator.com/item?id=31110206)
 * [x] [Downloading PuTTY Safely Is Nearly Impossible (2014)](https://news.ycombinator.com/item?id=9577861)
 * [x] [Post-xz backdoor, how to know when to trust niche-distro binaries?](https://www.reddit.com/r/DistroHopping/comments/1bu5mri/postxz_backdoor_how_to_know_when_to_trust/)

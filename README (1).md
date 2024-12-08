@@ -5,7 +5,10 @@ description: Comparing Soar with all the major pre-existing Package Managers
 
 # Comparisons
 
-#### Why would you ever use [**Soar**](https://github.com/pkgforge/soar) over <mark style="color:orange;">**xyz**</mark>? Well, you wouldn't, if you didn't read these:
+{% hint style="info" %}
+Why would you ever use [**Soar**](https://github.com/pkgforge/soar) over <mark style="color:orange;">**xyz**</mark>? Well, you wouldn't. \
+We just hope you will go through these & form your own conclusions.
+{% endhint %}
 
 1. [**Candidates**](soar/readme/candidates.md): All Package Managers we compared & evaluated
 2. [**Dependencies**](soar/readme/dependencies.md): The Overall Install & Setup Steps as well as the Dependencies that are needed to use each Selected Package Managers

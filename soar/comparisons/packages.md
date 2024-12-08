@@ -71,7 +71,7 @@ This specifies if the **package repository** contain **prebuilds,** i.e. package
 ### Total
 
 {% hint style="info" %}
-The total number of packages (each recipe is counted individually) auto updated every 2hrs
+The total number of packages (each recipe is counted individually) [auto updated](../../.github/workflows/healthchecks_housekeeping.yaml) every 2hrs
 {% endhint %}
 
 <table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2613</td><td>7256</td><td>658</td><td>995</td><td>4748</td></tr></tbody></table>
