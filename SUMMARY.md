@@ -1,9 +1,13 @@
 # Table of contents
 
+## Soar
+
+* [Soar (Docs)](https://soar.qaidvoid.dev/)
+* [Comparisons](README.md)
+
 ## Orgs
 
-* [Soar (Package Manager)](https://soar.qaidvoid.dev/)
-* [PkgForge (Core)](README.md)
+* [PkgForge (Core)](<README (1).md>)
   * [About](orgs/pkgforge-core/about.md)
   * [Projects](orgs/pkgforge-core/projects/README.md)
     * [SoarPkgs](orgs/pkgforge-core/projects/soarpkgs/README.md)
