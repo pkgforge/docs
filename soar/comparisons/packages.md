@@ -25,6 +25,38 @@ The following Caveats were applied:
 
 ***
 
+### Portability
+
+{% hint style="success" %}
+This specifies if any of the packages offered by the package manager are usable **standalone** aka **without using the packagemanager** & **just using curl/wget** or **just downloading from the browser**.
+{% endhint %}
+
+| Package Manager                                                                                 | Is it Standalone?                                                        |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [<mark style="color:purple;">**`AM`**</mark>](https://github.com/ivan-hc/AM/tree/main/programs) | [<mark style="color:orange;">**Sort of**</mark>](#user-content-fn-2)[^2] |
+| [<mark style="color:purple;">**`Brew`**</mark>](https://brew.sh/)                               | [<mark style="color:red;">**No**</mark>](#user-content-fn-3)[^3]         |
+| [<mark style="color:purple;">**`Pacstall`**</mark>](https://github.com/pacstall)                | [<mark style="color:red;">**No**</mark>](#user-content-fn-4)[^4]         |
+| [<mark style="color:purple;">**`PPKG`**</mark>](https://github.com/leleliu008/ppkg)             | [<mark style="color:orange;">**Sort of**</mark>](#user-content-fn-5)[^5] |
+| [<mark style="color:purple;">**`Soar`**</mark>](https://github.com/pkgforge/soar)               | [<mark style="color:green;">**Yes**</mark>](#user-content-fn-6)[^6]      |
+
+***
+
+### Prebuilt Cache
+
+{% hint style="info" %}
+This specifies if the **package repository** contain **prebuilts** i.e. packages are **directly&#x20;**<mark style="color:green;">**downloadable**</mark>**&#x20;without&#x20;**<mark style="color:orange;">**building/fixing/patching**</mark>**&#x20;anything**.&#x20;
+{% endhint %}
+
+| Package Manager                                                                                 | Provides Prebuilts?                                                                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [<mark style="color:purple;">**`AM`**</mark>](https://github.com/ivan-hc/AM/tree/main/programs) | [<mark style="color:orange;">**N/A**</mark>](#user-content-fn-7)[^7]                                                                                                                                                |
+| [<mark style="color:purple;">**`Brew`**</mark>](https://brew.sh/)                               | <mark style="color:green;">**Yes**</mark>, [Prebuilt Packages are offered as bottles](https://docs.brew.sh/FAQ#why-do-you-compile-everything)                                                                       |
+| [<mark style="color:purple;">**`Pacstall`**</mark>](https://github.com/pacstall)                | [<mark style="color:red;">**No**</mark>](#user-content-fn-8)[^8]                                                                                                                                                    |
+| [<mark style="color:purple;">**`PPKG`**</mark>](https://github.com/leleliu008/ppkg)             | [<mark style="color:red;">**No**</mark>](#user-content-fn-9)[^9]                                                                                                                                                    |
+| [<mark style="color:purple;">**`Soar`**</mark>](https://github.com/pkgforge/soar)               | <mark style="color:green;">**Yes**</mark>, See our [**edge**](https://docs.pkgforge.dev/repositories/pkgforge-edge/infra) & [**stable**](https://docs.pkgforge.dev/repositories/pkgforge-stable/infra) Repositories |
+
+***
+
 ### Types
 
 {% hint style="warning" %}
@@ -38,13 +70,11 @@ The following Caveats were applied:
 
 | Package Manager                                                                                 | Supported Types                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [<mark style="color:purple;">**`AM`**</mark>](https://github.com/ivan-hc/AM/tree/main/programs) | AppImage (<mark style="color:green;">**Full**</mark>), AppBundles (<mark style="color:green;">**Full**</mark>), Binaries (<mark style="color:orange;">**3rd Party**</mark>), [Libraries <mark style="color:red;">**(None)**</mark>](#user-content-fn-2)[^2]                                                                                                                              |
+| [<mark style="color:purple;">**`AM`**</mark>](https://github.com/ivan-hc/AM/tree/main/programs) | AppImage (<mark style="color:green;">**Full**</mark>), AppBundles (<mark style="color:green;">**Full**</mark>), Binaries (<mark style="color:orange;">**3rd Party**</mark>), [Libraries <mark style="color:red;">**(None)**</mark>](#user-content-fn-10)[^10]                                                                                                                            |
 | [<mark style="color:purple;">**`Brew`**</mark>](https://brew.sh/)                               | Binaries (<mark style="color:green;">**Full**</mark>) , Libraries ([Limited](https://github.com/orgs/Homebrew/discussions/4647)), [AppImages & Others](../../formats/packages/) (<mark style="color:red;">**None**</mark>)                                                                                                                                                               |
 | [<mark style="color:purple;">**`Pacstall`**</mark>](https://github.com/pacstall)                | Binaries (<mark style="color:green;">**Full**</mark>), Libraries (<mark style="color:green;">**Full**</mark>) , [AppImages & Others <mark style="color:orange;">(</mark><mark style="color:orange;">**Limited**</mark><mark style="color:orange;">)</mark>](https://github.com/pacstall/pacstall/wiki/FAQ#well-what-about-universal-packaging-methods-like-appimages-snaps-and-flatpaks) |
 | [<mark style="color:purple;">**`PPKG`**</mark>](https://github.com/leleliu008/ppkg)             | Binaries (<mark style="color:green;">**Full**</mark>), Libraries (<mark style="color:orange;">**Limited**</mark>)                                                                                                                                                                                                                                                                        |
-| [<mark style="color:purple;">**`Soar`**</mark>](https://github.com/pkgforge/soar)               | [Binaries](../../formats/binaries/) (<mark style="color:green;">**Full**</mark>) & All the [Zillion other Formats](../../formats/packages/) (<mark style="color:green;">**Full**</mark>), [Libraries <mark style="color:red;">**(None)**</mark>](#user-content-fn-3)[^3]                                                                                                                 |
-
-***
+| [<mark style="color:purple;">**`Soar`**</mark>](https://github.com/pkgforge/soar)               | [Binaries](../../formats/binaries/) (<mark style="color:green;">**Full**</mark>) & All the [Zillion other Formats](../../formats/packages/) (<mark style="color:green;">**Full**</mark>), [Libraries <mark style="color:red;">**(None)**</mark>](#user-content-fn-11)[^11]                                                                                                               |
 
 ***
 
@@ -54,6 +84,24 @@ The following Caveats were applied:
 
 [^1]: We allowed [Pacstall](https://github.com/pacstall/pacstall), as it's a community project & NOT backed by any distro. We could have included the [NUR](https://github.com/nix-community/NUR) too, but we already have [homebrew](https://brew.sh/) for reality checks...
 
-[^2]: Not in the Project's Scope
+[^2]: Needs the cli to build & install. Installed packages need to be copied manually & then moved
 
-[^3]: Not in the Project's Scope
+[^3]: Needs the cli to build & install. Installed packages are not standalone
+
+[^4]: Needs the cli to build & install. Installed packages are not standalone
+
+[^5]: Needs to parse, & build the formula themselves. The generated bundle is standalone
+
+[^6]: You can use any of our **`prebuilt`** packages just by downloading it & without using soar at all. \
+    Even the SBUILD packages can be bundled with <mark style="color:orange;">`--bundle`</mark>
+
+[^7]: AM mostly redownloads prebuilt packages from other sources. It has no prebuilt central cache. But We can't say NO, since it does download prebuilds, albeit from other sources.
+
+[^8]: Builds & Installs from source. Not everything as it depends on their build recipe, but the majority is.
+
+[^9]: Builds almost everything from source.\
+    They do publish prebuilds as releases, but the pkg-manager itself doesn't use pre-builts.
+
+[^10]: Not in the Project's Scope
+
+[^11]: Not in the Project's Scope
