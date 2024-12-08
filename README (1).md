@@ -1,29 +1,13 @@
 ---
-icon: box-archive
-description: The main Organization Inside PkgForge
-cover: .gitbook/assets/pkgforge (1).png
-coverY: 0
-layout:
-  cover:
-    visible: false
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+icon: not-equal
+description: Comparing Soar with all the major pre-existing Package Managers
 ---
 
-# PkgForge (Core)
+# Comparisons
 
-{% embed url="https://bin.pkgforge.dev/list.gif?tmp.zIfc51owdY=tmp.iZyNXJDjg7" %}
+#### Why would you ever use [**Soar**](https://github.com/pkgforge/soar) over <mark style="color:orange;">**xyz**</mark>? Well, you wouldn't, if you didn't read these:
 
-## About
-
-Welcome to [Package Forge](https://github.com/pkgforge), Improving Package Management for `*Unix` Systems with [Thousands of Statically Compiled Binaries](formats/binaries/), [Portable Packages like AppImage & More](formats/packages/) and a [Package Manager written in Blazingly 🚀🚀 Fast 🦀 Rust](https://github.com/pkgforge/soar)
-
+1. [**Candidates**](soar/readme/candidates.md): All Package Managers we compared & evaluated
+2. [**Dependencies**](soar/readme/dependencies.md): The Overall Install & Setup Steps as well as the Dependencies that are needed to use each Selected Package Managers
+3. [**Packages**](soar/comparisons/packages.md): The Overall Package Ecosystem of each Selected Package Managers
+4. [**Security**](soar/comparisons/security.md): The Overall Security Posture of each Selected Package Managers

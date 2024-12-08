@@ -1,17 +1,8 @@
 # Table of contents
 
-## Soar
-
-* [Soar (Docs)](https://soar.qaidvoid.dev/)
-* [Comparisons](README.md)
-  * [1. Candidates](soar/readme/candidates.md)
-  * [2. Dependencies](soar/readme/dependencies.md)
-  * [3. Packages](soar/comparisons/packages.md)
-  * [4. Security](soar/comparisons/security.md)
-
 ## Orgs
 
-* [PkgForge (Core)](<README (1).md>)
+* [PkgForge (Core)](README.md)
   * [About](orgs/pkgforge-core/about.md)
   * [Projects](orgs/pkgforge-core/projects/README.md)
     * [SoarPkgs](orgs/pkgforge-core/projects/soarpkgs/README.md)
@@ -43,6 +34,15 @@
 * [PkgForge-Security](orgs/pkgforge-security/README.md)
   * [Projects](orgs/pkgforge-security/projects/README.md)
     * [CertStream](orgs/pkgforge-security/projects/certstream.md)
+
+## Soar
+
+* [Soar (Docs)](https://soar.qaidvoid.dev/)
+* [Comparisons](<README (1).md>)
+  * [1. Candidates](soar/readme/candidates.md)
+  * [2. Dependencies](soar/readme/dependencies.md)
+  * [3. Packages](soar/comparisons/packages.md)
+  * [4. Security](soar/comparisons/security.md)
 
 ## Formats
 
