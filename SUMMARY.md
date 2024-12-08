@@ -4,6 +4,9 @@
 
 * [Soar (Docs)](https://soar.qaidvoid.dev/)
 * [Comparisons](README.md)
+  * [Features](soar/comparisons/features.md)
+  * [Packages](soar/comparisons/packages.md)
+  * [Security](soar/comparisons/security.md)
 
 ## Orgs
 
