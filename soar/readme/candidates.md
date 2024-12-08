@@ -1,6 +1,6 @@
 ---
 icon: list-tree
-description: All the Package Managers that were considered
+description: All the Package Managers that were considered, rejected & selected
 ---
 
 # 1. Candidates
