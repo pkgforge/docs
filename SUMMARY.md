@@ -38,11 +38,11 @@
 ## Soar
 
 * [Soar (Docs)](https://soar.qaidvoid.dev/)
-* [Comparisons](<README (1).md>)
+* [Comparisons](soar/readme/README.md)
   * [1. Candidates](soar/readme/candidates.md)
   * [2. Dependencies](soar/readme/dependencies.md)
-  * [3. Packages](soar/comparisons/packages.md)
-  * [4. Security](soar/comparisons/security.md)
+  * [3. Packages](soar/readme/packages.md)
+  * [4. Security](soar/readme/security.md)
 
 ## Formats
 
