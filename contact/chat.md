@@ -6,7 +6,7 @@ description: IRC/Chat Groups
 # Chat
 
 * [**Discord**](https://discord.gg/djJUs48Zbu) : [**https://discord.gg/djJUs48Zbu**](https://discord.gg/djJUs48Zbu) (<mark style="color:green;">**`Active`**</mark>**&#x20;&&#x20;**<mark style="color:green;">**`Instant Response`**</mark>) \[<mark style="color:purple;">**`Primary`**</mark>]
-* [**Telegram**](https://t.me/official_loonix/63949) **:** [https://t.me/official\_loonix/63949](https://t.me/official_loonix/63949) (<mark style="color:orange;">**`Late Response`**</mark>)
+* [~~**Telegram**~~](https://t.me/official_loonix/63949) ~~**:**~~ [~~https://t.me/official\_loonix/63949~~](https://t.me/official_loonix/63949) (<mark style="color:orange;">**`Late Response`**</mark>)  \[<mark style="color:red;">**`Abandoned`**</mark>]
 * [~~**Matrix**~~](https://matrix.to/#/#loonix:matrix.org) ~~:~~ [~~https://matrix.to/#/#loonix:matrix.org~~](https://matrix.to/#/#loonix:matrix.org) (<mark style="color:orange;">**`Late Response`**</mark>) \[<mark style="color:red;">**`Abandoned`**</mark>]
 
 {% hint style="warning" %}
