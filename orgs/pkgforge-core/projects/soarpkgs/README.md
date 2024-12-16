@@ -5,7 +5,7 @@ description: The Official pkgforge-community Repository
 
 # SoarPkgs
 
-{% embed url="https://bin.pkgforge.dev/list.gif?tmp.8MXufTs6a8=tmp.zjaYKokM9D" %}
+{% embed url="https://bin.pkgforge.dev/list.gif?tmp.dcUtDr3SDK=tmp.7bPgZmMKet" %}
 [**Package Forge Community Repo**](https://github.com/pkgforge/soarpkgs)
 {% endembed %}
 
