@@ -15,10 +15,6 @@ description: Build & CI Servers
 
 ### Cost
 
-{% hint style="info" %}
-Same Infra is shared with [pkgforge-edge](../pkgforge-edge/ "mention")
-{% endhint %}
-
 * Servers & Storage cost money, right now all financial cost is covered solely by [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas)&#x20;
 * [HuggingFace](https://huggingface.co/pricing) (<mark style="color:orange;">`$9/Month`</mark>)&#x20;
 * [CloudFlare R2 Bucket](https://developers.cloudflare.com/r2/pricing/) + [CloudFlare Workers](https://developers.cloudflare.com/workers/platform/pricing/) & [More](https://www.cloudflare.com/plans/) (<mark style="color:orange;">`70-100$/Month`</mark>)&#x20;

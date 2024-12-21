@@ -12,21 +12,19 @@ The Best way to learn it, is to view it ([https://bincache.pkgforge.dev/x86\_64/
 ```json5
 //The Structure is like:
  {
-   "base": [
-      {
+   "base":
+      [{
          // ${Binaries from bincache(Toolpacks)/${ARCH}/**/Baseutils/**}
-      }
-   ],
-   "bin" : [
-      {
+      }],
+   "bin" :
+      [{
          // ${Binaries are from core bincache(Toolpacks)/$ARCH}/**}
-      }
-   ],
-   "pkg" : [
-      {
+      }],
+   "pkg" : 
+      [{
          // ${Binaries, or rather pkgs are from pkgforge/pkgcache}
-      }
-   ]
+      }]
+   }
 ```
 
 {% hint style="info" %}
@@ -187,4 +185,3 @@ curl -qfsSL "https://bincache.pkgforge.dev/$(uname -m)/METADATA.AIO.json" \
 ```
 {% endcode %}
 {% endhint %}
-

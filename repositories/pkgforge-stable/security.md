@@ -109,7 +109,7 @@ Follow this guide to analyze a malicious binary/package: [https://book.hacktrick
 It's important to NOTE that **WE DO NOT WRITE/OWN the binaries we compile and CAN NOT BE HELD RESPONSIBLE if the Developer has DELIBERATELY made it Malicious**. If that's the case, it's best to **Notify Us (Create an Issue OR** [**Contact Us**](https://docs.pkgforge.dev/contact)**) & also** [**Report To Github the Original Repo**](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam) like here: [https://github.com/orgs/community/discussions/63603](https://github.com/orgs/community/discussions/63603)
 {% endhint %}
 
-4. All the [Build Servers](infra.md) follow [Standard Security Hardening](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) to mitigate [Supply Chain Attacks](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security), so a single Malicious Binary is more probable than ALL the binaries being infected.
+4. All the [Build Servers](../pkgforge-edge/infra.md) follow [Standard Security Hardening](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) to mitigate [Supply Chain Attacks](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security), so a single Malicious Binary is more probable than ALL the binaries being infected.
 5. Once again, to reiterate, **the source code of the packages or tools compiled here is not controlled in any way.**&#x20;
 
 {% hint style="danger" %}

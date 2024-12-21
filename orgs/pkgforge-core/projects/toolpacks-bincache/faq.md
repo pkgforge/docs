@@ -146,7 +146,7 @@ There's no public source code for the web frontend powering [https://bin.pkgforg
 
 * [bin.pkgforge.dev](https://bin.pkgforge.dev/) is **NOT a web server**. It's a [web proxy](https://developers.cloudflare.com/r2/buckets/public-buckets/#connect-a-bucket-to-a-custom-domain) to an [R2 Bucket](https://developers.cloudflare.com/r2/buckets/public-buckets/)
 * Internally, it uses a fork of [cmj2002/r2-dir-list](https://github.com/cmj2002/r2-dir-list) with [Hardcoded Cloudflare Credentials](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/)
-* The content can always be verified by comparing **CHECKSUMS**, published on GitHub (via Publicly Auditable & Log Viewable) Actions & on the Bucket. See [security.md](../../../../repositories/pkgforge-edge/security.md "mention")
+* The content can always be verified by comparing **CHECKSUMS**, published on GitHub (via Publicly Auditable & Log Viewable) Actions & on the Bucket. See [security.md](../../../../repositories/pkgforge-stable/security.md "mention")
 
 ***
 
