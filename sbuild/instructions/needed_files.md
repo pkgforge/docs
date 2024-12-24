@@ -44,6 +44,14 @@ description: Files produced at end of a successful SBUILD
 - [x] Only Available for [**Packages**](../../formats/packages/) **NOT** for [**Binaries**](../../formats/binaries/)
 {% endhint %}
 
+* [x] <mark style="color:orange;">**`${SBUILD_OUTDIR}/LICENSE`**</mark>
+
+{% hint style="info" %}
+- [x] **Description**: [<mark style="color:purple;">**`LICENSE`**</mark>](../specification/13.license.md) <mark style="color:orange;">**File**</mark>, Contains License
+- [x] **Min\_Size**: <mark style="color:orange;">**`> 3BYTES`**</mark>
+- [x] Is **NOT Always Available**, a <mark style="color:orange;">**`WARN`**</mark>is sufficient when it doesn't exist
+{% endhint %}
+
 * [x] <mark style="color:orange;">**`${SBUILD_OUTDIR}/.version`**</mark> | <mark style="color:orange;">**`${SBUILD_OUTDIR}/${SBUILD_PKG}.version`**</mark>
 
 {% hint style="info" %}
