@@ -34,3 +34,6 @@ soar search "${BIN_NAME}#base"
 {% hint style="warning" %}
 **If you don't put effort into requesting a tool/pkg to be added here, neither will we.**
 {% endhint %}
+
+### Criteria
+
