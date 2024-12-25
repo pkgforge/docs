@@ -1,25 +1,19 @@
 ---
 icon: box-circle-check
-description: The Official Repository containing stable/versioned binaries/packages
+description: 📀 Pre-Built Portable Packages for Soar (SoarPkgs)
 ---
 
 # pkgcache
 
-## PkgCache
-
 {% embed url="https://bin.pkgforge.dev/list.gif?tmp.h0ks9eLr5x=tmp.W4yp8aEjaT" %}
-[**Package Forge Package Cache**](https://github.com/pkgforge/pkgcache)
+📀 **Pre-Built** [**Portable Packages**](../../formats/packages/) for [**Soar**](https://github.com/pkgforge/soar) ([**SoarPkgs**](https://github.com/pkgforge/soarpkgs))
 {% endembed %}
 
-* This repository [**builds, compiles & bundles**](https://github.com/pkgforge/pkgcache/actions) <mark style="color:orange;">**SoarPkgs**</mark> & provides **PreBuilt Package Cache** for [**Soar**](https://github.com/pkgforge/soar)**.**
-
-{% hint style="success" %}
-- [x] This [repo](https://soar.qaidvoid.dev/configuration#repository-configuration)&#x20;
-- [x] This is the **stable** version, i.e. all packages are stable with **versions** & **snapshots**
-- [x] Workflow: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import\_sync.yaml](https://github.com/Azathothas/Toolpacks-BinCache-Importer/actions/workflows/import_sync.yaml)
-- [x] Scripts: [https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks-BinCache-Importer/tree/main/.github/scripts)
-- [x] For the **bleeding-edge** latest & greatest, Please refer to [bincache](../bincache/ "mention")
-{% endhint %}
+* [**PkgCache**](https://github.com/pkgforge/pkgcache) provides📀 [**Pre-Built**](cache.md) [**Portable Packages**](../../formats/packages/) for [**Soar**](https://github.com/pkgforge/soar) ([**SoarPkgs**](https://github.com/pkgforge/soarpkgs))
+* [Build recipes](https://github.com/pkgforge/bincache/blob/main/SBUILD_LIST.json) (<mark style="color:purple;">**`SBUILD`**</mark>) are built from source & uploaded to the [**Cache**](cache.md).
+* Only formats listed at [https://docs.pkgforge.dev/formats/packages](https://docs.pkgforge.dev/formats/packages) are applicable.
+* Only recipes that meet the criteria listed at [https://docs.pkgforge.dev/repositories/pkgcache/package-request#criteria](https://docs.pkgforge.dev/repositories/pkgcache/package-request#criteria) are applicable
+* For a more detailed comparison/differences, refer to: [differences.md](../soarpkgs/differences.md "mention")
 
 ### [Config](https://soar.qaidvoid.dev/configuration#repository-configuration)
 
