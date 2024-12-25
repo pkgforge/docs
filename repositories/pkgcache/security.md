@@ -40,7 +40,7 @@ soar inspect "<PACKAGE>"
 {% endhint %}
 
 {% hint style="warning" %}
-if you get a 404 or it errors out, you can get the build script here: [https://github.com/pkgforge/soarpkgs/tree/main/packages](https://github.com/pkgforge/soarpkgs/tree/main/packages)
+if you get a 404 or it errors out, you can get the build script here: [https://github.com/pkgforge/soarpkgs](https://github.com/pkgforge/soarpkgs)
 {% endhint %}
 
 * [x] Complete `RAW` **Build Logs** are made available with the **exception of `Personal Access Tokens`**
@@ -76,19 +76,20 @@ If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](
 
 * [x] If it still doesn't inspire confidence, there's a [Docker Image](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#setup-and-configure-local-build-environment) you can Configure to Run & Reproduce any Binary/Build Script on your own Secure System.
 
-> - **Dockerfiles**: [https://github.com/Azathothas/Toolpacks/tree/main/.github/runners](https://github.com/Azathothas/Toolpacks/tree/main/.github/runners)
-> - [https://github.com/pkgforge/pkgcache/tree/main/.github/scripts](https://github.com/pkgforge/pkgcache/tree/main/.github/scripts)
+> - **Devscripts**: [https://github.com/pkgforge/devscripts](https://github.com/pkgforge/devscripts)
+> - **Dockerfiles**: [https://github.com/pkgforge/devscripts/tree/main/Github/Runners](https://github.com/pkgforge/devscripts/tree/main/Github/Runners)
+
+* [x] All our Prebuilt Binaries/Packages are signed
 
 ***
 
 ### Don't Trust Us
 
-1. Repos that already publish pre-compiled binaries/packages, nothing is changed. You can **compare checksums**.
+1. Repos that already publish pre-compiled binaries/packages, [nothing is changed](#user-content-fn-1)[^1]. You can **compare checksums**.
 
 {% hint style="warning" %}
 * For [Binaries](../../formats/binaries/), Debug Symbols, Comments are stripped, this will change the checksum
 * For [Packages](../../formats/packages/), Icons, Desktops (& even repacking) are edited/fixed & patched, this will change the checksum&#x20;
-* **To preserve checksums wherever possible, we don't sign any of our binaries as we already have Logs + Checksums**
 {% endhint %}
 
 2. Fork our repos, read & audit our code, setup all the infrastructure, & run all the scripts & build on your own servers
@@ -109,9 +110,11 @@ Follow this guide to analyze a malicious binary/package: [https://book.hacktrick
 It's important to NOTE that **WE DO NOT WRITE/OWN the binaries we compile and CAN NOT BE HELD RESPONSIBLE if the Developer has DELIBERATELY made it Malicious**. If that's the case, it's best to **Notify Us (Create an Issue OR** [**Contact Us**](https://docs.pkgforge.dev/contact)**) & also** [**Report To Github the Original Repo**](https://docs.github.com/en/communities/maintaining-your-safety-on-github/reporting-abuse-or-spam) like here: [https://github.com/orgs/community/discussions/63603](https://github.com/orgs/community/discussions/63603)
 {% endhint %}
 
-4. All the [Build Servers](../pkgforge-edge/infra.md) follow [Standard Security Hardening](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) to mitigate [Supply Chain Attacks](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security), so a single Malicious Binary is more probable than ALL the binaries being infected.
+4. All the [Build Servers](../bincache/infra.md) follow [Standard Security Hardening](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) to mitigate [Supply Chain Attacks](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security), so a single Malicious Binary is more probable than ALL the binaries being infected.
 5. Once again, to reiterate, **the source code of the packages or tools compiled here is not controlled in any way.**&#x20;
 
 {% hint style="danger" %}
 It cannot be guaranteed that the upstream source is entirely safe or legitimate. It's upto you to exercise basic common sense and vigilance when using these binaries/packages.
 {% endhint %}
+
+[^1]: Our Build Tooling still strips static binaries, which might change it

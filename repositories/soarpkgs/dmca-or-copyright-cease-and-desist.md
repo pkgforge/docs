@@ -1,6 +1,6 @@
 ---
-description: Our policy for takedown Notices
 icon: diamond-exclamation
+description: Our policy for takedown Notices
 ---
 
 # DMCA | Copyright (Cease & Desist)
@@ -16,5 +16,5 @@ icon: diamond-exclamation
 To contact us:
 
 * [Broken link](broken-reference "mention")
-* [people.md](../../people.md "mention")
+* [people.md](../../orgs/pkgforge-core/people.md "mention")
 {% endhint %}

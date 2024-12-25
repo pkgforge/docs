@@ -16,7 +16,7 @@ description: Build & CI Servers
 ### Cost
 
 {% hint style="info" %}
-Same Infra is shared with [pkgforge-stable](../pkgforge-stable/ "mention")
+Same Infra is shared with [pkgcache](../pkgcache/ "mention")
 {% endhint %}
 
 * Servers & Storage cost money, right now all financial cost is covered solely by [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas)&#x20;
