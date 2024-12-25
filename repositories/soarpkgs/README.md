@@ -1,5 +1,5 @@
 ---
-icon: webhook
+icon: box-open-full
 description: The Official Soar User Repository (SoarPkgs)
 ---
 

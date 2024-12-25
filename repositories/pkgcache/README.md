@@ -1,5 +1,5 @@
 ---
-icon: atom-simple
+icon: box-circle-check
 description: The Official Repository containing stable/versioned binaries/packages
 ---
 

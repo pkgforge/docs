@@ -1,5 +1,5 @@
 ---
-icon: atom
+icon: box-circle-check
 description: The Official Repository containing the latest bleeding edge binaries/packages
 ---
 
