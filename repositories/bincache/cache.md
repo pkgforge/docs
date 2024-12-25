@@ -1,17 +1,34 @@
 ---
-description: Hosted Binary Cache
 icon: download
+description: Hosted Binary Cache
 ---
 
 # Cache
 
-* The prebuilt binaries are stored on [<mark style="color:orange;">**Pkgforge's CloudFlare**</mark>](https://developers.cloudflare.com/r2/)[ <mark style="color:orange;">**R2 Bucket**</mark> ](https://developers.cloudflare.com/r2/)at:  [**https://bin.pkgforge.dev/**](https://bin.pkgforge.dev/)
-* This is achieved with  [rClone](https://github.com/rclone/rclone) & a snapshot version of the entire bucket is [**also Synced**](https://github.com/Azathothas/Toolpacks-BinCache-Importer) to [<mark style="color:orange;">**Pkgforge's Hugging Face**</mark>](https://huggingface.co/pkgforge) Repository at: [https://huggingface.co/datasets/pkgforge/bincache](https://huggingface.co/datasets/pkgforge/bincache)
+### GitHub Container Registry
 
 {% hint style="info" %}
-The Repository at: [https://huggingface.co/datasets/pkgforge/bincache](https://huggingface.co/datasets/pkgforge/bincache) might show some files as <mark style="color:red;">**unsafe**</mark>, this is because [Binaries](../../../../formats/binaries/) are also packed using [<mark style="color:orange;">**`upx --best`**</mark>](https://github.com/upx/upx/blob/devel/doc/upx-doc.txt#L114) after a [CI Build is Complete.](https://github.com/Azathothas/Toolpacks/actions)&#x20;
-
-* It is a known issue: [https://github.com/upx/upx/issues/437](https://github.com/upx/upx/issues/437)
+* The prebuilt binaries are stored on [<mark style="color:orange;">**PkgForge's Github Organization**</mark>](https://github.com/orgs/pkgforge/packages) at: [https://github.com/orgs/pkgforge/packages?repo\_name=bincache](https://github.com/orgs/pkgforge/packages?repo_name=bincache)
+* This is achieved with [oras](https://github.com/oras-project/oras) & allows us to use [Github Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) for a transparent & complete history (tags) of all previous versions.
+* This is our primary cache, and the rest are backups based on this one.
 {% endhint %}
 
-* Currently, the [**CI rebuilds**](https://github.com/Azathothas/Toolpacks/actions) everything <mark style="color:purple;">**`@30 18 * * 1`**</mark>
+***
+
+### HuggingFace Hub
+
+{% hint style="info" %}
+* The prebuilt binaries are also stored on [<mark style="color:orange;">**Pkgforge's Hugging Face**</mark>](https://huggingface.co/pkgforge) Repository at: [https://huggingface.co/datasets/pkgforge/bincache](https://huggingface.co/datasets/pkgforge/bincache)
+* This is achieved with git-lfs & allows us to have a transparent & complete history (snapshots) of all previous versions.
+* This is our secondary cache & serves as backup in case [ghcr](https://ghcr.io/) goes down
+{% endhint %}
+
+***
+
+### CloudFlare R2
+
+{% hint style="warning" %}
+* Some of the prebuilt binaries are also stored on [<mark style="color:orange;">**Pkgforge's CloudFlare**</mark>](https://developers.cloudflare.com/r2/)[ <mark style="color:orange;">**R2 Bucket**</mark> ](https://developers.cloudflare.com/r2/)at:  [https://bin.pkgforge.dev/](https://bin.pkgforge.dev/)
+* This is achieved with  [rClone](https://github.com/rclone/rclone) & allows us to have the most reliable & fastest access to the core binaries we depend on.
+* **This cache reserve does NOT contain everything & is meant for pkgforge's CI use only**
+{% endhint %}
