@@ -5,7 +5,7 @@ description: 📦 Pre-Built Static Binaries for Soar (SoarPkgs)
 
 # bincache
 
-{% embed url="https://bin.pkgforge.dev/list.gif?tmp.xl1re9eiPD=tmp.785BSJ2nRp" %}
+{% embed url="https://bin.pkgforge.dev/list.gif?tmp.XCJQ8DoHrz=tmp.UrKKJ8NScL" %}
 📦 **Pre-Built** [**Static Binaries**](../../formats/binaries/) for [**Soar**](https://github.com/pkgforge/soar) ([**SoarPkgs**](https://github.com/pkgforge/soarpkgs))
 {% endembed %}
 
