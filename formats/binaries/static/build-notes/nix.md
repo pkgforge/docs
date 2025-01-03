@@ -1,6 +1,6 @@
 ---
-description: https://kokada.dev/blog/building-static-binaries-in-nix/
 icon: snowflake
+description: https://kokada.dev/blog/building-static-binaries-in-nix/
 ---
 
 # Nix
@@ -32,6 +32,8 @@ nix-collect-garbage >/dev/null 2>&1
 ```
 {% endcode %}
 
+***
+
 ### Cross
 
 {% code overflow="wrap" %}
@@ -62,3 +64,26 @@ nix-collect-garbage >/dev/null 2>&1
 ```
 {% endcode %}
 
+***
+
+### Old Versions
+
+{% code overflow="wrap" %}
+```bash
+!#1. Using GIT_COMMIT_SHA
+
+#Get Version
+nix derivation show "github:NixOS/nixpkgs/${COMMIT_SHA}#${PKG_NAME}" --impure --refresh --quiet 2>&1 | jq -r '.. | objects | select(has("version")) | .version'
+
+#Build
+nix-build 'https://github.com/NixOS/nixpkgs/archive/${COMMIT_SHA}.tar.gz' --impure --attr "pkgsStatic.${PKG_NAME}" --cores "$(($(nproc)+1))" --max-jobs "$(($(nproc)+1))" --log-format bar-with-logs --out-link "./TMPDIR"
+
+!#2. Using GIT_TAGS: https://github.com/NixOS/nixpkgs/tags
+
+#Get Version
+nix derivation show "github:NixOS/nixpkgs/${GIT_TAG}#${PKG_NAME}" --impure --refresh --quiet 2>&1 | jq -r '.. | objects | select(has("version")) | .version'
+
+#Build
+nix-build 'https://github.com/NixOS/nixpkgs/archive/refs/tags/${GIT_TAG}.tar.gz' --impure --attr "pkgsStatic.${PKG_NAME}" --cores "$(($(nproc)+1))" --max-jobs "$(($(nproc)+1))" --log-format bar-with-logs --out-link "./TMPDIR"
+```
+{% endcode %}
