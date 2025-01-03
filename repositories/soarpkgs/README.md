@@ -7,7 +7,7 @@ description: The Official Soar User Repository (SoarPkgs)
 
 ## SoarPkgs
 
-{% embed url="https://bin.pkgforge.dev/list.gif?tmp.049f802DRI=tmp.Q2E6euzrSo" %}
+{% embed url="https://bin.pkgforge.dev/list.gif?tmp.brgsN4s8au=tmp.Ty1ikdRnKz" %}
 [**The true, simple & suckless Linux User Repository**](https://github.com/pkgforge/soarpkgs)
 {% endembed %}
 
