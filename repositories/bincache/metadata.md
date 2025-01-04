@@ -178,7 +178,7 @@ snapshots: "@array",
 {% endhint %}
 
 {% hint style="success" %}
-[**R2**](https://developers.cloudflare.com/r2/) (99% Uptime) \[<mark style="color:green;">**RECOMMENDED**</mark>]
+[**R2**](https://meta.pkgforge.dev/bincache/) (99% Uptime) \[<mark style="color:green;">**RECOMMENDED**</mark>]
 
 ```bash
 https://meta.pkgforge.dev/bincache/${HOST}.json
