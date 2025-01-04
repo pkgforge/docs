@@ -130,6 +130,10 @@ build_script: "@string",
 //This is a ghcr api call, so may not be as relaible as `pull`
 download_url: "@string",
 
+//Contains the Github Registry Container (ghcr) Name + Blob Digest of the $PKG
+//This can be `pulled` directly by an OCI client (Pulls only $PKG)
+ghcr_blob: "@array",
+
 //Contains All the artifacts that can be pulled from the $ghcr_pkg
 //This is essentially a list of ALL org.opencontainers.image.title
 ghcr_files: "@array",
