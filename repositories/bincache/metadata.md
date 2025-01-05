@@ -252,3 +252,10 @@ curl -qfsSL "https://meta.pkgforge.dev/bincache/$(uname -m)-$(uname -s).json" \
 ```
 {% endcode %}
 {% endhint %}
+
+***
+
+### Security
+
+Metadata files are generated at: [https://github.com/pkgforge/metadata](https://github.com/pkgforge/metadata). Generation Provenance can be verified using [GitHub Attestations](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds): [https://github.com/pkgforge/metadata/attestations](https://github.com/pkgforge/metadata/attestations)
+
