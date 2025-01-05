@@ -119,12 +119,24 @@ bsum: "@string",
 //Format in YYYY-MM-DDTHH:MM:SS (example: 2024-10-08T01:19:56)
 build_date: "@string",
 
+//Contains the Github Actions Run URL that built the ${PKG}
+//If starts with ^local:// , then it implies it was built by a maintainer on a dev machine
+build_gha: "@string",
+
+//Contains the Github Actions Run ID that built the ${PKG}
+//If .build_gha started with ^local:// , then it implies it was built by a maintainer on a dev machine, thus this value is just: /etc/machine-id
+build_id: "@string",
+
 //Contains the link to view the Actual CI BUILD LOG of the $PKG
 build_log: "@string",
 
 //Contains the SBUILD Script the $BINARY was Built/Fetched With
 //Is usually a `blob url`, might require replacing with `raw`
 build_script: "@string",
+
+//Contains the Total Downloads (Pulls) a $PKG has received (ghcr pull)
+//If the value is -1, it implies no data was available
+download_count: "@string",
 
 //Contains the Raw Direct Download URL of the $PKG
 //This is a ghcr api call, so may not be as relaible as `pull`
