@@ -25,7 +25,7 @@ The Best way to learn it, is to view it ([**https://meta.pkgforge.dev/pkgcache/*
 // @array|@string --> Can be either, check & handle accordingly
 
 //Denotes if this pkg is disabled (currently broken, SHOULD NOT BE INSTALLED)
-disabled: false, //if true, then this pkg is marked disabled
+disabled: "false", //if true, then this pkg is marked disabled
 
 //Contains the Canonical Build Target [$(uname -m)-$(uname -s)]: https://docs.pkgforge.dev/sbuild/specification/20.x_exec#host
 host: "@string",
@@ -54,7 +54,7 @@ pkg_type: "@string",
 pkg_webpage: "@string",
 
 //Contains the Application ID, usually from appstream files, [Otherwise Empty/Non-Existent]
-//IF THIS IS MISSING, assume app_id==pkg_id
+//IF THIS IS MISSING, DO NOT SET app_id==pkg_id (NOT SAME)
 app_id: "@string"
 
 //Contains the URL to Appstream ({AppData/Metainfo}.xml) File of the $PKG/$PKG_FAMILY 
@@ -139,6 +139,7 @@ build_script: "@string",
 //Contains the Total Downloads (Pulls) a $PKG has received (ghcr pull)
 //If the value is -1, it implies no data was available
 download_count: "@string",
+//Similar fields like `download_count_month`, `download_count_week` may also be available
 
 //Contains the Raw Direct Download URL of the $PKG
 //This is a ghcr api call, so may not be as relaible as `pull`

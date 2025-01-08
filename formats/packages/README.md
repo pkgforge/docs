@@ -15,6 +15,7 @@ You should be aware of these:
 * [x] [The security risks of Flathub](https://blog.frehi.be/2023/04/23/the-security-risks-of-flathub/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/20240925042807/https://blog.frehi.be/2023/04/23/the-security-risks-of-flathub/)
 * [x] [Flatpak - an insecurity nightmare](https://orowith2os.gitlab.io/posts/Flatpak-an-insecurity-nightmare/) [<mark style="color:orange;">**`ARCHIVED`**</mark>](https://web.archive.org/web/20240520001227/https://orowith2os.gitlab.io/posts/Flatpak-an-insecurity-nightmare/)
 * [x] [YT/Your favourite Linux packaging format isn’t as secure as you think…](https://www.youtube.com/watch?v=xw3NxIWpylc)
+* [x] [YT/I was wrong about Flatpak, AppImage, and Snap (Containerised Apps Presentation) \[FOSDEM 2023\]](https://youtu.be/4WuYGcs0t6I)
 {% endhint %}
 
 These are usually **GUI Applications** packaged in one of the following formats:
