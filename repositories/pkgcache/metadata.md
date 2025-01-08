@@ -50,7 +50,7 @@ pkg_name: "@string",
 //Contains the Package Type: https://docs.pkgforge.dev/sbuild/specification/2.pkg
 pkg_type: "@string",
 
-//Contains the WebIndex generated at: https://pkgs.pkgforge.dev/
+//Contains the Web Index generated at: https://pkgs.pkgforge.dev/
 pkg_webpage: "@string",
 
 //Contains the Application ID, usually from appstream files, [Otherwise Empty/Non-Existent]

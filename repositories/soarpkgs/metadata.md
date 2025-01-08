@@ -1,6 +1,6 @@
 ---
-description: Metadata Spec
 icon: brackets-curly
+description: Metadata Spec
 ---
 
 # Metadata
@@ -41,6 +41,9 @@ pkg_id: "@string",
 
 //Contains the Package Type: https://docs.pkgforge.dev/sbuild/specification/2.pkg
 pkg_type: "@string",
+
+//Contains the Web Index generated at: https://pkgs.pkgforge.dev/
+pkg_webpage: "@string",
 
 //Contains the Application ID, usually from appstream files, [Otherwise Empty/Non-Existent]
 //IF THIS IS MISSING, DO NOT SET app_id==pkg_id (NOT SAME)
