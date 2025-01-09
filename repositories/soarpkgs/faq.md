@@ -5,9 +5,26 @@ description: Frequently Asked Questions & Misc
 
 # FAQ
 
+### **Is this really an AUR?**
+
+1. [**Soarpkgs**](https://github.com/pkgforge/soarpkgs) is inspired by the concept of the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository), but **is not an exact replica**. While the AUR is a community-driven system where users can freely submit packages by creating repositories and `PKGBUILDs` with minimal oversight, [**Soarpkgs**](https://github.com/pkgforge/soarpkgs)  takes a more controlled approach.
+2. The key distinction is in how packages are added. [**Soarpkgs**](https://github.com/pkgforge/soarpkgs) implements a **review system** where **maintainers must evaluate and approve packages** before they can be included in the repository. This extra layer of scrutiny helps maintain higher quality standards and better [**security**](security.md) compared to the AUR's more open submission process.
+3. So while  [**Soarpkgs**](https://github.com/pkgforge/soarpkgs)  was influenced by the AUR concept, it's not truly an AUR since it prioritizes curated content over unrestricted user submissions.
+
+***
+
+### What makes Soarpkgs trustworthy if the AUR is viewed as a security risk?
+
+1. The AUR isn't inherently a security nightmare if you exercise common sense—like reviewing `PKGBUILD`s before installation or avoiding outdated packages.&#x20;
+2. Unlike the AUR, where anyone can upload a package, **we require maintainers to manually review, evaluate & locally test all `SBUILDS`in a sandbox before approving any new submission/PR**.&#x20;
+3. We also go as far as forking any third party repository we use, under the [**pkgforge-community** ](https://docs.pkgforge.dev/orgs/pkgforge-community)org.
+4. We have a detailed section dedicated to it here: [https://docs.pkgforge.dev/repositories/soarpkgs/security](https://docs.pkgforge.dev/repositories/soarpkgs/security)
+
+***
+
 ### **Why not contribute Upstream?**
 
-1. Unfortunately, with the [**mass adoption of Flatpaks**](https://flatpak.org/), most developers have no interest in AppImages or [**other formats**](../../../../formats/packages/)
+1. Unfortunately, with the [**mass adoption of Flatpaks**](https://flatpak.org/), most developers have no interest in AppImages or [**other formats**](../../formats/packages/)
 2. The few who do, either lack the interest, skill or time, or all of these to provide a properly made Portable Package. There are numerous examples, you simply need to see their issues tab & search our usernames.
 3. So, creating PR that the upstream won't even accept is a huge waste of our time. However, we (mostly [**@Samueru-sama**](https://docs.pkgforge.dev/orgs/pkgforge-dev/people#samueru-sama)) still try our best to contribute upstream whenever possible.
 
