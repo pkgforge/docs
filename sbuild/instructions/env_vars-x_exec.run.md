@@ -12,6 +12,7 @@ description: List of Environment Variables that are Accessible Inside x_exec.run
 * [x] <mark style="color:orange;">**`${pkg}`**</mark>**&#x20;|&#x20;**<mark style="color:orange;">**`{PKG}`**</mark>
 
 > - **Description**: The raw value of [<mark style="color:purple;">**`.pkg`**</mark>](../specification/2.pkg.md) from <mark style="color:purple;">**`.SBUILD`**</mark> <<mark style="color:green;">**ALWAYS**</mark> _Available_>
+> - **ALWAYS USE** <mark style="color:orange;">**${PKG}**</mark> for **output**, example: <mark style="color:orange;">**${PKG}**</mark> (<mark style="color:blue;">**Main Binary**</mark>), <mark style="color:orange;">**${PKG}.png**</mark> (<mark style="color:blue;">**Icon**</mark>), <mark style="color:orange;">**${PKG}.desktop**</mark> (<mark style="color:blue;">**Desktop**</mark>) etc
 
 * [x] <mark style="color:orange;">**`${pkg_id}`**</mark> | <mark style="color:orange;">**`${PKG_ID}`**</mark>
 
@@ -29,7 +30,6 @@ description: List of Environment Variables that are Accessible Inside x_exec.run
 * [x] <mark style="color:orange;">**`${SBUILD_PKG}`**</mark>
 
 > - **Description**: The raw value of [<mark style="color:purple;">**`.pkg`**</mark>](../specification/2.pkg.md) + [<mark style="color:purple;">**.pkg\_type**</mark>](../specification/2.pkg.md) from <mark style="color:purple;">**`.SBUILD`**</mark> <<mark style="color:green;">**ALWAYS**</mark> _Available_>
-> - **ALWAYS USE** <mark style="color:orange;">**${SBUILD\_PKG}**</mark> for **output**, example: <mark style="color:orange;">**${SBUILD\_PKG}**</mark> (<mark style="color:blue;">**Main Binary**</mark>), <mark style="color:orange;">**${SBUILD\_PKG}.png**</mark> (<mark style="color:blue;">**Icon**</mark>), <mark style="color:orange;">**${SBUILD\_PKG}.desktop**</mark> (<mark style="color:blue;">**Desktop**</mark>) etc
 
 * [x] <mark style="color:orange;">**`${SBUILD_OUTDIR}`**</mark>
 
