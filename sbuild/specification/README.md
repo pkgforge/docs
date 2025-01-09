@@ -21,7 +21,7 @@ description: The Official Specification for .SBUILD
 14. [<mark style="color:purple;">**License**</mark>](13.license.md) (**TYPE**:<mark style="color:blue;">**`NON_ENFORCED`**</mark>)
 15. [<mark style="color:purple;">**Maintainer**</mark>](14.maintainer.md) (**TYPE**:<mark style="color:blue;">**`NON_ENFORCED`**</mark>)
 16. [<mark style="color:purple;">**Note**</mark>](15.note.md) (**TYPE**:<mark style="color:blue;">**`NON_ENFORCED`**</mark>)
-17. [<mark style="color:purple;">**Provides**</mark>](16.provides.md) (**TYPE**:<mark style="color:blue;">**`NON_ENFORCED`**</mark>)
+17. [<mark style="color:purple;">**Provides**</mark>](16.provides.md) (**TYPE**:<mark style="color:green;">**`RECOMMENDED`**</mark>)
 18. [<mark style="color:purple;">**Repology**</mark>](17.repology.md) (**TYPE**:<mark style="color:green;">**`RECOMMENDED`**</mark>)
 19. [<mark style="color:purple;">**Source URL**</mark>](18.sourceurl.md) (**TYPE**: <mark style="color:red;">**ENFORCED**</mark>)
 20. [<mark style="color:purple;">**Tag**</mark>](19.tag.md) (**TYPE**:<mark style="color:green;">**`RECOMMENDED`**</mark>)
