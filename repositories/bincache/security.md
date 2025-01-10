@@ -1,6 +1,6 @@
 ---
-description: It is NEVER a good idea to install random binaries from random sources.
 icon: shield-quartered
+description: It is NEVER a good idea to install random binaries from random sources.
 ---
 
 # Security
@@ -31,7 +31,8 @@ The amount of work and the near impossibility to ensure that every source used, 
 * [x] All the Build Scripts & workflows are completely open-source. You are free to audit & scrutinize everything.
 
 {% hint style="info" %}
-- [x] You can view <mark style="color:orange;">**RAW Build Script**</mark>
+- [x] Check the Package Page & Look for <mark style="color:orange;">**Build Script**</mark> : [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
+- [x] Using `Soar`&#x20;
 
 ```bash
 !# View Build Script
@@ -39,14 +40,11 @@ soar inspect "<PACKAGE>"
 ```
 {% endhint %}
 
-{% hint style="warning" %}
-if you get a 404 or it errors out, you can get the build script here: [https://github.com/pkgforge/soarpkgs](https://github.com/pkgforge/soarpkgs)
-{% endhint %}
-
 * [x] Complete `RAW` **Build Logs** are made available with the **exception of `Personal Access Tokens`**
 
 {% hint style="info" %}
-- [x] You can view <mark style="color:orange;">**RAW Build Logs**</mark>
+- [x] Check the Package Page & Look for <mark style="color:orange;">**Build Log**</mark> : [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
+- [x] Using `Soar`&#x20;
 
 ```bash
 !# View Logs
@@ -55,17 +53,7 @@ soar log "<PACKAGE>"
 {% endhint %}
 
 {% hint style="warning" %}
-If you get a 404 or it errors out, you can get the full logs for [**Toolpacks (BinCache)**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache) here:
-
-* [x] <mark style="color:orange;">**`aarch64-Linux`**</mark> :  [https://bin.pkgforge.dev/aarch64/BUILD.log.txt ](https://bin.pkgforge.dev/aarch64/BUILD.log.txt)
-* [x] <mark style="color:orange;">**`x86_64-Linux`**</mark> :  [https://bin.pkgforge.dev/x86\_64/BUILD.log.txt ](https://bin.pkgforge.dev/x86_64/BUILD.log.txt)
-{% endhint %}
-
-{% hint style="warning" %}
-If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache) here:
-
-* [x] <mark style="color:orange;">**`aarch64-Linux`**</mark> :  [https://pkg.pkgforge.dev/aarch64/BUILD.log.txt ](https://pkg.pkgforge.dev/aarch64/BUILD.log.txt)
-* [x] <mark style="color:orange;">**`x86_64-Linux`**</mark> :  [https://pkg.pkgforge.dev/x86\_64/BUILD.log.txt](https://pkg.pkgforge.dev/x86_64/BUILD.log.txt)&#x20;
+If you get a 404 or it errors out, you can get the full logs here: [https://meta.pkgforge.dev/bincache/logs/](https://meta.pkgforge.dev/bincache/logs/)
 {% endhint %}
 
 * [x] Both <mark style="color:orange;">**`SHA256SUM`**</mark> & <mark style="color:orange;">**`BLAKE3SUM`**</mark> are automatically generated right after build script finishes.
@@ -74,12 +62,18 @@ If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](
 **Since, the builds aren't reproducible, it's unlikely you will end up with the same checksums if you rebuild/rerun the Build Script**
 {% endhint %}
 
-* [x] If it still doesn't inspire confidence, there's a [Docker Image](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#setup-and-configure-local-build-environment) you can Configure to Run & Reproduce any Binary/Build Script on your own Secure System.
+* [x] All our Prebuilt Binaries/Packages are signed
+
+{% hint style="info" %}
+<mark style="color:blue;">**Public Key**</mark>:&#x20;
+{% endhint %}
+
+* [x] If it still doesn't inspire confidence, there's a Docker Image you can Configure to Run & Reproduce any Binary/Build Script on your own Secure System.
 
 > - **Devscripts**: [https://github.com/pkgforge/devscripts](https://github.com/pkgforge/devscripts)
 > - **Dockerfiles**: [https://github.com/pkgforge/devscripts/tree/main/Github/Runners](https://github.com/pkgforge/devscripts/tree/main/Github/Runners)
 
-* [x] All our Prebuilt Binaries/Packages are signed
+*
 
 ***
 

@@ -42,3 +42,11 @@ soar search "${PKG_NAME}"
 2. Replace with actual values; **PkgReq**: **`NAME_OF_PKG (TYPE_OF_PKG)`**
 3. Body: Fill with correct/Relevant Values from the Information you gathered
 {% endhint %}
+
+### Additional Notes
+
+1. After you are really sure that it's not available, Read our [Build Notes](https://docs.pkgforge.dev/formats/binaries/static/build-notes). This contains notes on compiling static binaries. However, if there's already a static binary that's released, you can [**just use soar to fetch it**](https://github.com/pkgforge/soar).
+2. After you have successfully **`built/compiled/fetched`** a **static** binary, you must check that it's truly static : [**Tests**](https://docs.pkgforge.dev/formats/binaries/static/build-tests)
+3. After all this, finally describe & provide step-by-step instruction by [**creating a new issue**](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package) Make sure to include **ALL Steps** (Including getting source code). Be as verbose as possible. Include output of **`file` | `ldd` | `readelf`**. Optionally, also test the binary with **`qemu-$ARCH-static`** or a minimal VM/Docker Image (Preferably alpine) to ensure that it really does work.
+4. If you can not (don't know how to) compile, [**create a new issue**](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package) with **links to the PKG/Tool's homepage/source-code along with a brief description on what it does.**
+

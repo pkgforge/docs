@@ -5,6 +5,10 @@ description: Frequently Asked Questions & Misc
 
 # FAQ
 
+{% hint style="success" %}
+Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md](https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md)
+{% endhint %}
+
 ### **Is this really an AUR?**
 
 1. [**Soarpkgs**](https://github.com/pkgforge/soarpkgs) is inspired by the concept of the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository), but **is not an exact replica**. While the AUR is a community-driven system where users can freely submit packages by creating repositories and `PKGBUILDs` with minimal oversight, [**Soarpkgs**](https://github.com/pkgforge/soarpkgs)  takes a more controlled approach.

@@ -1,6 +1,6 @@
 ---
 icon: block-question
-description: How to request a new Package
+description: How to request a new Package to be added to the Cache
 ---
 
 # Package-Request
@@ -8,32 +8,29 @@ description: How to request a new Package
 ### Guide
 
 {% hint style="info" %}
-There's no strict rules, however if you put in **some effort**, it **will be Resolved Sooner**
+This is <mark style="color:red;">**NOT FOR REQUESTING NEW PACKAGES**</mark>, see: [https://docs.pkgforge.dev/repositories/soarpkgs/package-request](https://docs.pkgforge.dev/repositories/soarpkgs/package-request)
 
 * [x] Also make sure you **do not request an already existing package**
 * [x] Check using [<mark style="color:orange;">**soar**</mark>](https://soar.qaidvoid.dev/search)
 
 ```bash
-#The bin (main catalogue)
-soar search "${BIN_NAME}#bin"
-
-#The baseutil catalogue
-soar search "${BIN_NAME}#base"
+soar search "${PKG_NAME}"
 ```
 
-* [x] Search it on [**Github**](https://github.com/pkgforge/soarpkgs/tree/main/packages): [https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts](https://github.com/Azathothas/Toolpacks/tree/main/.github/scripts)
-* [x] Detailed **`aarch64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/aarch64-Linux/DETAILED.md)
-* [x] Detailed **`x86_64`** List: [https://github.com/Azathothas/Toolpacks/blob/main/x86\_64-Linux/DETAILED.md](https://github.com/Azathothas/Toolpacks/blob/main/x86_64-Linux/DETAILED.md)
+* [x] Search it on **Index**: [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
 {% endhint %}
 
-* [x] After you are really sure that it's not available, Read our [Build Notes](https://docs.pkgforge.dev/formats/binaries/static/build-notes). This contains notes on compiling static binaries. However, if there's already a static binary that's released, you can [**just use soar to fetch it**](https://github.com/pkgforge/soar).
-* [x] After you have successfully **`built/compiled/fetched`** a **static** binary, you must check that it's truly static : [**Tests**](https://docs.pkgforge.dev/formats/binaries/static/build-tests)
-* [x] After all this, finally describe & provide step-by-step instruction by [creating a new issue](https://github.com/Azathothas/Toolpacks/issues/new) Make sure to include **ALL Steps** (Including getting source code). Be as verbose as possible. Include output of **`file` | `ldd` | `readelf`**. Optionally, also test the binary with **`qemu-$ARCH-static`** or a minimal VM/Docker Image (Preferably alpine) to ensure that it really does work.
-* [x] If you can not (don't know how to) compile, [**create a new issue**](https://github.com/Azathothas/Toolpacks/issues/new) with **links to the PKG/Tool's homepage/source-code along with a brief description on what it does.**
+* [x] After you are really sure that it's not available, [Create a new issue](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package) at: [https://github.com/pkgforge/soarpkgs/issues/new/choose](https://github.com/pkgforge/soarpkgs/issues/new/choose) >> [**Prebuilt Package Request (Cache)**](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package)
 
 {% hint style="warning" %}
-**If you don't put effort into requesting a tool/pkg to be added here, neither will we.**
+Fill all the required fields, **If you don't put effort into requesting a tool/pkg to be added here, neither will we.**
 {% endhint %}
 
 ### Criteria
 
+{% hint style="warning" %}
+* [x] If on Github, must have at least `10 stars`
+* [x] The total age of the project must be at least `~ 1 month`
+* [x] The most recent commit must NOT be older than `~ 12 months`
+* [x] The project must have a permissive `license` that allows binary redistribution
+{% endhint %}

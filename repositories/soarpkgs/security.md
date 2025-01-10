@@ -11,9 +11,9 @@ Recommended Reading:
 * [x] [pkgforge-edge/security](../../orgs/pkgforge-security/)
 {% endhint %}
 
-Other than the details mentioned at [https://docs.pkgforge.dev/repositories/pkgforge-edge/security](https://docs.pkgforge.dev/repositories/pkgforge-edge/security), we follow some additional precautions for[ SoarPkgs](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/soarpkgs):&#x20;
+Other than the details mentioned at [bincache/security](../bincache/security.md) & [pkgcache/security](../pkgcache/security.md), we follow some additional precautions for [SoarPkgs](https://github.com/pkgforge/soarpkgs):&#x20;
 
-1. [PkgForge](https://github.com/pkgforge) maintains up-to-date [Forks](https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse) of all the <mark style="color:red;">**Unofficial**</mark> Packages that are added to [SoarPkgs](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/soarpkgs) : [https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse](https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse)
+1. [PkgForge](https://github.com/pkgforge) maintains up-to-date [Forks](https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse) of all the <mark style="color:red;">**Unofficial**</mark> Packages that are added to [SoarPkgs](https://docs.pkgforge.dev/repositories/soarpkgs) : [https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse](https://github.com/orgs/pkgforge-community/repositories?q=fork%3Atrue+archived%3Afalse)
 
 {% hint style="info" %}
 More details: [https://github.com/pkgforge-community#why-did-you-fork-my-repo](https://github.com/pkgforge-community#why-did-you-fork-my-repo)
