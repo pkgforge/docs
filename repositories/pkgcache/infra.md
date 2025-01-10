@@ -9,18 +9,20 @@ description: Build & CI Servers
 
 * Either [Github-Runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners) OR [Self-Hosted Runners](infra.md#cost) are configured and kicked off every 5-6 Days.
 * The stack runs on a combination of [Podman](https://podman.io/) + [Docker](https://www.docker.com/)
-
-> - [ToolPacks (BinCache)](broken-reference): [https://github.com/Azathothas/Toolpacks/tree/main/.github/runners](https://github.com/Azathothas/Toolpacks/tree/main/.github/runners)
-> - [PkgCache](broken-reference): [https://github.com/pkgforge/pkgcache/tree/main/.github/scripts](https://github.com/pkgforge/pkgcache/tree/main/.github/scripts)
+* Primary artifacts are stored on [ghcr](https://docs.pkgforge.dev/repositories/pkgcache/cache#github-container-registry), with mirror on [HuggingFace](https://docs.pkgforge.dev/repositories/pkgcache/cache#huggingface-hub)
 
 ### Cost
+
+{% hint style="info" %}
+Same infra is shared with [bincache](../bincache/ "mention")
+{% endhint %}
 
 * Servers & Storage cost money, right now all financial cost is covered solely by [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas)&#x20;
 * [HuggingFace](https://huggingface.co/pricing) (<mark style="color:orange;">`$9/Month`</mark>)&#x20;
 * [CloudFlare R2 Bucket](https://developers.cloudflare.com/r2/pricing/) + [CloudFlare Workers](https://developers.cloudflare.com/workers/platform/pricing/) & [More](https://www.cloudflare.com/plans/) (<mark style="color:orange;">`70-100$/Month`</mark>)&#x20;
 * [Self Hosted Github Runners](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners) (<mark style="color:orange;">`36$/Month`</mark>)
 
-<table><thead><tr><th width="129">Builder</th><th width="181">Specs</th><th width="104">Host</th><th>Dedicated ?</th><th width="116">Build Time</th><th>Cost</th></tr></thead><tbody><tr><td><a href="https://github.com/Azathothas/Toolpacks/actions/workflows/build_aarch64_Linux.yaml">aarch64 Linux</a></td><td>14 vCPU (Ampere Altra) + 32 GB RAM (??) + 1024 GB SSD + Unmetered Bandwidth</td><td><a href="https://www.netcup.eu/bestellen/produkt.php?produkt=3991">Netcup</a></td><td><mark style="color:red;">NO</mark></td><td><code>35-40</code> <code>Hrs</code></td><td><mark style="color:orange;"><code>$17/Mo</code></mark></td></tr><tr><td><a href="https://github.com/Azathothas/Toolpacks/actions/workflows/build_x86_64_Linux.yaml">x86_64 Linux</a></td><td>8 vCPU (AMD EPYC™ 9634) + 16 GB RAM (DDR5 ECC) + 512 GB SSD + Unmetered Bandwidth</td><td><a href="https://www.netcup.eu/bestellen/produkt.php?produkt=3694">Netcup</a></td><td><a href="https://www.netcup.eu/vserver/vergleich-root-server-vps.php"><mark style="color:orange;">Semi-Dedicated</mark></a></td><td><code>20-25</code> <code>Hrs</code></td><td><mark style="color:orange;"><code>$18.50/Mo</code></mark></td></tr></tbody></table>
+<table><thead><tr><th width="129">Builder</th><th width="181">Specs</th><th width="104">Host</th><th>Dedicated ?</th><th width="116">Build Time</th><th>Cost</th></tr></thead><tbody><tr><td><code>aarch64 Linux</code></td><td>14 vCPU (Ampere Altra) + 32 GB RAM (??) + 1024 GB SSD + Unmetered Bandwidth</td><td><a href="https://www.netcup.eu/bestellen/produkt.php?produkt=3991">Netcup</a></td><td><mark style="color:red;">NO</mark></td><td><code>35-40</code> <code>Hrs</code></td><td><mark style="color:orange;"><code>$17/Mo</code></mark></td></tr><tr><td><code>x86_64 Linux</code></td><td>8 vCPU (AMD EPYC™ 9634) + 16 GB RAM (DDR5 ECC) + 512 GB SSD + Unmetered Bandwidth</td><td><a href="https://www.netcup.eu/bestellen/produkt.php?produkt=3694">Netcup</a></td><td><a href="https://www.netcup.eu/vserver/vergleich-root-server-vps.php"><mark style="color:orange;">Semi-Dedicated</mark></a></td><td><code>20-25</code> <code>Hrs</code></td><td><mark style="color:orange;"><code>$18.50/Mo</code></mark></td></tr></tbody></table>
 
 * Test Servers  (<mark style="color:orange;">`12$/Month`</mark>)
 

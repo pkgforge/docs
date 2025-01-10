@@ -30,7 +30,7 @@ The amount of work and the near impossibility to ensure that every source used, 
 
 * [x] All the Build Scripts & workflows are completely open-source. You are free to audit & scrutinize everything.
 
-{% hint style="info" %}
+{% hint style="success" %}
 - [x] Check the Package Page & Look for <mark style="color:orange;">**Build Script**</mark> : [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
 - [x] Using `Soar`&#x20;
 
@@ -40,9 +40,9 @@ soar inspect "<PACKAGE>"
 ```
 {% endhint %}
 
-* [x] Complete `RAW` **Build Logs** are made available with the **exception of `Personal Access Tokens`**
+* [x] &#x20;**Build Logs**
 
-{% hint style="info" %}
+{% hint style="success" %}
 - [x] Check the Package Page & Look for <mark style="color:orange;">**Build Log**</mark> : [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
 - [x] Using `Soar`&#x20;
 
@@ -56,24 +56,28 @@ soar log "<PACKAGE>"
 If you get a 404 or it errors out, you can get the full logs here: [https://meta.pkgforge.dev/bincache/logs/](https://meta.pkgforge.dev/bincache/logs/)
 {% endhint %}
 
-* [x] Both <mark style="color:orange;">**`SHA256SUM`**</mark> & <mark style="color:orange;">**`BLAKE3SUM`**</mark> are automatically generated right after build script finishes.
+* [x] Checksums: <mark style="color:orange;">**`SHA256SUM`**</mark> & <mark style="color:orange;">**`BLAKE3SUM`**</mark>
 
 {% hint style="warning" %}
 **Since, the builds aren't reproducible, it's unlikely you will end up with the same checksums if you rebuild/rerun the Build Script**
 {% endhint %}
 
-* [x] All our Prebuilt Binaries/Packages are signed
+* [x] **Signed Artifacts**
 
-{% hint style="info" %}
-<mark style="color:blue;">**Public Key**</mark>:&#x20;
+{% hint style="success" %}
+You can use [**`minisign`**](https://github.com/jedisct1/minisign) to verify any of our artifacts using the <mark style="color:blue;">**Public Key**</mark>: [https://raw.githubusercontent.com/pkgforge/bincache/refs/heads/main/keys/minisign.pub](https://raw.githubusercontent.com/pkgforge/bincache/refs/heads/main/keys/minisign.pub)
+{% endhint %}
+
+* [x] [**Build Attestations & Provenance**](https://github.com/actions/attest-build-provenance)
+
+{% hint style="success" %}
+All our CI workflows produce attestations for all of the artifacts:  [https://github.com/pkgforge/bincache/attestations](https://github.com/pkgforge/bincache/attestations)
 {% endhint %}
 
 * [x] If it still doesn't inspire confidence, there's a Docker Image you can Configure to Run & Reproduce any Binary/Build Script on your own Secure System.
 
 > - **Devscripts**: [https://github.com/pkgforge/devscripts](https://github.com/pkgforge/devscripts)
 > - **Dockerfiles**: [https://github.com/pkgforge/devscripts/tree/main/Github/Runners](https://github.com/pkgforge/devscripts/tree/main/Github/Runners)
-
-*
 
 ***
 

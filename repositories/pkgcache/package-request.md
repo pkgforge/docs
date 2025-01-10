@@ -1,16 +1,9 @@
 ---
 icon: block-question
-description: How to request a new Package
+description: How to request a new Package to be added to the Cache
 ---
 
 # Package-Request
-
-{% hint style="danger" %}
-* This is **only for packages that have been selected & marked** as<mark style="color:orange;">**`.pkgcache`**</mark> at [**SoarPkgs (pkgforge-community)**](https://github.com/pkgforge/soarpkgs/blob/main/README.md)
-* **Any Issue related to Package-Request must be made at** [**pkgforge/soarpkgs**](https://github.com/pkgforge/soarpkgs) **, NOT at** [**pkgforge/pkgcache**](https://github.com/pkgforge/pkgcache)
-{% endhint %}
-
-***
 
 ### Criteria
 
@@ -28,24 +21,19 @@ Exceptions Apply, [**Discussion**](https://github.com/pkgforge/pkgcache/issues) 
 ### Guide
 
 {% hint style="info" %}
-This repository prefers quality over quantity, so some strict rules & guidelines have to be followed
+This is **NOT FOR REQUESTING NEW PACKAGES**, see: [https://docs.pkgforge.dev/repositories/soarpkgs/package-request](https://docs.pkgforge.dev/repositories/soarpkgs/package-request)&#x20;
 
-* Check yor requested package meets the [Criteria listed above](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/package-request#criteria), if you would like to argue, do it: [https://github.com/pkgforge/pkgcache/issues](https://github.com/pkgforge/pkgcache/issues)
-* Also make sure you **do not request an already existing package**
-* Check using [<mark style="color:orange;">**soar**</mark>](https://soar.qaidvoid.dev/search)
+* [x] Also make sure you **do not request an already existing package**
+* [x] Check using [**soar**](https://soar.qaidvoid.dev/search)
 
 ```bash
-soar search "${PKG_NAME}#pkg"
+soar search "${PKG_NAME}"
 ```
 
-* If you want to see the list: [<mark style="color:purple;">**aarch64-Linux**</mark>](https://github.com/pkgforge/pkgcache/tree/main/aarch64-Linux) [<mark style="color:purple;">**x86\_64-Linux**</mark>](https://github.com/pkgforge/pkgcache/tree/main/x86_64-Linux)
+* [x] Search it on **Index**: [https://pkgs.pkgforge.dev/](https://pkgs.pkgforge.dev/)
+* [x] After you are really sure that it's not available, [Create a new issue](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package) at: [https://github.com/pkgforge/soarpkgs/issues/new/choose](https://github.com/pkgforge/soarpkgs/issues/new/choose) >> [**Prebuilt Package Request (Cache)**](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=prebuilt-request\&projects=\&template=2-prebuilt-cache-request.yaml\&title=CacheReq%3A+name_of_the_package)
 {% endhint %}
 
-* [x] Find the Package's <mark style="color:purple;">**`.SBUILD`**</mark> from [https://github.com/pkgforge/soarpkgs/tree/main/packages](https://github.com/pkgforge/soarpkgs/tree/main/packages)
-
-{% hint style="info" %}
-1. [Create an Issue](https://github.com/pkgforge/soarpkgs/issues/new/choose): [https://github.com/pkgforge/soarpkgs/issues/new/choose](https://github.com/pkgforge/soarpkgs/issues/new/choose) `>>` [**Prebuilt Request (Generic)**](https://github.com/pkgforge/soarpkgs/issues/new?assignees=Azathothas\&labels=pkgcache\&projects=\&template=prebuilt-request--generic-.md\&title=%5BPkgCache+Request%5D+NAME_OF_PKG)
-2. Replace with actual values; **Title**: **\[PkgCache Request] NAME\_OF\_PKG**
-3. Body: Fill with correct/Relevant Values from the Information you gathered
-4. Wait for one of the maintainers to respond
+{% hint style="warning" %}
+Fill all the required fields, **If you don't put effort into requesting a tool/pkg to be added here, neither will we.**
 {% endhint %}
