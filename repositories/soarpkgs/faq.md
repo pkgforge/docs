@@ -49,7 +49,7 @@ description: Frequently Asked Questions & Misc
 ### Public Tools Search
 
 * [**GitHub Search**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse++stars%3A%3E5+GUI+OR+Portable+OR+Package\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false  stars:>5 GUI OR Portable OR Package`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
-* **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-tba](https://github.com/stars/Azathothas/lists/soarpkgs-tba)
+* **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba](https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba)
 
 ***
 
@@ -62,8 +62,8 @@ description: Frequently Asked Questions & Misc
 
 ### History & Lore
 
-* [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) drafted repos & projects which would eventually become [Toolpacks](https://github.com/Azathothas/Toolpacks),  \~ **July, 2023**, You can read more about it here: [https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache/faq#history-and-lore)
-* After [Azathothas/Toolpacks#28](https://github.com/Azathothas/Toolpacks/issues/28), [PkgCache](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache) was created **\~ Sep 25, 2024**, You can read more about it here: [https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/faq#history-and-lore](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache/faq#history-and-lore)
-* We realized it pretty quickly that, [PkgCache](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache) wasn't sustainable, and a User Repository consisting of community submitted packages, just like [**ivan-hc/AM**](https://github.com/ivan-hc/AM), was desperately needed. Thus, [Soarpkgs](https://github.com/pkgforge/soarpkgs), came into existence [`~ Nov 04, 2024`](https://github.com/pkgforge/soarpkgs/commit/47b3023010232dfe8b13a83a1daa688e57aa21f1)
+* [**@Azathothas**](https://docs.pkgforge.dev/orgs/pkgforge-core/people#azathothas) drafted repos & projects which would eventually become [Toolpacks](https://github.com/Azathothas/Toolpacks),  \~ **July, 2023**, You can read more about it here: [https://docs.pkgforge.dev/repositories/bincache/faq#history-and-lore](https://docs.pkgforge.dev/repositories/bincache/faq#history-and-lore)
+* After [Azathothas/Toolpacks#28](https://github.com/Azathothas/Toolpacks/issues/28), [PkgCache](https://docs.pkgforge.dev/repositories/pkgcache) was created **\~ Sep 25, 2024**, You can read more about it here: [https://docs.pkgforge.dev/repositories/pkgcache/faq#history-and-lore](https://docs.pkgforge.dev/repositories/pkgcache/faq#history-and-lore)
+* We realized it pretty quickly that, [PkgCache](https://docs.pkgforge.dev/repositories/pkgcache) wasn't sustainable, and a User Repository consisting of community submitted packages, just like [**ivan-hc/AM**](https://github.com/ivan-hc/AM), was desperately needed. Thus, [Soarpkgs](https://github.com/pkgforge/soarpkgs), came into existence [`~ Nov 04, 2024`](https://github.com/pkgforge/soarpkgs/commit/47b3023010232dfe8b13a83a1daa688e57aa21f1)
 
 [^1]: Can't be distributed as a standalone static binary with no dependencies
