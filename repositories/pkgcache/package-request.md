@@ -8,14 +8,15 @@ description: How to request a new Package to be added to the Cache
 ### Criteria
 
 {% hint style="warning" %}
-Exceptions Apply, [**Discussion**](https://github.com/pkgforge/pkgcache/issues) is encouraged
+Exceptions Apply, [**Discussion**](https://github.com/pkgforge/soarpkgs/discussions) is encouraged
 {% endhint %}
 
 * [x] Must already exist as a [<mark style="color:purple;">**`.SBUILD`**</mark>](broken-reference)at [**SoarPkgs (pkgforge-community)**](https://github.com/pkgforge/soarpkgs/blob/main/README.md)
 * [x] Must be **Portable**, i.e. must work on all **Libc** ([GLIBC](https://www.gnu.org/software/libc/), [MUSL](https://musl.libc.org/) etc) **Linux Distros**
 * [x] Must have **an entry on** [**RepoLogy**](https://repology.org/projects/)
 * [x] Must have **received an update** within the **last 6 Month** or, at the very extent, within the **last 12 Month**.
-* [x] If on [**GitHub**](https://github.com/) & Official, then it must have at least **100 Stars,** or otherwise be a well known package
+* [x] If on [**GitHub**](https://github.com/) & Official, then it must have at least **10 Stars,** or otherwise be a well known package
+* [x] The project must have a permissive `license` that allows binary redistribution
 * [x] Optionally, also already exist at [https://flathub.org/](https://flathub.org/), tho this is not a hard requirement.
 
 ### Guide

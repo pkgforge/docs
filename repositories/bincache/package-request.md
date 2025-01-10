@@ -5,6 +5,22 @@ description: How to request a new Package to be added to the Cache
 
 # Package-Request
 
+### Criteria
+
+{% hint style="warning" %}
+Exceptions Apply, [**Discussion**](https://github.com/pkgforge/soarpkgs/discussions) is encouraged
+{% endhint %}
+
+* [x] Must already exist as a [**`.SBUILD`**](https://docs.pkgforge.dev/sbuild/introduction)at [**SoarPkgs (pkgforge-community)**](https://github.com/pkgforge/soarpkgs/blob/main/README.md)
+* [x] Must be **Portable**, i.e. must work on all **Libc** ([GLIBC](https://www.gnu.org/software/libc/), [MUSL](https://musl.libc.org/) etc) **Linux Distros**
+* [x] Must have **an entry on** [**RepoLogy**](https://repology.org/projects/)
+* [x] The total age of the project must be at least `~ 1 month`
+* [x] Must have **received an update** within the **last 6 Month** or, at the very extent, within the **last 12 Month**.
+* [x] If on Github, must have at least `10 stars`
+* [x] The project must have a permissive `license` that allows binary redistribution
+
+***
+
 ### Guide
 
 {% hint style="info" %}
@@ -24,13 +40,4 @@ soar search "${PKG_NAME}"
 
 {% hint style="warning" %}
 Fill all the required fields, **If you don't put effort into requesting a tool/pkg to be added here, neither will we.**
-{% endhint %}
-
-### Criteria
-
-{% hint style="warning" %}
-* [x] If on Github, must have at least `10 stars`
-* [x] The total age of the project must be at least `~ 1 month`
-* [x] The most recent commit must NOT be older than `~ 12 months`
-* [x] The project must have a permissive `license` that allows binary redistribution
 {% endhint %}
