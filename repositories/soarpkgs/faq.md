@@ -54,6 +54,7 @@ Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.m
 
 * [**GitHub Search**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse++stars%3A%3E5+GUI+OR+Portable+OR+Package\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false  stars:>5 GUI OR Portable OR Package`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
 * **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba](https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba)
+* **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-binaries-tba](https://github.com/stars/Azathothas/lists/soarpkgs-binaries-tba)
 
 ***
 
