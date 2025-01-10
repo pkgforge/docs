@@ -26,6 +26,22 @@ Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.m
 
 ***
 
+### GLIBC vs MUSL
+
+[MUSL](https://musl.libc.org/) is indeed slow, See:
+
+* [https://edu.chainguard.dev/chainguard/chainguard-images/about/images-compiled-programs/glibc-vs-musl](https://edu.chainguard.dev/chainguard/chainguard-images/about/images-compiled-programs/glibc-vs-musl)
+* [https://martinheinz.dev/blog/92](https://martinheinz.dev/blog/92)
+* [https://andygrove.io/2020/05/why-musl-extremely-slow/](https://andygrove.io/2020/05/why-musl-extremely-slow/)
+* [http://www.etalabs.net/compare\_libcs.html](http://www.etalabs.net/compare_libcs.html)
+
+However, we use  [**`mimalloc`**](https://github.com/microsoft/mimalloc)  over other the default musl allocators, and also prefer [**LTO**](https://gcc.gnu.org/wiki/LinkTimeOptimization) &  [**PIE**](https://en.wikipedia.org/wiki/Position-independent_code) , this means the packages we compile from source have identical performance to their GLIBC counterparts, sometimes even faster.
+
+* [https://www.linkedin.com/pulse/linux-testing-alternative-c-memory-allocators-emerson-gomes/](https://www.linkedin.com/pulse/linux-testing-alternative-c-memory-allocators-emerson-gomes/)
+* [https://www.linkedin.com/pulse/testing-alternative-c-memory-allocators-pt-2-musl-mystery-gomes/](https://www.linkedin.com/pulse/testing-alternative-c-memory-allocators-pt-2-musl-mystery-gomes/)
+
+***
+
 ### **Why not contribute Upstream?**
 
 1. Unfortunately, with the [**mass adoption of Flatpaks**](https://flatpak.org/), most developers have no interest in AppImages or [**other formats**](../../formats/packages/)
