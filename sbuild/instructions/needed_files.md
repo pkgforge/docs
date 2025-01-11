@@ -11,7 +11,7 @@ description: Files produced at end of a successful SBUILD
 
 {% hint style="info" %}
 - [x] **Description**: The actual <mark style="color:orange;">**binary/package**</mark> that was built
-- [x] **Min\_Size**: <mark style="color:orange;">**`> 10KB`**</mark>
+- [x] **Min\_Size**: <mark style="color:orange;">**`> 1KB`**</mark>
 {% endhint %}
 
 * [x] <mark style="color:orange;">**`${SBUILD_OUTDIR}/.version`**</mark> | <mark style="color:orange;">**`${SBUILD_OUTDIR}/${PKG}.version`**</mark> <mark style="color:red;">**`ENFORCED`**</mark>
@@ -32,7 +32,7 @@ description: Files produced at end of a successful SBUILD
 
 {% hint style="info" %}
 - [x] **Description**: <mark style="color:orange;">**`DirIcon`**</mark>, _Preferred as_ <mark style="color:purple;">**`Icon`**</mark> **if** <mark style="color:orange;">**${SBUILD\_OUTDIR}/${PKG}.png**</mark> OR <mark style="color:orange;">**${SBUILD\_OUTDIR}/${PKG}.svg**</mark> **DO NOT Exist**
-- [x] **Min\_Size**: <mark style="color:orange;">**`> 1KB`**</mark>
+- [x] **Min\_Size**: <mark style="color:orange;">**`> 20Bytes`**</mark>
 - [x] Only Available for [**Packages**](../../formats/packages/) **NOT** for [**Binaries**](../../formats/binaries/)
 {% endhint %}
 
@@ -40,7 +40,7 @@ description: Files produced at end of a successful SBUILD
 
 {% hint style="info" %}
 - [x] **Description**: _Preferred even_ **if&#x20;**<mark style="color:orange;">**${SBUILD\_OUTDIR}/${PKG}.png**</mark> OR <mark style="color:orange;">**${SBUILD\_OUTDIR}/${PKG}.svg**</mark> **Exists due to Higher Resolution**
-- [x] **Min\_Size**: <mark style="color:orange;">**`> 1KB`**</mark>
+- [x] **Min\_Size**: <mark style="color:orange;">**`> 20BYTES`**</mark>
 - [x] Only Available for [**Packages**](../../formats/packages/) **NOT** for [**Binaries**](../../formats/binaries/)
 {% endhint %}
 
