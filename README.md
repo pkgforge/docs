@@ -25,5 +25,4 @@ layout:
 
 ## About
 
-Welcome to [Package Forge](https://github.com/pkgforge), Improving Package Management for `*Unix` Systems with [Thousands of Statically Compiled Binaries](formats/binaries/), [Portable Packages like AppImage & More](formats/packages/) and a [Package Manager written in Blazingly 🚀🚀 Fast 🦀 Rust](https://github.com/pkgforge/soar)
-
+Welcome to [Package Forge](https://github.com/pkgforge), Improving Package Management for `*Unix` Systems with [Thousands](https://pkgs.pkgforge.dev/) of [Statically Compiled Binaries](formats/binaries/), [Portable Packages like AppImage & More](formats/packages/) and a [Package Manager written in Blazingly 🚀🚀 Fast 🦀 Rust](https://github.com/pkgforge/soar)

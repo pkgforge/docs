@@ -34,7 +34,7 @@ Currently, our cache is of two types:
 
 {% hint style="info" %}
 * [x] [Bincache](../bincache/) provides prebuilt Static Binaries ([soarpkgs/binaries](https://github.com/pkgforge/soarpkgs/tree/main/binaries)): [cache.md](../bincache/cache.md "mention")
-* [x] Pkgcache provides prebuilt GUI Apps ([soarpkgs/packages](https://github.com/pkgforge/soarpkgs/tree/main/packages)): [cache.md](../pkgcache/cache.md "mention")
+* [x] [Pkgcache](../pkgcache/) provides prebuilt GUI Apps ([soarpkgs/packages](https://github.com/pkgforge/soarpkgs/tree/main/packages)): [cache.md](../pkgcache/cache.md "mention")
 {% endhint %}
 
 ***
@@ -52,6 +52,32 @@ However, we use  [**`mimalloc`**](https://github.com/microsoft/mimalloc)  over o
 
 * [https://www.linkedin.com/pulse/linux-testing-alternative-c-memory-allocators-emerson-gomes/](https://www.linkedin.com/pulse/linux-testing-alternative-c-memory-allocators-emerson-gomes/)
 * [https://www.linkedin.com/pulse/testing-alternative-c-memory-allocators-pt-2-musl-mystery-gomes/](https://www.linkedin.com/pulse/testing-alternative-c-memory-allocators-pt-2-musl-mystery-gomes/)
+
+***
+
+### Portability
+
+We wrote a [manifesto](https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md), and we stand by it. And thus, we do the following to ensure we guarantee at least some level of portability for each package:
+
+{% hint style="info" %}
+* [x] We provide prebuilt packages as [#cache](faq.md#cache "mention")so user don't have to build packages themselves. This avoids user's having to install some common dependencies to build a package.&#x20;
+* [x] Dependency heavy packages for instance typically involve docker containers, so we mark these kind of **SBUILDs** with a [**note**](../../sbuild/specification/15.note.md):
+
+```yaml
+note:
+  - "[DO NOT RUN] (Meant for pkgforge CI Only)"
+```
+{% endhint %}
+
+{% hint style="info" %}
+* [x] We have written dedicated documentation about each format & their portability, you can find them at [${format}/portability](https://docs.pkgforge.dev/formats/packages)
+* [ ] You can also specifically filter & only use portable packages at the **expense of size**, we add a special [**note**](../../sbuild/specification/15.note.md) if we are confident the package works on Any Linux
+
+```yaml
+note:
+  - "[PORTABLE] (Works on Any LIBC)"
+```
+{% endhint %}
 
 ***
 

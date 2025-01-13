@@ -44,7 +44,7 @@ These are usually **GUI Applications** packaged in one of the following formats:
 [nixappimage](nixappimage/)
 {% endcontent-ref %}
 
-{% content-ref url="runimage-tbd/" %}
-[runimage-tbd](runimage-tbd/)
+{% content-ref url="runimage/" %}
+[runimage](runimage/)
 {% endcontent-ref %}
 
