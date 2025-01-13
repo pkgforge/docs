@@ -1,16 +1,18 @@
 ---
-description: User Namespace & Related
 icon: square-up-right
+description: User Namespace & Related
 ---
 
 # Namespaces
 
-{% hint style="info" %}
-* The TLDR is that it's a way to isolate user and group IDs between processes, like creating a "mini operating system" inside the real operating system.
-* In a user namespace, a process can think it's running as the root user (with all the usual admin powers), but in reality, it's still a regular user outside of that namespace.
-* This allows AppImages (& Variants) think they have full control, but in fact, they are limited to what the outer system allows.
-* Some distros like [Ubuntu](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces) disable it using AppArmor for security: [https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces)
-* But you can disable that, and just use modern Sandboxing Tools like [BubbleWrap](https://github.com/containers/bubblewrap) & [firejail](https://github.com/netblue30/firejail). Or Wrappers like [AISAP](https://github.com/mgord9518/aisap) & [Chains](https://github.com/xplshn/chains)
+{% hint style="warning" %}
+**To better understand why the warnings & why the solutions, it is recommended to read:**
+
+* [x] The TLDR is that it's a way to isolate user and group IDs between processes, like creating a "mini operating system" inside the real operating system.
+* [x] In a user namespace, a process can think it's running as the root user (with all the usual admin powers), but in reality, it's still a regular user outside of that namespace.
+* [x] This allows AppImages (& Variants) think they have full control, but in fact, they are limited to what the outer system allows.
+* [x] Some distros like [Ubuntu](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces) disable it using AppArmor for security: [https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces) (Also see [https://getsol.us/2024/07/15/dropping-apparmor-kernel-patches/](https://getsol.us/2024/07/15/dropping-apparmor-kernel-patches/) & [https://github.com/linuxmint/mint22-beta/issues/82](https://github.com/linuxmint/mint22-beta/issues/82))
+* [x] But you can disable that, and just use modern Sandboxing Tools like [BubbleWrap](https://github.com/containers/bubblewrap) & [firejail](https://github.com/netblue30/firejail). Or Wrappers like [AISAP](https://github.com/mgord9518/aisap) & [Chains](https://github.com/xplshn/chains)
 {% endhint %}
 
 ***
@@ -63,7 +65,7 @@ sudo dmesg | grep -E '(selinux|apparmor|security)'
 ```
 {% endcode %}
 
-#### <mark style="color:orange;">**`[WARN]`**</mark><mark style="color:orange;">**` `**</mark><mark style="color:orange;">**`You must`**</mark><mark style="color:green;">**`Enable`**</mark><mark style="color:orange;">**`unprivileged_userns_clone`**</mark>
+#### <mark style="color:orange;">**`[WARN] You must`**</mark><mark style="color:green;">**`Enable`**</mark><mark style="color:orange;">**`unprivileged_userns_clone`**</mark>
 
 {% code overflow="wrap" %}
 ```bash
