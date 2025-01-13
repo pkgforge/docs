@@ -62,7 +62,7 @@ soar add 'bash/bash#base' \
 > {% code overflow="wrap" %}
 > ```sh
 > !#Add it using Soar
-> soar add "sbuild-linter#bin" "shellcheck#bin"
+> soar add "sbuild-linter" "shellcheck"
 > #Or Download manually & Add to Path: https://github.com/pkgforge/sbuilder/releases
 >
 > !#Run it with /path/to/your/SBUILD
@@ -80,9 +80,21 @@ soar add 'bash/bash#base' \
 
 ### Build
 
-* [ ] To Do
+{% hint style="warning" %}
+It is recommended you setup a sandbox or containerized environment before running arbitrary SBUILDs that have NOT been approved by a maintainer into [pkgforge/soarpkgs](https://github.com/pkgforge/soarpkgs)
+{% endhint %}
 
+* [x] [**Install sbuild**](https://github.com/pkgforge/sbuilder)
 
+```bash
+!#Add it using Soar
+soar add "sbuild" "shellcheck"
+#Or Download manually & Add to Path: https://github.com/pkgforge/sbuilder/releases
+
+!#Run it with /path/to/your/SBUILD
+sbuild "./example.SBUILD" --log-level "verbose" --keep --outdir "./SBUILD-TEST"
+#If it's not successful, fix your errors
+```
 
 [^1]: Only needed if you intend to use the Automation Scripts.\
     Otherwise, you may skip this & just do everything manually
