@@ -26,6 +26,19 @@ Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.m
 
 ***
 
+### Cache
+
+Cache refers to prebuilds provided by pkgforge's CI that soar uses by default. Think of it as the [Chaotic AUR](https://aur.chaotic.cx/) or [Homebrew's bottles](https://docs.brew.sh/Bottles).
+
+Currently, our cache is of two types:
+
+{% hint style="info" %}
+* [x] [Bincache](../bincache/) provides prebuilt Static Binaries ([soarpkgs/binaries](https://github.com/pkgforge/soarpkgs/tree/main/binaries)): [cache.md](../bincache/cache.md "mention")
+* [x] Pkgcache provides prebuilt GUI Apps ([soarpkgs/packages](https://github.com/pkgforge/soarpkgs/tree/main/packages)): [cache.md](../pkgcache/cache.md "mention")
+{% endhint %}
+
+***
+
 ### GLIBC vs MUSL
 
 [MUSL](https://musl.libc.org/) is indeed slow, See:
