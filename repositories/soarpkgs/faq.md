@@ -71,7 +71,7 @@ note:
 
 {% hint style="info" %}
 * [x] We have written dedicated documentation about each format & their portability, you can find them at [${format}/portability](https://docs.pkgforge.dev/formats/packages)
-* [ ] You can also specifically filter & only use portable packages at the **expense of size**, we add a special [**note**](../../sbuild/specification/15.note.md) if we are confident the package works on Any Linux
+* [x] You can also specifically filter & only use portable packages at the **expense of size**, we add a special [**note**](../../sbuild/specification/15.note.md) if we are confident the package works on Any Linux
 
 ```yaml
 note:
