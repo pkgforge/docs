@@ -60,7 +60,7 @@ However, we use  [**`mimalloc`**](https://github.com/microsoft/mimalloc)  over o
 We wrote a [manifesto](https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md), and we stand by it. And thus, we do the following to ensure we guarantee at least some level of portability for each package:
 
 {% hint style="info" %}
-* [x] We provide prebuilt packages as [#cache](faq.md#cache "mention")so user don't have to build packages themselves. This avoids user's having to install some common dependencies to build a package.&#x20;
+* [x] We provide prebuilt packages as [#cache](faq.md#cache "mention") ,so users don't have to build packages themselves. This avoids users having to install some common dependencies to build a package.&#x20;
 * [x] Dependency heavy packages for instance typically involve docker containers, so we mark these kind of **SBUILDs** with a [**note**](../../sbuild/specification/15.note.md):
 
 ```yaml
