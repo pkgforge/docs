@@ -75,7 +75,7 @@ note:
 
 ```yaml
 note:
-  - "[PORTABLE] (Works on Any LIBC)"
+  - "[PORTABLE] (#some comments)"
 ```
 {% endhint %}
 
