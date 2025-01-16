@@ -107,7 +107,8 @@ note:
 
 ### Public Tools Search
 
-* [**GitHub Search**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse++stars%3A%3E5+GUI+OR+Portable+OR+Package\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false  stars:>5 GUI OR Portable OR Package`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
+* [**Search Awesome CLI**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse+lang%3Ac+lang%3Acrystal+lang%3Ago+lang%3Anim+lang%3Arust+lang%3Azig+stars%3A%3E5+cli+OR+tool+OR+utility\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false lang:c lang:crystal lang:go lang:nim lang:rust lang:zig stars:>5 cli OR tool OR utility`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
+* [**Search Awesome GUI**](https://github.com/search?q=is%3Apublic+archived%3Afalse+template%3Afalse++stars%3A%3E5+GUI+OR+Portable+OR+Package\&type=repositories\&s=updated\&o=desc): <mark style="color:orange;">`is:public archived:false template:false  stars:>5 GUI OR Portable OR Package`</mark> (**Sorted By**: <mark style="color:purple;">`Recently Updated`</mark>)
 * **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba](https://github.com/stars/Azathothas/lists/soarpkgs-packages-tba)
 * **List**: [https://github.com/stars/Azathothas/lists/soarpkgs-binaries-tba](https://github.com/stars/Azathothas/lists/soarpkgs-binaries-tba)
 
