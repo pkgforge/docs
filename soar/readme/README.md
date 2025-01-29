@@ -12,5 +12,5 @@ We just hope you will go through these & form your own conclusions.
 
 1. [**Candidates**](candidates.md): All Package Managers we compared & evaluated
 2. [**Dependencies**](dependencies.md): The Overall Install & Setup Steps as well as the Dependencies that are needed to use each Selected Package Managers
-3. [**Packages**](broken-reference): The Overall Package Ecosystem of each Selected Package Managers
+3. [**Packages**](packages.md): The Overall Package Ecosystem of each Selected Package Managers
 4. [**Security**](security.md): The Overall Security Posture of each Selected Package Managers
