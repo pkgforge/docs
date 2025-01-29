@@ -57,7 +57,7 @@ jobs:
           ##presets
           set +x ; set +e
           #-------------#
-          bash <(curl -qfsSL "https://pub.ajam.dev/repos/Azathothas/Arsenal/misc/Linux/install_dev_tools.sh")
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
         continue-on-error: true
 
       - name: Fix GIFs
