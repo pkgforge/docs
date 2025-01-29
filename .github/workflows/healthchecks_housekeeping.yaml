@@ -66,10 +66,10 @@ jobs:
           set +x ; set +e
           #--------------#
           cd "${GITHUB_WORKSPACE}/main" && git pull origin main || git pull origin main --ff-only || git merge --no-ff -m "Merge & Sync"
-          find "${GITHUB_WORKSPACE}/main" -type f -name "*.md" -not -path '*/.*' -print0 | xargs -0 sed -i -E "s~(https://bin\.pkgforge\.dev/list\.gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g"
+          find "${GITHUB_WORKSPACE}/main" -type f -name "*.md" -not -path '*/.*' -print0 | xargs -0 sed -i -E "s~(https://soar\.pkgforge\.dev/gif)[^\"]*~\1?$(basename "$(mktemp -u)")=$(basename "$(mktemp -u)")~g"
         continue-on-error: true
 
-      - name: Update (https://docs.pkgforge.dev/soar/comparisons/packages)
+      - name: Update (https://docs.pkgforge.dev/soar/readme/packages)
         run: |
           #Presets
           set +x ; set +e
@@ -78,30 +78,31 @@ jobs:
           #https://github.com/ivan-hc/AM/tree/main/programs
           AM_PKGNUM="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/x86_64-apps" | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${AM_PKGNUM}" -gt 2000 ]; then
-             sed -E "s/(<td>)[0-9]+(<\/td>)/\1${AM_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
+             sed -E "s/(<td>)[0-9]+(<\/td>)/\1${AM_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi 
           #https://formulae.brew.sh/docs/api/
           BREW_PKGNUM="$(curl -qfsSL "https://formulae.brew.sh/api/formula.json" | jq -r '.[] | .name' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${BREW_PKGNUM}" -gt 7000 ]; then
-             sed -E "s/(<td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${BREW_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
+             sed -E "s/(<td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${BREW_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
           #https://github.com/pacstall/pacstall-programs/tree/master/packages
           PACSTALL_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/pacstall/pacstall-programs/contents/packages" | jq -r '.[] | select(.type == "dir") | .name' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${PACSTALL_PKGNUM}" -gt 600 ]; then
-             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PACSTALL_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
+             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PACSTALL_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
           #https://github.com/leleliu008/ppkg-formula-repository-official-core/tree/master/formula
           PPKG_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/leleliu008/ppkg-formula-repository-official-core/contents/formula" | jq -r '.[] | select(.type == "file") | .name' | grep -Ei '\.(yml|yaml)$' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${PPKG_PKGNUM}" -gt 900 ]; then
-             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
+             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##https://docs.pkgforge.dev/repositories/pkgforge-edge/metadata
-          CACHE_PKG_NUM="$(curl -qfsSL "https://bin.pkgforge.dev/x86_64/METADATA.AIO.json" | jq -r '(.base[], .bin[], .pkg[]) | .pkg' | wc -l | tr -d '[:space:]')"
-          #https://docs.pkgforge.dev/repositories/pkgforge-community/metadata
-          SBUILD_PKG_NUM="$(curl -qfsSL "https://soarpkgs.pkgforge.dev/metadata/METADATA.json" | jq -r '.[] | .pkg' | wc -l | tr -d '[:space:]')"
+          ##https://docs.pkgforge.dev/repositories/bincache/metadata
+          ##https://docs.pkgforge.dev/repositories/pkgcache/metadata
+          CACHE_PKG_NUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/TOTAL_CACHE.txt" | tr -d '[:space:]')"
+          #https://docs.pkgforge.dev/repositories/soarpkgs/metadata
+          SBUILD_PKG_NUM="$(curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | .pkg_id' | wc -l | tr -d '[:space:]')"
           PKG_NUM="$((CACHE_PKG_NUM + SBUILD_PKG_NUM))"
           if [ "${PKG_NUM}" -gt 4000 ]; then
-             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PKG_NUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/comparisons/packages.md"
+             sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PKG_NUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
         continue-on-error: true
 
