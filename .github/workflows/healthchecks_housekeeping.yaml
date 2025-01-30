@@ -91,8 +91,8 @@ jobs:
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PACSTALL_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
           #https://github.com/leleliu008/ppkg-formula-repository-official-core/tree/master/formula
-          PPKG_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/leleliu008/ppkg-formula-repository-official-core/contents/formula" | jq -r '.[] | select(.type == "file") | .name' | grep -Ei '\.(yml|yaml)$' | sort -u | wc -l | tr -d '[:space:]')"
-          if [ "${PPKG_PKGNUM}" -gt 900 ]; then
+          PPKG_PKGNUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/data/PPKG.json" | jq -r '.[] | .pkg' | sort -u | wc -l | tr -d '[:space:]')"
+          if [ "${PPKG_PKGNUM}" -gt 1000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
           ##https://docs.pkgforge.dev/repositories/bincache/metadata
@@ -101,7 +101,7 @@ jobs:
           #https://docs.pkgforge.dev/repositories/soarpkgs/metadata
           SBUILD_PKG_NUM="$(curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | .pkg_id' | wc -l | tr -d '[:space:]')"
           PKG_NUM="$((CACHE_PKG_NUM + SBUILD_PKG_NUM))"
-          if [ "${PKG_NUM}" -gt 4000 ]; then
+          if [ "${PKG_NUM}" -gt 6000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PKG_NUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
         continue-on-error: true
