@@ -219,7 +219,7 @@ https://raw.githubusercontent.com/pkgforge/metadata/main/bincache/data/${HOST}.j
 
 {% code overflow="wrap" %}
 ```bash
-https://hf.bincache.pkgforge.dev/${HOST}/METADATA.json
+https://hf.bincache.pkgforge.dev/${HOST}.json
 ```
 {% endcode %}
 {% endhint %}

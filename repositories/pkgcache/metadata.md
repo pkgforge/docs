@@ -222,7 +222,7 @@ https://raw.githubusercontent.com/pkgforge/metadata/main/pkgcache/data/${HOST}.j
 
 {% code overflow="wrap" %}
 ```bash
-https://hf.pkgcache.pkgforge.dev/${HOST}/METADATA.json
+https://hf.pkgcache.pkgforge.dev/${HOST}.json
 ```
 {% endcode %}
 {% endhint %}
