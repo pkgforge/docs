@@ -55,17 +55,7 @@ soar log "<PACKAGE>"
 {% endhint %}
 
 {% hint style="warning" %}
-If you get a 404 or it errors out, you can get the full logs for [**Toolpacks (BinCache)**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/toolpacks-bincache) here:
-
-* [x] <mark style="color:orange;">**`aarch64-Linux`**</mark> :  [https://bin.pkgforge.dev/aarch64/BUILD.log.txt ](https://bin.pkgforge.dev/aarch64/BUILD.log.txt)
-* [x] <mark style="color:orange;">**`x86_64-Linux`**</mark> :  [https://bin.pkgforge.dev/x86\_64/BUILD.log.txt ](https://bin.pkgforge.dev/x86_64/BUILD.log.txt)
-{% endhint %}
-
-{% hint style="warning" %}
-If you get a 404 or it errors out, you can get the full logs for [**PkgCache**](https://docs.pkgforge.dev/orgs/pkgforge-core/projects/pkgcache) here:
-
-* [x] <mark style="color:orange;">**`aarch64-Linux`**</mark> :  [https://pkg.pkgforge.dev/aarch64/BUILD.log.txt ](https://pkg.pkgforge.dev/aarch64/BUILD.log.txt)
-* [x] <mark style="color:orange;">**`x86_64-Linux`**</mark> :  [https://pkg.pkgforge.dev/x86\_64/BUILD.log.txt](https://pkg.pkgforge.dev/x86_64/BUILD.log.txt)&#x20;
+If you get a 404 or it errors out, you can get the full logs here: [https://meta.pkgforge.dev/pkgcache/logs/](https://meta.pkgforge.dev/pkgcache/logs/)
 {% endhint %}
 
 * [x] Both <mark style="color:orange;">**`SHA256SUM`**</mark> & <mark style="color:orange;">**`BLAKE3SUM`**</mark> are automatically generated right after build script finishes.
