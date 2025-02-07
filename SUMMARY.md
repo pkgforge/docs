@@ -141,6 +141,8 @@
   * [Metadata](repositories/pkgcache/metadata.md)
   * [Package-Request](repositories/pkgcache/package-request.md)
   * [Security](repositories/pkgcache/security.md)
+* [external](repositories/external/README.md)
+  * [AM](repositories/external/am.md)
 
 ## Contact
 
