@@ -143,6 +143,7 @@
   * [Security](repositories/pkgcache/security.md)
 * [external](repositories/external/README.md)
   * [AM](repositories/external/am.md)
+  * [appimage.github.io](repositories/external/appimage.github.io.md)
 
 ## Contact
 
