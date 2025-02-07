@@ -1,6 +1,6 @@
 ---
 icon: user-bounty-hunter
-description: AppImage Manager (AM)
+description: Application Manager (AM)
 ---
 
 # AM
