@@ -79,9 +79,9 @@ jobs:
           ##AM##
           #https://github.com/ivan-hc/AM/tree/main/programs
           AM_PKGNUM_AARCH64="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/aarch64-apps" | sort -u | wc -l | tr -d '[:space:]')"
-          AM_PKGNUM_I686="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/i686-apps" | sort -u | wc -l | tr -d '[:space:]')"
+          #AM_PKGNUM_I686="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/i686-apps" | sort -u | wc -l | tr -d '[:space:]')"
           AM_PKGNUM_X86_64="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/x86_64-apps" | sort -u | wc -l | tr -d '[:space:]')"
-          AM_PKGNUM="$((AM_PKGNUM_AARCH64 + AM_PKGNUM_I686 + AM_PKGNUM_X86_64))"
+          AM_PKGNUM="$((AM_PKGNUM_AARCH64 + AM_PKGNUM_X86_64))"
           if [ "${AM_PKGNUM}" -gt 2000 ]; then
              sed -E "s/(<td>)[0-9]+(<\/td>)/\1${AM_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
