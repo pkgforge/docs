@@ -90,7 +90,7 @@ This specifies if the **package repository** contain **prebuilds,** i.e. package
 The total number of packages (each recipe is counted individually) [auto updated](../../.github/workflows/healthchecks_housekeeping.yaml) every 2hrs
 {% endhint %}
 
-<table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2715</td><td>7399</td><td>1412</td><td>2552</td><td>9020</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2650</td><td>7399</td><td>1412</td><td>2552</td><td>9020</td></tr></tbody></table>
 
 [^1]: Depends on what source they use
 
