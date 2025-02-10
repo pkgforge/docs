@@ -75,6 +75,8 @@ jobs:
           set +x ; set +e
           #--------------#
           cd "${GITHUB_WORKSPACE}/main"
+          #--------------#
+          ##AM##
           #https://github.com/ivan-hc/AM/tree/main/programs
           AM_PKGNUM_AARCH64="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/aarch64-apps" | sort -u | wc -l | tr -d '[:space:]')"
           AM_PKGNUM_I686="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/i686-apps" | sort -u | wc -l | tr -d '[:space:]')"
@@ -83,25 +85,41 @@ jobs:
           if [ "${AM_PKGNUM}" -gt 2000 ]; then
              sed -E "s/(<td>)[0-9]+(<\/td>)/\1${AM_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##Provides no aarch64 bottles for Linux as of 2025-02-10
+          #--------------#
+          ##Brew##
           #https://formulae.brew.sh/docs/api/
+          #Provides no aarch64 bottles for Linux as of 2025-02-10
           BREW_PKGNUM="$(curl -qfsSL "https://formulae.brew.sh/api/formula.json" | jq -r '.[] | .name' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${BREW_PKGNUM}" -gt 7000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${BREW_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##Offers no way to count per arch
+          #--------------#
+          ##Pacstall##
           #https://github.com/pacstall/pacstall-programs/tree/master/packages
-          PACSTALL_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/pacstall/pacstall-programs/contents/packages" | jq -r '.[] | select(.type == "dir") | .name' | sort -u | wc -l | tr -d '[:space:]')"
+           #PACSTALL_PKGNUM_TMP="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/pacstall/pacstall-programs/contents/packages" | jq -r '.[] | select(.type == "dir") | .name' | sort -u | wc -l | tr -d '[:space:]')"
+          pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://github.com/pacstall/pacstall-programs" && cd "./pacstall-programs"
+          git sparse-checkout set "" && git checkout
+          PACSTALL_REPO_LOCAL="$(realpath .)" && export PACSTALL_REPO_LOCAL="${PACSTALL_REPO_LOCAL}"
+          if [[ -d "${PACSTALL_REPO_LOCAL}" ]] && [[ $(du -s "${PACSTALL_REPO_LOCAL}" | cut -f1) -gt 100 ]]; then
+            PACSTALL_PKGNUM_TMP="$(git -C "${PACSTALL_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "packages/" | xargs -I "{}" basename "{}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | grep -Eiv '\.(git|md|txt)' | wc -l | tr -d '[:space:]')"
+          fi
+          #Offers no way to count per arch , so we multiply by 2 just in case
+          PACSTALL_PKGNUM="$((PACSTALL_PKGNUM_TMP * 2))"
           if [ "${PACSTALL_PKGNUM}" -gt 600 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PACSTALL_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##Offers no way to count per arch
+          #--------------#
+          ##PPKG##
+          #Offers no way to count per arch, so we multiply by 2 just in case
           #https://github.com/leleliu008/ppkg-formula-repository-official-core/tree/master/formula
-          PPKG_PKGNUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/data/PPKG.json" | jq -r '.[] | .pkg' | sort -u | wc -l | tr -d '[:space:]')"
+          PPKG_PKGNUM_MULTI="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/data/PPKG.json" | jq -r '.[] | .pkg' | sort -u | wc -l | tr -d '[:space:]')"
+          PPKG_PKGNUM="$((PPKG_PKGNUM_MULTI * 2))"
           if [ "${PPKG_PKGNUM}" -gt 1000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##https://github.com/pkgforge/metadata#counts
+          #--------------#
+          ##Soar##
+          #https://github.com/pkgforge/metadata#counts
           #CACHE_PKG_NUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/TOTAL_CACHE.txt" | tr -d '[:space:]')"
           ##https://docs.pkgforge.dev/repositories/soarpkgs/metadata
           #SBUILD_PKG_NUM="$(curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | .pkg_id' | wc -l | tr -d '[:space:]')"
