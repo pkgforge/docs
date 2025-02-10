@@ -99,7 +99,7 @@ jobs:
            #PACSTALL_PKGNUM_TMP="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/pacstall/pacstall-programs/contents/packages" | jq -r '.[] | select(.type == "dir") | .name' | sort -u | wc -l | tr -d '[:space:]')"
           pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://github.com/pacstall/pacstall-programs" && cd "./pacstall-programs"
           git sparse-checkout set "" && git checkout
-          PACSTALL_REPO_LOCAL="$(realpath .)" && export PACSTALL_REPO_LOCAL="${PACSTALL_REPO_LOCAL}"
+          PACSTALL_REPO_LOCAL="$(realpath .)" && export PACSTALL_REPO_LOCAL="${PACSTALL_REPO_LOCAL}" ; popd &>/dev/null
           if [[ -d "${PACSTALL_REPO_LOCAL}" ]] && [[ $(du -s "${PACSTALL_REPO_LOCAL}" | cut -f1) -gt 100 ]]; then
             PACSTALL_PKGNUM_TMP="$(git -C "${PACSTALL_REPO_LOCAL}" ls-tree --name-only 'HEAD' -- "packages/" | xargs -I "{}" basename "{}" | sort -u | sed -E 's/^[[:space:]]+|[[:space:]]+$//g' | grep -Eiv '\.(git|md|txt)' | wc -l | tr -d '[:space:]')"
           fi
