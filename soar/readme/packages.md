@@ -49,8 +49,6 @@ This specifies if any of the packages offered by the package managers are usable
 
 {% hint style="success" %}
 This specifies if the **package repository** contain **prebuilds,** i.e. packages are **directly&#x20;**<mark style="color:green;">**downloadable**</mark>**&#x20;without&#x20;**<mark style="color:orange;">**building/fixing/patching**</mark>**&#x20;anything**.
-
-
 {% endhint %}
 
 | Package Manager                                                                                 | Provides Prebuilts?                                                                                                                                                   |
@@ -87,7 +85,8 @@ This specifies if the **package repository** contain **prebuilds,** i.e. package
 ### Total
 
 {% hint style="info" %}
-The total number of packages (each recipe is counted individually) [auto updated](../../.github/workflows/healthchecks_housekeeping.yaml) every 2hrs
+* The total number of packages (each arch/recipe is counted individually) [auto updated](../../.github/workflows/healthchecks_housekeeping.yaml) every 2hrs
+* See how: [https://github.com/pkgforge/docs/blob/main/.github/workflows/healthchecks\_housekeeping.yaml](../../.github/workflows/healthchecks_housekeeping.yaml)
 {% endhint %}
 
 <table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2650</td><td>7399</td><td>1412</td><td>2552</td><td>9020</td></tr></tbody></table>
