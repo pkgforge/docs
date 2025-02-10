@@ -76,32 +76,38 @@ jobs:
           #--------------#
           cd "${GITHUB_WORKSPACE}/main"
           #https://github.com/ivan-hc/AM/tree/main/programs
-          AM_PKGNUM="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/x86_64-apps" | sort -u | wc -l | tr -d '[:space:]')"
+          AM_PKGNUM_AARCH64="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/aarch64-apps" | sort -u | wc -l | tr -d '[:space:]')"
+          AM_PKGNUM_I686="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/i686-apps" | sort -u | wc -l | tr -d '[:space:]')"
+          AM_PKGNUM_X86_64="$(curl -qfsSL "https://raw.githubusercontent.com/ivan-hc/AM/refs/heads/main/programs/x86_64-apps" | sort -u | wc -l | tr -d '[:space:]')"
+          AM_PKGNUM="$((AM_PKGNUM_AARCH64 + AM_PKGNUM_I686 + AM_PKGNUM_X86_64))"
           if [ "${AM_PKGNUM}" -gt 2000 ]; then
              sed -E "s/(<td>)[0-9]+(<\/td>)/\1${AM_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
-          fi 
+          fi
+          ##Provides no aarch64 bottles for Linux as of 2025-02-10
           #https://formulae.brew.sh/docs/api/
           BREW_PKGNUM="$(curl -qfsSL "https://formulae.brew.sh/api/formula.json" | jq -r '.[] | .name' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${BREW_PKGNUM}" -gt 7000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${BREW_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
+          ##Offers no way to count per arch
           #https://github.com/pacstall/pacstall-programs/tree/master/packages
           PACSTALL_PKGNUM="$(curl -qfsSL "https://api.gh.pkgforge.dev/repos/pacstall/pacstall-programs/contents/packages" | jq -r '.[] | select(.type == "dir") | .name' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${PACSTALL_PKGNUM}" -gt 600 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PACSTALL_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
+          ##Offers no way to count per arch
           #https://github.com/leleliu008/ppkg-formula-repository-official-core/tree/master/formula
           PPKG_PKGNUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/misc/data/PPKG.json" | jq -r '.[] | .pkg' | sort -u | wc -l | tr -d '[:space:]')"
           if [ "${PPKG_PKGNUM}" -gt 1000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PPKG_PKGNUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
-          ##https://docs.pkgforge.dev/repositories/bincache/metadata
-          ##https://docs.pkgforge.dev/repositories/pkgcache/metadata
-          CACHE_PKG_NUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/TOTAL_CACHE.txt" | tr -d '[:space:]')"
-          #https://docs.pkgforge.dev/repositories/soarpkgs/metadata
-          SBUILD_PKG_NUM="$(curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | .pkg_id' | wc -l | tr -d '[:space:]')"
-          PKG_NUM="$((CACHE_PKG_NUM + SBUILD_PKG_NUM))"
-          if [ "${PKG_NUM}" -gt 6000 ]; then
+          ##https://github.com/pkgforge/metadata#counts
+          #CACHE_PKG_NUM="$(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/soarpkgs/data/TOTAL_CACHE.txt" | tr -d '[:space:]')"
+          ##https://docs.pkgforge.dev/repositories/soarpkgs/metadata
+          #SBUILD_PKG_NUM="$(curl -qfsSL "https://meta.pkgforge.dev/soarpkgs/INDEX.json" | jq -r '.[] | .pkg_id' | wc -l | tr -d '[:space:]')"
+          #PKG_NUM="$((CACHE_PKG_NUM + SBUILD_PKG_NUM))"
+          PKG_NUM="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/metadata/refs/heads/main/TOTAL_ALL.json' | jq -r '.[] | select(.sum=="total") | .total' | tr -d '[:space:]')"
+          if [ "${PKG_NUM}" -gt 9000 ]; then
              sed -E "s/(<td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>[0-9]+<\/td><td>)[0-9]+(<\/td>)/\1${PKG_NUM}\2/" -i "${GITHUB_WORKSPACE}/main/soar/readme/packages.md"
           fi
         continue-on-error: true
