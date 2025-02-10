@@ -89,11 +89,27 @@ note:
 
 ***
 
-### Why not contribute & collaborate with AM?
+### Why not contribute to [appimage.github.io](https://github.com/AppImage/appimage.github.io)?
+
+{% hint style="info" %}
+Soar itself has added appimage.github.io as an external source: [https://docs.pkgforge.dev/repositories/external/appimage.github.io](https://docs.pkgforge.dev/repositories/external/appimage.github.io)
+{% endhint %}
+
+1. [**appimage.github.io**](https://github.com/AppImage/appimage.github.io) has <mark style="color:red;">**had no proper spec or validation**</mark> for packages that people submit, for most of its existent.
+2. It is **no longer maintained** actively, with **hundreds** of [Issues](https://github.com/AppImage/appimage.github.io/issues) & [PR](https://github.com/AppImage/appimage.github.io/pulls)s plaguing the project for years.
+3. **Most entries are useless**: [https://github.com/AppImage/appimage.github.io/issues/2909](https://github.com/AppImage/appimage.github.io/issues/2909)
+4. **Most entries contain years out of date packages**: [https://github.com/AppImage/appimage.github.io/issues/1297](https://github.com/AppImage/appimage.github.io/issues/1297)
+5. **Many entries are missing/non-existent**: [https://github.com/AppImage/appimage.github.io/issues/2356](https://github.com/AppImage/appimage.github.io/issues/2356)
+6. [**AM**](https://github.com/ivan-hc/AM) seems to be a far better alternative & is actively maintained
+
+***
+
+### Why not contribute & collaborate with [AM](https://github.com/ivan-hc/AM)?
 
 {% hint style="info" %}
 * We ([**@pkgforge**](https://docs.pkgforge.dev/orgs/pkgforge-core/people)) & [AM's Author](https://github.com/ivan-hc/AM) are friends. &#x20;
 * [**AM**](https://github.com/ivan-hc/AM) _has added partial support for some of_ [**PkgForge's Reposotories** ](broken-reference)since [**`Nov 10, 2024`**](https://github.com/ivan-hc/AM/pull/1096/files), thanks to this [**Issue**](https://github.com/ivan-hc/AM/issues/1079): [**https://github.com/ivan-hc/AM/issues/1079**](https://github.com/ivan-hc/AM/issues/1079)
+* Soar itself has also added AM as an external source: [https://docs.pkgforge.dev/repositories/external/am](https://docs.pkgforge.dev/repositories/external/am)&#x20;
 * So everything listed below is meant for a technical comparision & **NOT to harass/insult either side**. So please be decent & don't misquote us.
 {% endhint %}
 
