@@ -50,7 +50,7 @@ mkdir -pv "~/.config/soar" &&\
 {% code overflow="wrap" %}
 ```toml
 [[repositories]]
-name = "appimage-github-io"
+name = "appimagehub"
 url = "https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json.zstd"
 ```
 {% endcode %}
