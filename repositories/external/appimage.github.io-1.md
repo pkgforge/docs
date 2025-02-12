@@ -1,6 +1,6 @@
 ---
+icon: store
 description: AppImage Hub
-icon: gitkraken
 ---
 
 # AppImageHub
