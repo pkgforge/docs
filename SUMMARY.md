@@ -144,6 +144,7 @@
 * [external](repositories/external/README.md)
   * [AM](repositories/external/am.md)
   * [appimage.github.io](repositories/external/appimage.github.io.md)
+  * [AppImageHub](repositories/external/appimage.github.io-1.md)
 
 ## Contact
 

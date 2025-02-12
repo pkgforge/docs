@@ -1,17 +1,17 @@
 ---
+description: AppImage Hub
 icon: gitkraken
-description: AppImage Community
 ---
 
-# appimage.github.io
+# AppImageHub
 
 {% hint style="info" %}
-* [x] Project: [https://github.com/AppImage/appimage.github.io](https://github.com/AppImage/appimage.github.io)
-* [x] Bugs/Issues: [https://github.com/AppImage/appimage.github.io/issues](https://github.com/AppImage/appimage.github.io/issues)
-* [x] Soar Repo: <mark style="color:orange;">**`appimage-github-io`**</mark>
+* [x] Project: [https://www.appimagehub.com/](https://www.appimagehub.com/)
+* [x] Bugs/Issues: [https://forum.opendesktop.org/](https://forum.opendesktop.org/)
+* [x] Soar Repo: <mark style="color:orange;">**`appimagehub`**</mark>
 * [x] Cache: [<mark style="color:red;">**None**</mark>](#user-content-fn-1)[^1]
-* [x] Soar CI & Repo: [https://github.com/pkgforge/metadata/tree/main/external/appimage.github.io/scripts](https://github.com/pkgforge/metadata/tree/main/external/appimage.github.io/scripts)
-* [x] Metadata: [https://meta.pkgforge.dev/external/appimage.github.io/](https://meta.pkgforge.dev/external/appimage.github.io/)
+* [x] Soar CI & Repo: [https://github.com/pkgforge/metadata/tree/main/external/appimagehub/scripts](https://github.com/pkgforge/metadata/tree/main/external/appimagehub/scripts)
+* [x] Metadata: [https://meta.pkgforge.dev/external/appimagehub/](https://meta.pkgforge.dev/external/appimagehub/)
 {% endhint %}
 
 ***
@@ -26,7 +26,7 @@ description: AppImage Community
 #ONLY If you didn't already use it or have your own custom config
 soar defconfig --external
 soar sync
-soar list 'appimage-github-io'
+soar list 'appimagehub'
 ```
 {% endcode %}
 {% endhint %}
@@ -51,7 +51,7 @@ mkdir -pv "~/.config/soar" &&\
 ```toml
 [[repositories]]
 name = "appimage-github-io"
-url = "https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json.zstd"
+url = "https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json.zstd"
 ```
 {% endcode %}
 
@@ -60,7 +60,7 @@ url = "https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json.z
 {% code overflow="wrap" %}
 ```bash
 soar sync
-soar list 'appimage-github-io'
+soar list 'appimagehub'
 ```
 {% endcode %}
 {% endhint %}
@@ -75,8 +75,8 @@ soar list 'appimage-github-io'
 mkdir -pv "~/.config/soar" &&\
 tee -a "~/.config/soar/config.toml" <<EOF
 [[repositories]]
-name = "appimage-github-io"
-url = "https://meta.pkgforge.dev/external/appimage.github.io/x86_64-Linux.json.zstd"
+name = "appimagehub"
+url = "https://meta.pkgforge.dev/external/appimagehub/x86_64-Linux.json.zstd"
 EOF
 ```
 {% endcode %}
@@ -86,7 +86,7 @@ EOF
 {% code overflow="wrap" %}
 ```bash
 soar sync
-soar list 'appimage-github-io'
+soar list 'appimagehub'
 ```
 {% endcode %}
 {% endhint %}
