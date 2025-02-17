@@ -5,8 +5,8 @@ description: Self Hosted Mini Repositories for Soar
 
 # Nests
 
-{% hint style="success" %}
-* [x] <mark style="color:purple;">**Nests**</mark> are <mark style="color:orange;">**self hosted**</mark> repositories that build & release packages on their own Account/Org/Repository/Registry. Think of them as [homebrew's tap](https://docs.brew.sh/Taps), but easier & better
+{% hint style="info" %}
+* [x] <mark style="color:purple;">**Nests**</mark> are <mark style="color:orange;">**self hosted**</mark> repositories that build & release packages on their own Account/Org/Repository/Registry. Think of them as [homebrew's tap](https://docs.brew.sh/Taps), but easier & better.
 * [x] For <mark style="color:blue;">**Developers**</mark>, Nests are an easy way to distribute their applications easily & seamlessly to the target system or any \*Unix based distro
 * [x] For <mark style="color:blue;">**Users**</mark>, Nests are an easy (& quicker) way to get their favourite applications as soon as new releases are made without waiting for any package manager (including us) to package it first.
 {% endhint %}
@@ -18,8 +18,8 @@ description: Self Hosted Mini Repositories for Soar
 ### Workflow
 
 {% hint style="info" %}
-* This will publish (mirror) your release on [**ghcr**](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages) & add a new **release** tag <mark style="color:green;">**`soar-manifest`**</mark>to your repository
-* The <mark style="color:green;">**`soar-manifest`**</mark> release tag contains **JSON** metadata which soar uses to start ingesting your repository as a Nest.
+* This will publish (mirror) your release on [**ghcr**](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages) & add a new **release** tag <mark style="color:green;">**`soar-nest`**</mark>to your repository
+* The <mark style="color:green;">**`soar-nest`**</mark> release tag contains **JSON** metadata which soar uses to start ingesting your repository as a Nest.
 {% endhint %}
 
 1. Write and add an [<mark style="color:purple;">**`.SBUILD`**</mark>](broken-reference) to your Project. You can [**ask us**](https://discord.gg/djJUs48Zbu) for help.
@@ -64,7 +64,8 @@ jobs:
 ```
 {% endcode %}
 
-3. Update your <mark style="color:blue;">**README**</mark> to include a one-liner
+3. Check for the <mark style="color:green;">**`soar-nest`**</mark> release tag (It is marked as a <mark style="color:blue;">**Pre-Release**</mark>)
+4. Update your <mark style="color:blue;">**README**</mark> to include a one-liner
 
 ```bash
 soar nest add "https://github.com/YOUR-USERNAME/YOUR-ORG"
