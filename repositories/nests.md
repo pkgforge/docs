@@ -22,25 +22,26 @@ description: Self Hosted Mini Repositories for Soar
 * The <mark style="color:green;">**`soar-manifest`**</mark> release tag contains **JSON** metadata which soar uses to start ingesting your repository as a Nest.
 {% endhint %}
 
-1. Write and add an [<mark style="color:purple;">**`.SBUILD`**</mark>](broken-reference) to your Project
+1. Write and add an [<mark style="color:purple;">**`.SBUILD`**</mark>](broken-reference) to your Project. You can [**ask us**](https://discord.gg/djJUs48Zbu) for help.
 2. Add something like this to your release pipeline or as another workflow
 
-<pre class="language-yaml" data-overflow="wrap"><code class="lang-yaml">name: 🧰🛠️ Build Soar Package 📦📀
+{% code overflow="wrap" %}
+```yaml
+name: 🧰🛠️ Build Soar Package 📦📀
 
 ##Optional:
-# Setup minisign &#x26; add the private key as secret: MINISIGN_KEY [${{ secrets.MINISIGN_KEY }}]
+# Setup minisign & add the private key as secret: MINISIGN_KEY [${{ secrets.MINISIGN_KEY }}]
 # Setup a Read-Only Underprivileged Github Token as secret: RO_GHTOKEN [${{ secrets.RO_GHTOKEN }}]
 # Setup a Read-Only Underprivileged GitLab Token as secret: RO_GLTOKEN [${{ secrets.RO_GLTOKEN }}]
 
 #These permissions are needed by main CI
 permissions:
-  attestations: write #Needed for Build Provenance &#x26; Attestations
+  attestations: write #Needed for Build Provenance & Attestations
   contents: write #Needed to create Release
-  id-token: write #Needed for Build Provenance &#x26; Attestations
+  id-token: write #Needed for Build Provenance & Attestations
   packages: write #Needed to push to ghcr
-<strong>   
-</strong>
-#Assuming you just published a new release &#x26; the SBUILD doesn't build from source                 
+
+#Assuming you just published a new release & the SBUILD doesn't build from source                 
 on:
   #push:
   workflow_dispatch:
@@ -59,10 +60,15 @@ jobs:
       pkg-family: "YOUR-PKG-PRIMARY-NAME" #Needed so soar can cross reference with other repos/nests
       debug: false #If set to true, will run everything with set -x
       logs: true #Will Attach the entire Logs + File as Workflow Artifact
-      rebui
-      
-      ld: true #Will rebuild even if ghcr tag already exists
-</code></pre>
+      rebuild: true #Will rebuild even if ghcr tag already exists
+```
+{% endcode %}
+
+3. Update your <mark style="color:blue;">**README**</mark> to include a one-liner
+
+```bash
+soar nest add "https://github.com/YOUR-USERNAME/YOUR-ORG"
+```
 
 ***
 
