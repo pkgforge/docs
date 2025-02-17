@@ -18,7 +18,7 @@ description: Self Hosted Mini Repositories for Soar
 ### Workflow
 
 {% hint style="info" %}
-* This will publish (mirror) your release on [**ghcr**](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages) & add a new **release** tag <mark style="color:green;">**`soar-nest`**</mark>to your repository
+* This will publish (mirror) your release on [**ghcr**](https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages) & add a new **release** tag <mark style="color:green;">**`soar-nest`**</mark> to your repository
 * The <mark style="color:green;">**`soar-nest`**</mark> release tag contains **JSON** metadata which soar uses to start ingesting your repository as a Nest.
 {% endhint %}
 
