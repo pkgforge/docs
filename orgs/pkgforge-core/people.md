@@ -31,5 +31,5 @@ description: Who are we?
 * **Role**: <mark style="color:blue;">**Lead Developer**</mark> for [<mark style="color:purple;">**pkgs.pkgforge.dev**</mark>](https://pkgs.pkgforge.dev/), the [<mark style="color:orange;">**Index**</mark>](https://github.com/pkgforge/pkgs.pkgforge.dev) for [<mark style="color:purple;">**Soar**</mark>](https://github.com/pkgforge/soar)
 * **Homepage**: [<mark style="color:green;">**https://manjultamrakar.com.np/**</mark>](https://manjultamrakar.com.np/)
 * **Contact**: [**manjultamrakar4@gmail.com**](mailto:manjultamrakar4@gmail.com)
-* **Joined**: <mark style="color:orange;">`2024-01-05`</mark>
+* **Joined**: <mark style="color:orange;">`2025-01-05`</mark>
 
