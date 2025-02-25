@@ -96,7 +96,7 @@ This specifies if the **package repository** contain **prebuilds,** i.e. package
 [^2]: Their so-called relocatable packages are relocatable only to another system where homebrew is already installed.\
     And 99% of their packages don't even build on MUSL
 
-[^3]: Only meat for Debian Based distros
+[^3]: Only meant for Debian Based distros
 
 [^4]: Most of the packages are built on MUSL by default & are relocatable
 
