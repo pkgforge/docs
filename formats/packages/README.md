@@ -20,30 +20,30 @@ You should be aware of these:
 
 These are usually **GUI Applications** packaged in one of the following formats:
 
-{% content-ref url="archive.md" %}
-[archive.md](archive.md)
+{% content-ref url="archive/" %}
+[archive](archive/)
 {% endcontent-ref %}
 
-{% content-ref url="appbundle.md" %}
-[appbundle.md](appbundle.md)
+{% content-ref url="appbundle/" %}
+[appbundle](appbundle/)
 {% endcontent-ref %}
 
-{% content-ref url="appimage.md" %}
-[appimage.md](appimage.md)
+{% content-ref url="appimage/" %}
+[appimage](appimage/)
 {% endcontent-ref %}
 
-{% content-ref url="flatimage.md" %}
-[flatimage.md](flatimage.md)
+{% content-ref url="flatimage/" %}
+[flatimage](flatimage/)
 {% endcontent-ref %}
 
-{% content-ref url="gameimage-tbd.md" %}
-[gameimage-tbd.md](gameimage-tbd.md)
+{% content-ref url="gameimage-tbd/" %}
+[gameimage-tbd](gameimage-tbd/)
 {% endcontent-ref %}
 
-{% content-ref url="nixappimage.md" %}
-[nixappimage.md](nixappimage.md)
+{% content-ref url="nixappimage/" %}
+[nixappimage](nixappimage/)
 {% endcontent-ref %}
 
-{% content-ref url="runimage.md" %}
-[runimage.md](runimage.md)
+{% content-ref url="runimage/" %}
+[runimage](runimage/)
 {% endcontent-ref %}
