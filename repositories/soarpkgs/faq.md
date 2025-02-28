@@ -31,6 +31,7 @@ Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.m
 1. The majority of our packages (\~80%) are built from source.
 2. The largest of the remaining percentage, we fetch from upstream sources like Github Releases.
 3. Whatever remains, here we do indeed pull packages from other distros. But this is done to repackage them as statically-linked or dependency free bundles. We end up rebuilding/patching most of the original source package. We don't violate any Licensing or TOS (because we use the src distribution itself), and we also redistribute the `LICENSE` file where we are required to do so. This practice of repackaging is similar to [pkg2appimage](https://github.com/AppImageCommunity/pkg2appimage) & other projects.
+4. The data at [https://github.com/pkgforge/metadata/tree/main/misc/data](https://github.com/pkgforge/metadata/tree/main/misc/data) is used for comparisons, statistics & to infer popular/trending packages (because soar collects no user metrics).
 
 ***
 
