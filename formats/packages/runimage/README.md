@@ -26,7 +26,7 @@ description: Portable single-file Linux container, Similar to FlatImage
 ### **Prerequisites (`HOST)`**
 
 {% hint style="info" %}
-* [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
+* [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images (Can still be run with `--runtime-extract-and-run | RUNTIME_EXTRACT_AND_RUN=1` )
 * [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
 * [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
 {% endhint %}
