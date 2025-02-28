@@ -1,9 +1,16 @@
 ---
-description: https://en.wikipedia.org/wiki/AppImage
 icon: compact-disc
+description: https://en.wikipedia.org/wiki/AppImage
 ---
 
 # AppImage
+
+{% hint style="info" %}
+<mark style="color:purple;">**Sources**</mark>
+
+* Upstream prebuilt if it exists & is actively maintained
+* Community created prebuilts if official prebuilt doesn't exist & we can't build from source
+{% endhint %}
 
 ### Schema
 
@@ -23,6 +30,15 @@ icon: compact-disc
 * [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images (Can still be run with [<mark style="color:orange;">`--appimage-extract-and-run`</mark> | <mark style="color:orange;">`APPIMAGE_EXTRACT_AND_RUN=1`</mark>](https://docs.appimage.org/user-guide/troubleshooting/fuse.html#fallback-if-fuse-can-t-be-made-working))
 * [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
 * [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
+{% endhint %}
+
+***
+
+### Sandbox
+
+{% hint style="danger" %}
+* AppImages have no built-in sandboxing
+* There exists third party tools like [<mark style="color:blue;">**aisap**</mark>](https://github.com/mgord9518/aisap) , but we <mark style="color:red;">**DO NOT RECOMMEND**</mark> it as it is not actively maintained
 {% endhint %}
 
 ***

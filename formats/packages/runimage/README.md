@@ -1,12 +1,13 @@
 ---
-description: Portable single-file Linux container, Similar to FlatImage
 icon: compact-disc
+description: Portable single-file Linux container, Similar to FlatImage
 ---
 
 # RunImage
 
 * **Author**: [`@VHSgunzo`](https://github.com/VHSgunzo)
 * **Project Page**: [https://github.com/VHSgunzo/runimage](https://github.com/VHSgunzo/runimage)
+* **Sources**: A [base runimage](https://github.com/pkgforge-dev/runimage-base) is used to install packages using a distro & then rebuilt/packaged
 
 ***
 
@@ -28,6 +29,14 @@ icon: compact-disc
 * [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
 * [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
 * [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
+{% endhint %}
+
+***
+
+### Sandbox
+
+{% hint style="success" %}
+RunImages have built-in sandboxing, check the docs: [https://github.com/VHSgunzo/runimage#usage](https://github.com/VHSgunzo/runimage#usage)
 {% endhint %}
 
 ***

@@ -1,6 +1,6 @@
 ---
-description: A hybrid of Flatpak sandboxing with AppImage portability
 icon: compact-disc
+description: A hybrid of Flatpak sandboxing with AppImage portability
 ---
 
 # FlatImage
@@ -38,6 +38,14 @@ librewolf-alpine-nix.FlatImage --> Created using alpine as BaseImage/RootFS with
 * [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
 * [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
 * [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
+{% endhint %}
+
+***
+
+### Sandbox
+
+{% hint style="success" %}
+FlatImages have built-in sandboxing, check docs: [https://flatimage.github.io/docs/cmd/perms/](https://flatimage.github.io/docs/cmd/perms/)&#x20;
 {% endhint %}
 
 ***

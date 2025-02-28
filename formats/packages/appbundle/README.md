@@ -1,12 +1,13 @@
 ---
-description: https://github.com/xplshn/AppBundleHUB
 icon: compact-disc
+description: https://github.com/xplshn/AppBundleHUB
 ---
 
 # AppBundle
 
 * **Author**: [`@xplshn`](https://github.com/xplshn)
 * **Project Page**: [https://github.com/xplshn/pelf/](https://github.com/xplshn/pelf/)
+* **Sources**: Mostly prebuilts from [https://github.com/xplshn/AppBundleHUB](https://github.com/xplshn/AppBundleHUB)
 
 ***
 
