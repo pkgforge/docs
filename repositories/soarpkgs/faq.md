@@ -26,6 +26,14 @@ Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.m
 
 ***
 
+### Do you steal packages from other distros & call them as your own?
+
+1. The majority of our packages (\~80%) are built from source.
+2. The largest of the remaining percentage, we fetch from upstream sources like Github Releases.
+3. Whatever remains, here we do indeed pull packages from other distros. But this is done to repackage them as statically-linked or dependency free bundles. We end up rebuilding/patching most of the original source package. We don't violate any Licensing or TOS (because we use the src distribution itself), and we also redistribute the `LICENSE` file where we are required to do so.
+
+***
+
 ### Cache
 
 Cache refers to prebuilds provided by pkgforge's CI that soar uses by default. Think of it as the [Chaotic AUR](https://aur.chaotic.cx/) or [Homebrew's bottles](https://docs.brew.sh/Bottles).
