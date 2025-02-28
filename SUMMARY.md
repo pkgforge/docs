@@ -30,12 +30,8 @@
 ## Formats
 
 * [Binaries](formats/binaries/README.md)
-  * [Dynamic](formats/binaries/dynamic/README.md)
-    * [Install](formats/binaries/dynamic/install.md)
-    * [UnInstall](formats/binaries/dynamic/uninstall.md)
+  * [Dynamic](formats/binaries/dynamic.md)
   * [Static](formats/binaries/static/README.md)
-    * [Install](formats/binaries/static/install.md)
-    * [UnInstall](formats/binaries/static/uninstall.md)
     * [Build Notes](formats/binaries/static/build-notes/README.md)
       * [Cargo (Rust)](formats/binaries/static/build-notes/cargo-rust.md)
       * [GoLang](formats/binaries/static/build-notes/golang.md)

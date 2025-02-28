@@ -8,7 +8,7 @@ description: Statically Linked Binaries (.pkg_type == static)
 {% hint style="success" %}
 <mark style="color:orange;">**Build Profile**</mark>
 
-* [x] Prefer [**`mimalloc`**](https://github.com/microsoft/mimalloc) over other musl allocators
+* [x] Prefer [**`mimalloc`**](https://github.com/microsoft/mimalloc) over other musl allocators (<mark style="color:red;">**Not Always**</mark>)
 * [x] Prefer [LTO](https://gcc.gnu.org/wiki/LinkTimeOptimization)
 * [x] Prefer [PIE](https://en.wikipedia.org/wiki/Position-independent_code)
 {% endhint %}
@@ -27,3 +27,5 @@ description: Statically Linked Binaries (.pkg_type == static)
 * **`*official*`** : Implies it was built/fetched from official source
 * **`*stable*`** : Implies it was likely fetched from upstream source & not built from source
 {% endhint %}
+
+* [x] If the binary is a desktop app i.e. needs desktop integration, it needs to go under [**./packages**](https://github.com/pkgforge/soarpkgs/tree/main/packages)

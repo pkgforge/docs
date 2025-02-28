@@ -11,7 +11,7 @@ These are usually **CLI Applications** :&#x20;
 [static](static/)
 {% endcontent-ref %}
 
-{% content-ref url="dynamic/" %}
-[dynamic](dynamic/)
+{% content-ref url="dynamic.md" %}
+[dynamic.md](dynamic.md)
 {% endcontent-ref %}
 

@@ -1,6 +1,0 @@
----
-icon: trash-can
----
-
-# UnInstall
-
