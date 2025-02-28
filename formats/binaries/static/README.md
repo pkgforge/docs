@@ -8,7 +8,7 @@ description: Statically Linked Binaries (.pkg_type == static)
 {% hint style="success" %}
 <mark style="color:orange;">**Build Profile**</mark>
 
-* [x] Prefer [**`mimalloc`**](https://github.com/microsoft/mimalloc) over other musl allocators (<mark style="color:red;">**Not Always**</mark>)
+* [x] Prefer [**`mimalloc`**](https://github.com/microsoft/mimalloc) over other musl allocators ([<mark style="color:red;">**Not Always**</mark>](#user-content-fn-1)[^1])
 * [x] Prefer [LTO](https://gcc.gnu.org/wiki/LinkTimeOptimization)
 * [x] Prefer [PIE](https://en.wikipedia.org/wiki/Position-independent_code)
 {% endhint %}
@@ -29,3 +29,5 @@ description: Statically Linked Binaries (.pkg_type == static)
 {% endhint %}
 
 * [x] If the binary is a desktop app i.e. needs desktop integration, it needs to go under [**./packages**](https://github.com/pkgforge/soarpkgs/tree/main/packages)
+
+[^1]: We have had reports of users running into segfault errors on old hardware&#x20;

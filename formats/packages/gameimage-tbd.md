@@ -10,9 +10,9 @@ icon: disc-drive
 ### Schema
 
 {% hint style="info" %}
-[<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
+[<mark style="color:purple;">**`.pkg`**</mark>](../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
 
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`gameimage`**</mark>
+[<mark style="color:purple;">**`.pkg_type`**</mark>](../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`gameimage`**</mark>
 
 <mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.gameimage`**</mark>
 {% endhint %}
@@ -22,9 +22,9 @@ icon: disc-drive
 ### **Prerequisites (`HOST)`**
 
 {% hint style="info" %}
-* [**Fuse**](../errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
-* [**Fonts**](../errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
-* [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](../errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
+* [**Fuse**](errors-and-quirks/fuse.md): Required for mounting Filesystems & Images
+* [**Fonts**](errors-and-quirks/fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
+* [<mark style="color:blue;">**Kernel User NameSpaces**</mark>](errors-and-quirks/namespaces.md): Required for Sandboxing, Security & Performance
 {% endhint %}
 
 ***
