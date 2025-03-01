@@ -119,6 +119,7 @@
   * [Security](repositories/pkgcache/security.md)
 * [external](repositories/external/README.md)
   * [AM](repositories/external/am.md)
+  * [cargo-bins](repositories/external/cargo-bins.md)
   * [appimage.github.io](repositories/external/appimage.github.io.md)
   * [AppImageHub](repositories/external/appimagehub.md)
 * [Nests](repositories/nests.md)

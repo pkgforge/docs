@@ -12,6 +12,7 @@ description: Application Manager (AM)
 * [x] Cache: [https://huggingface.co/datasets/pkgforge/AMcache](https://huggingface.co/datasets/pkgforge/AMcache)
 * [x] Soar CI & Repo: [https://github.com/pkgforge-community/AM-HF-SYNC](https://github.com/pkgforge-community/AM-HF-SYNC)
 * [x] Metadata: [https://meta.pkgforge.dev/external/am/](https://meta.pkgforge.dev/external/am/)
+* [x] Type: AppImages
 {% endhint %}
 
 ***

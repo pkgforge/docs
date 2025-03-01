@@ -12,6 +12,7 @@ description: AppImage Community
 * [x] Cache: [<mark style="color:red;">**None**</mark>](#user-content-fn-1)[^1]
 * [x] Soar CI & Repo: [https://github.com/pkgforge/metadata/tree/main/external/appimage.github.io/scripts](https://github.com/pkgforge/metadata/tree/main/external/appimage.github.io/scripts)
 * [x] Metadata: [https://meta.pkgforge.dev/external/appimage.github.io/](https://meta.pkgforge.dev/external/appimage.github.io/)
+* [x] Type: AppImages (Latest only)
 {% endhint %}
 
 ***
