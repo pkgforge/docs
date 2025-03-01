@@ -1,6 +1,6 @@
 ---
-description: cargo-binstall/cargo-quickinstall
 icon: crab
+description: cargo-binstall/cargo-quickinstall
 ---
 
 # cargo-bins
@@ -46,7 +46,7 @@ mkdir -pv "~/.config/soar" &&\
 ```
 {% endcode %}
 
-* [x] Add the repo config
+* [x] Add the repo config (For aarch64: Replace **x86\_64-Linux** with **aarch64-Linux**)
 
 {% code overflow="wrap" %}
 ```toml
@@ -69,7 +69,7 @@ soar list 'cargo-bins'
 {% hint style="info" %}
 [Using tee (<mark style="color:red;">**NOT-Recommended**</mark>)](#user-content-fn-4)[^4]
 
-* [x] Append
+* [x] Append (For aarch64: Replace **x86\_64-Linux** with **aarch64-Linux**)
 
 {% code overflow="wrap" %}
 ```bash
