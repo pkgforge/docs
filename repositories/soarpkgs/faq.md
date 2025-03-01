@@ -5,10 +5,6 @@ description: Frequently Asked Questions & Misc
 
 # FAQ
 
-{% hint style="success" %}
-Recommended Reading: [https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md](https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md)
-{% endhint %}
-
 ### **Is this really an AUR?**
 
 1. [**Soarpkgs**](https://github.com/pkgforge/soarpkgs) is inspired by the concept of the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository), but **is not an exact replica**. While the AUR is a community-driven system where users can freely submit packages by creating repositories and `PKGBUILDs` with minimal oversight, [**Soarpkgs**](https://github.com/pkgforge/soarpkgs)  takes a more controlled approach.
@@ -66,7 +62,7 @@ However, we use  [**`mimalloc`**](https://github.com/microsoft/mimalloc)  over o
 
 ### Portability
 
-We wrote a [manifesto](https://github.com/pkgforge/soarpkgs/blob/main/MANIFESTO.md), and we stand by it. And thus, we do the following to ensure we guarantee at least some level of portability for each package:
+We do the following to ensure we guarantee at least some level of portability for each package:
 
 {% hint style="info" %}
 * [x] We provide prebuilt packages as [#cache](faq.md#cache "mention") ,so users don't have to build packages themselves. This avoids users having to install some common dependencies to build a package.&#x20;
