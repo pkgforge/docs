@@ -37,7 +37,7 @@ curl -qfsSL "https://raw.githubusercontent.com/vergoh/vnstat/master/cfg/vnstat.c
 </strong></code></pre>
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>vnstatd running in Terminal 1</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>vnstatd running in Terminal 1</p></figcaption></figure>
 
 * [x] <mark style="color:orange;">**Monitor**</mark>**&#x20;**<mark style="color:purple;">**Live Traffic**</mark> (Terminal: 2, **Keep it Running**)
 
