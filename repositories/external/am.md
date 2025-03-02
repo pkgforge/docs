@@ -17,6 +17,20 @@ description: Application Manager (AM)
 
 ***
 
+### Trust
+
+{% hint style="warning" %}
+While we trust the author & lead maintainers of AM, we have doubts about the sources as AM is just a collection of bash scripts that fetch the actual binary from elsewhere & not their own cache since they don't do prebuilds. This is [intentional on their own part](https://github.com/ivan-hc/AM/blob/fdd044aebdcfcf50ce719f20f98c58e94d9e1982/README.md?plain=1#L33).
+
+Their effort to prefer offical packages over third party ones are noted. So is also their **spooky** note they have when a pkg they add didn't have CI. Read: [https://github.com/ivan-hc/AM/blob/main/docs/troubleshooting.md#spyware-malware-and-dangerous-software](https://github.com/ivan-hc/AM/blob/main/docs/troubleshooting.md#spyware-malware-and-dangerous-software)
+
+However, the very nature of run scripts at build/install time, there's a lot of things that can go wrong.
+
+On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:green;">**7**</mark>, Good enough as long as you view the logs and scripts.
+{% endhint %}
+
+***
+
 ### Add
 
 {% hint style="info" %}

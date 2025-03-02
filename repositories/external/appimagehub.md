@@ -17,6 +17,16 @@ description: AppImage Hub
 
 ***
 
+### Trust
+
+{% hint style="danger" %}
+DO NOT USE this repo unless you have to. This is so untrusted that we don't ship this with soar & only way to add this source is to do it manually. We made it intentionally difficult for a simple reason: Most packages on here have no way to verify what's inside th
+{% endhint %}
+
+
+
+***
+
 ### Add
 
 {% hint style="info" %}

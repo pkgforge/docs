@@ -17,6 +17,18 @@ description: AppImage Community
 
 ***
 
+### Trust
+
+{% hint style="danger" %}
+This is a **wild west**, as their own automation scrapes and then generates most of the data without much human oversight. Our automation ingests their generated data, cleans it up a bit and then converts it to soar compatible.
+
+A lot of things can & will go wrong here, and there's not even a central agency you can blame. It is highly recommended to use <mark style="color:orange;">**`soar query`**</mark> before you install any package from this source.
+
+On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:orange;">**5**</mark>, **always check the details before using any packages from this repository**.
+{% endhint %}
+
+***
+
 ### Add
 
 {% hint style="info" %}
