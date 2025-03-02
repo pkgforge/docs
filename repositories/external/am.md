@@ -26,7 +26,7 @@ Their effort to prefer offical packages over third party ones are noted. So is a
 
 However, the very nature of run scripts at build/install time, there's a lot of things that can go wrong.
 
-On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:green;">**7**</mark>, Good enough as long as you view the logs and scripts.
+On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:green;">**7**</mark>, **Good enough as long as you view the logs and scripts**.
 {% endhint %}
 
 ***

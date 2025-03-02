@@ -24,7 +24,7 @@ This is as good as our own officially curated packages, as they have [clear work
 
 All of these make us say with high confidence that **you can trust them**, **as long as you trust that Github, Cargo, Crates.io or the package itself isn't compromised.**
 
-On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:green;">**9**</mark>, As high as any external source, not personally curated by us can get.
+On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:green;">**9**</mark>, **As high as any external source**, not personally curated by us can get.
 {% endhint %}
 
 ***

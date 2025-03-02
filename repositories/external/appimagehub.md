@@ -20,10 +20,10 @@ description: AppImage Hub
 ### Trust
 
 {% hint style="danger" %}
-DO NOT USE this repo unless you have to. This is so untrusted that we don't ship this with soar & only way to add this source is to do it manually. We made it intentionally difficult for a simple reason: Most packages on here have no way to verify what's inside th
+<mark style="color:red;">**DO NOT USE**</mark> this repo unless you have to. This is so untrusted that we don't ship this with soar & only way to add this source is to do it manually. We made it intentionally difficult for a simple reason: Most packages on here have no way to verify where did they come from & what's actually inside them.
+
+On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this source as <mark style="color:red;">**1**</mark>, **use it at your own Risk**.
 {% endhint %}
-
-
 
 ***
 
