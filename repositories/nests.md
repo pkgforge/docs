@@ -101,8 +101,9 @@ However, if you want to be extra careful, these mitagtions will help reduce any 
 
 ### Quirks
 
-{% hint style="danger" %}
-Nests won't **work on forked repos** because github needs it to be a real (detached) repository in order to push packages associated with that repo to ghcr.
+{% hint style="warning" %}
+* Nests won't **work on forked repos** because github needs it to be a real (detached) repository in order to push packages associated with that repo to ghcr.
+* **Setup time** for a build job can be as **high as 10 minutes**, this is because the runner needs to be able to handle any & all scenarios. This is intentional, as developers can use any build tool or even docker/podman without having to specify install deps in the SBUILD itself. However, if the sbuild **only needs curl/wget**, the runner **will still go through the whole setup phase**. Currently there's no solution for this problem, we thank you for your understanding & welcome any ideas over at: [**soarpkgs/discussions**](https://github.com/pkgforge/soarpkgs/discussions)
 {% endhint %}
 
 ***
