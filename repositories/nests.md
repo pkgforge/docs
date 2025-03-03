@@ -99,6 +99,14 @@ However, if you want to be extra careful, these mitagtions will help reduce any 
 
 ***
 
+### Quirks
+
+{% hint style="danger" %}
+Nests won't **work on forked repos** because github needs it to be a real (detached) repository in order to push packages associated with that repo to ghcr.
+{% endhint %}
+
+***
+
 ## Users
 
 
