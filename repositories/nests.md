@@ -73,6 +73,32 @@ soar nest add "https://github.com/YOUR-USERNAME/YOUR-ORG"
 
 ***
 
+### Branding
+
+{% hint style="warning" %}
+* There's hardcoded stuff related to pkgforge, like filepath & some links.&#x20;
+* The filename/paths should be harmless and are presently only in CI, not the final artifact
+* However the api-urls, can't be removed as it is needed & used by soar-core. Fallbacks are automatically used in case our api-urls ever die, so this is also harmless.
+* Finally, there's some branding in the logfile, To disable banners in logfiles, set <mark style="color:blue;">**`banner:`**</mark><mark style="color:red;">**`false`**</mark>
+{% endhint %}
+
+***
+
+### Security
+
+{% hint style="danger" %}
+By default, if you use our official workflows, you are pulling in code from our repos & then executing them on your repo with some over privileged perms. This is fine if you trust us not to do anything bad.
+
+However, if you want to be extra careful, these mitagtions will help reduce any potential impact in case of bad actors:
+
+1. Always use the workflow on github actions with [github''s own JIT](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication), so they would be generated & expired automatically.
+2. Additionally, rather than using **pkgforge/soarpkgs/.github/workflows/matrix\_builds.yaml**<mark style="color:blue;">**@main**</mark> , audit our code, and then hardcode it to a particular commit hash **pkgforge/soarpkgs/.github/workflows/matrix\_builds.yaml@**<mark style="color:purple;">**${SHA}**</mark>
+3. Additionally, separate your project's official project repo and soar's nest repo into two different repositories, so the token would have access to only soar's nest repo, not to your whole project
+4. Additionally, read our code, and then rewrite it by yourself, on your own repo & run it on your own infra
+{% endhint %}
+
+***
+
 ## Users
 
 
