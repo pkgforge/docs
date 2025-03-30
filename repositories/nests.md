@@ -1,6 +1,6 @@
 ---
-icon: kite
 description: Self Hosted Mini Repositories for Soar
+icon: kite
 ---
 
 # Nests
@@ -70,6 +70,10 @@ jobs:
 ```bash
 soar nest add "https://github.com/YOUR-USERNAME/YOUR-ORG"
 ```
+
+{% hint style="warning" %}
+* All values must be **lowercase** : [https://github.com/oras-project/oras/discussions/930](https://github.com/oras-project/oras/discussions/930) , the workflow will forcefully change all values to match this.
+{% endhint %}
 
 ***
 
