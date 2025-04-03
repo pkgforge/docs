@@ -6,7 +6,7 @@ icon: circle-info
 
 
 
-{% embed url="https://soar.pkgforge.dev/gif?tmp.UbMu8ZoSqz=tmp.6zdhJrRYvc" %}
+{% embed url="https://soar.pkgforge.dev/gif?tmp.y6HOl6Crv0=tmp.rCFTuQAfHA" %}
 [**Package Forge**](https://github.com/pkgforge)
 {% endembed %}
 
