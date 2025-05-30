@@ -89,7 +89,7 @@ This specifies if the **package repository** contain **prebuilds,** i.e. package
 * See how: [https://github.com/pkgforge/docs/blob/main/.github/workflows/healthchecks\_housekeeping.yaml](../../.github/workflows/healthchecks_housekeeping.yaml)
 {% endhint %}
 
-<table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2625</td><td>7643</td><td>1490</td><td>2734</td><td>17245</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="97">AM</th><th width="93">Brew</th><th width="99">Pacstall</th><th width="79">PPKG</th><th>PkgForge (Soar)</th></tr></thead><tbody><tr><td>2626</td><td>7647</td><td>1492</td><td>2734</td><td>17246</td></tr></tbody></table>
 
 [^1]: Depends on what source they use
 
