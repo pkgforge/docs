@@ -23,6 +23,11 @@ Any third-parties, must have a dedicated section on the main README of their pro
 * [x] Any [External/Third-Party](https://docs.pkgforge.dev/repositories/external) Repositories from Package Forge, must be marked as external & third party, same as Official Repositories from Package Forge, because for a third-party, all these are also external.&#x20;
 * [x] The total percentage of packages used from our repos, compared to the third-parties' repos (if they have it) must be clearly specified.
 * [x] Any data that's used from [pkgforge/metadata](https://github.com/pkgforge/metadata/) must be disclosed, especially if a third-party edits/re-edits it to match their own needs.
+* [x] Issue Tracker link for reporting issues with Packages that originate from PkgForge
+
+#### Examples:
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Proper &#x26; Explicit Attribution with Links</p></figcaption></figure>
 
 ***
 
@@ -49,6 +54,10 @@ Any third-parties, must clearly show the following fields (from our metadata) to
 
 Any third-parties, must also re-distribute the following files in addition to the main binary for the Package. An option can be offered to users to exclude this, but by default, the third party can't make this decision for the users, & thus must comply.
 
+{% hint style="success" %}
+These don't apply if a third-party is a simply a downloader & not an installer i.e if a third party has a sub command to only download a package but not install it, then these files can be skipped.
+{% endhint %}
+
 * [x] LICENSE: For legal reasons, the `LICENSE` file must be downloaded & installed in the user's system.
 
 #### Examples:
@@ -57,3 +66,20 @@ Any third-parties, must also re-distribute the following files in addition to th
 
 ***
 
+### Media
+
+Any third-parties, when posting about their project anywhere through blogs, posts, comments or similar must follow these guidelines:
+
+* [x] The third-party must not claim any additions/announcements/deletions/features/ports originating from our Packages/Projects/Repos as their own, unless the third party also directly contributed to it. We, PkgForge reserve the sole rights to publishing these at our own discretion.
+* [x] The third-party must not advertise Package counts without disclosing the source as their own, unless the majority of the packages are from the third-party's own official repo & not ours (Official/External).
+* [x] The third-party must not advertise itself as "official" as the only "official" projects are all under our PkgForge Org.
+
+#### Examples:
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Misleading Claim with no Source</p></figcaption></figure> <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Package Count with explicit Source</p></figcaption></figure></div>
+
+Bad press release (without our Permission):
+
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Press Release, but self-credited (with 0 contributions)</p></figcaption></figure>
+
+***
