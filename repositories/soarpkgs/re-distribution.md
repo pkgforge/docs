@@ -37,7 +37,7 @@ Any third-parties, must have a dedicated section on the main README of their pro
 
 ### Mandatory Fields
 
-Any third-parties, must clearly show the following fields (from our metadata) to their user when installing any packages or querying information on any packages that come from our repositories (Official/External). These can be skipped if & only if these are missing (For instance, from our External Repositories).
+Any third-parties, must clearly show the following fields (from our metadata) to their user when installing any packages OR querying information on any packages that come from our repositories (Official/External). These can be skipped if & only if these are missing (For instance, from our External Repositories).
 
 * [x] Homepage: The `homepage` entry must show the Homepage URL(s) for the package & is our way of offering attribution/credits to the original Author(s) of the package.
 * [x] Licenses: The `license` entry must show the SPDX Identifier of the package & is a legal requirement.
