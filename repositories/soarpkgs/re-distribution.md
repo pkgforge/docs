@@ -7,7 +7,9 @@ icon: chart-network
 
 # Re:Distribution
 
-Any third-party package manager (i.e. not under our [PkgForge Org](https://docs.pkgforge.dev/orgs/readme/about) Umbrella), must follow these guidelines when re-distributing them. Hence forth, referred to as `third-parties`
+Any third-party package manager (i.e. not under our [PkgForge Org](https://docs.pkgforge.dev/orgs/readme/about) Umbrella), must follow these guidelines when re-distributing them. Hence forth, referred to as `third-parties` .&#x20;
+
+Failure to comply will force our hands to no longer make the metadata (& other files these third-parties depend on) available. As well as blacklisting these clients from using our apis & other services.&#x20;
 
 {% hint style="success" %}
 These don't apply if re-distributing is done only for personal use i.e not advertised as a package manager & instead they are being used in dotfiles or similar.
