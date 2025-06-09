@@ -96,6 +96,7 @@
   * [Infra](repositories/soarpkgs/infra.md)
   * [Metadata](repositories/soarpkgs/metadata.md)
   * [Package-Request](repositories/soarpkgs/package-request.md)
+  * [Re:Distribution](repositories/soarpkgs/re-distribution.md)
   * [Security](repositories/soarpkgs/security.md)
 * [bincache](repositories/bincache/README.md)
   * [Cache](repositories/bincache/cache.md)
