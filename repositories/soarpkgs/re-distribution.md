@@ -14,7 +14,7 @@ Failure to comply will force our hands to no longer make the metadata (& other f
 {% endhint %}
 
 {% hint style="success" %}
-These don't apply if re-distributing is done only for personal use i.e not advertised as a package manager & instead they are being used in dotfiles or similar.
+**Personal Use Exception**: These guidelines don't apply to personal redistribution (dotfiles, private scripts, etc.) that isn't advertised as a public package manager service.
 {% endhint %}
 
 ***
@@ -25,7 +25,7 @@ Any third-parties, must have a dedicated section on the main README of their pro
 
 * [x] Any [Official Repositories](https://docs.pkgforge.dev/repositories) from Package Forge, must be marked as external & third party i.e. not your default repos & your users must know the actual source.&#x20;
 * [x] Any [External/Third-Party](https://docs.pkgforge.dev/repositories/external) Repositories from Package Forge, must be marked as external & third party, same as Official Repositories from Package Forge, because for a third-party, all these are also external.&#x20;
-* [x] The total percentage of packages used from our repos, compared to the third-parties' repos (if they have it) must be clearly specified.
+* [x] Specify the percentage of packages sourced from PkgForge repositories versus your own repositories
 * [x] Any data that's used from [pkgforge/metadata](https://github.com/pkgforge/metadata/) must be disclosed, especially if a third-party edits/re-edits it to match their own needs.
 * [x] Issue Tracker link for reporting issues with Packages that originate from PkgForge
 
@@ -56,7 +56,7 @@ Any third-parties, must clearly show the following fields (from our metadata) to
 
 ### Mandatory Files
 
-Any third-parties, must also re-distribute the following files in addition to the main binary for the Package. An option can be offered to users to exclude this, but by default, the third party can't make this decision for the users, & thus must comply.
+Any third-parties, must also re-distribute the following files in addition to the main binary for the Package. An option can be offered to users to exclude this, but by default, the third party can't make this decision for the users, & thus must comply. Users may opt-out, but this must be their explicit choice, not your default behavior.
 
 {% hint style="success" %}
 These don't apply if a third-party is a simply a downloader & not an installer i.e if a third party has a sub command to only download a package but not install it, then these files can be skipped.
@@ -86,4 +86,28 @@ Bad press release (without our Permission):
 
 <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>Press Release, but self-credited (with 0 contributions)</p></figcaption></figure>
 
+Good Press Release
+
+```markdown
+## Package Repository
+- 15,000+ packages available
+- Source: 12,000 from PkgForge repositories, 3,000+ maintained locally
+
+## Recent Updates
+- New packages added to PkgForge collection
+- Read the official announcement: [PkgForge Blog](...)
+```
+
+**Avoid:**
+
+* "We've added 50 new packages!" (when they're from PkgForge)
+* "Official package manager for..." (without authorization)
+* Press releases about PkgForge features without permission
+
 ***
+
+### Compliance and Support
+
+For questions about these guidelines or to request clarification, [contact us through our official channels](https://docs.pkgforge.dev/contact/chat). We're committed to working with third-party distributors who respect these requirements and help maintain the integrity of the PkgForge ecosystem.
+
+These guidelines ensure proper attribution, legal compliance, and clear communication about package sources while supporting the broader package management community.
