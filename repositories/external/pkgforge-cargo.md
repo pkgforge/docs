@@ -1,6 +1,6 @@
 ---
 description: Officially maintained External Repo for All Crates
-icon: crab
+icon: gear-complex-code
 ---
 
 # pkgforge-cargo

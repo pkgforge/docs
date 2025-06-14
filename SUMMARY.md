@@ -121,7 +121,7 @@
 * [external](repositories/external/README.md)
   * [AM](repositories/external/am.md)
   * [cargo-bins](repositories/external/cargo-bins.md)
-  * [pkgforge-cargo](repositories/external/cargo-bins-1.md)
+  * [pkgforge-cargo](repositories/external/pkgforge-cargo.md)
   * [appimage.github.io](repositories/external/appimage.github.io.md)
   * [AppImageHub](repositories/external/appimagehub.md)
 * [Nests](repositories/nests.md)
