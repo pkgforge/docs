@@ -88,7 +88,7 @@ soar list 'pkgforge-cargo'
 mkdir -pv "~/.config/soar" &&\
 tee -a "~/.config/soar/config.toml" <<EOF
 [[repositories]]
-name = "cargo-bins"
+name = "pkgforge-cargo"
 url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
 EOF
 ```
