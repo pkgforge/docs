@@ -9,7 +9,7 @@ icon: gear-complex-code
 * [x] Project: [https://github.com/pkgforge-cargo/builder](https://github.com/pkgforge-cargo/builder)
 * [x] Bugs/Issues: [https://github.com/pkgforge-cargo/builder/issues](https://github.com/pkgforge-cargo/builder/issues)
 * [x] Soar Repo: <mark style="color:orange;">**`pkgforge-cargo`**</mark>
-* [x] Cache: [<mark style="color:green;">**None**</mark>](#user-content-fn-1)[^1]
+* [x] Cache: [<mark style="color:green;">**Yes**</mark>](#user-content-fn-1)[^1]
 * [x] Soar CI & Repo: [https://github.com/pkgforge-cargo/builder/tree/main/scripts](https://github.com/pkgforge-cargo/builder/tree/main/scripts)
 * [x] Metadata: [https://github.com/pkgforge-cargo/builder/tree/main/data](https://github.com/pkgforge-cargo/builder/tree/main/data)
 * [x] Type: Static
