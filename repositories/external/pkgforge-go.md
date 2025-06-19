@@ -58,7 +58,7 @@ mkdir -pv "~/.config/soar" &&\
 ```
 {% endcode %}
 
-* [x] Add the repo config (For other hosts, see [supported list](https://github.com/pkgforge-go/builder#-hosts).)
+* [x] Add the repo config (For other hosts, see [supported list](https://github.com/pkgforge-go/builder#-hosts---targets).)
 
 {% code overflow="wrap" %}
 ```toml
@@ -81,7 +81,7 @@ soar list 'pkgforge-go'
 {% hint style="info" %}
 [Using tee (<mark style="color:red;">**NOT-Recommended**</mark>)](#user-content-fn-4)[^4]
 
-* [x] Append (For other hosts, see [supported list](https://github.com/pkgforge-cargo/builder#-hosts).)
+* [x] Append (For other hosts, see [supported list](https://github.com/pkgforge-go/builder#-hosts---targets).)
 
 {% code overflow="wrap" %}
 ```bash
