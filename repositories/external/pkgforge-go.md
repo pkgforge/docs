@@ -1,17 +1,17 @@
 ---
-description: Officially maintained External Repo for All Crates
-icon: rust
+description: Officially maintained External Repo for Go Packages
+icon: golang
 ---
 
-# pkgforge-cargo
+# pkgforge-go
 
 {% hint style="info" %}
-* [x] Project: [https://github.com/pkgforge-cargo/builder](https://github.com/pkgforge-cargo/builder)
-* [x] Bugs/Issues: [https://github.com/pkgforge-cargo/builder/issues](https://github.com/pkgforge-cargo/builder/issues)
-* [x] Soar Repo: <mark style="color:orange;">**`pkgforge-cargo`**</mark>
+* [x] Project: [https://github.com/pkgforge-go/builder](https://github.com/pkgforge-go/builder)
+* [x] Bugs/Issues: [https://github.com/pkgforge-go/builder/issues](https://github.com/pkgforge-go/builder/issues)
+* [x] Soar Repo: <mark style="color:orange;">**`pkgforge-go`**</mark>
 * [x] Cache: [<mark style="color:green;">**Yes**</mark>](#user-content-fn-1)[^1]
-* [x] Soar CI & Repo: [https://github.com/pkgforge-cargo/builder/tree/main/scripts](https://github.com/pkgforge-cargo/builder/tree/main/scripts)
-* [x] Metadata: [https://github.com/pkgforge-cargo/builder/tree/main/data](https://github.com/pkgforge-cargo/builder/tree/main/data)
+* [x] Soar CI & Repo: [https://github.com/pkgforge-go/builder/tree/main/scripts](https://github.com/pkgforge-go/builder/tree/main/scripts)
+* [x] Metadata: [https://github.com/pkgforge-go/builder/tree/main/data](https://github.com/pkgforge-go/builder/tree/main/data)
 * [x] Type: Static
 {% endhint %}
 
@@ -20,7 +20,7 @@ icon: rust
 ### Trust
 
 {% hint style="success" %}
-This is as good as our own officially curated packages, as it is officially maintained by [@Azathothas](https://docs.pkgforge.dev/orgs/readme/people#azathothas). We have [clear workflow](https://github.com/pkgforge-cargo/builder/tree/main#-workflow) on what & how packages are built. And since the packages are built on [Github Actions](https://github.com/pkgforge-cargo/builder/actions/workflows/matrix_builds.yaml), transparent CI logs are also available for all of the packages.
+This is as good as our own officially curated packages, as it is officially maintained by [@Azathothas](https://docs.pkgforge.dev/orgs/readme/people#azathothas). We have [clear workflow](https://github.com/pkgforge-go/builder/tree/main#-workflow) on what & how packages are built. And since the packages are built on [Github Actions](https://github.com/pkgforge-go/builder/actions/workflows/matrix_builds.yaml), transparent CI logs are also available for all of the packages.
 
 All of these make us say with high confidence that **you can trust it, as long as you trust that Github, Cargo, Crates.io or the package itself isn't compromised.**
 
@@ -39,7 +39,7 @@ On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this sour
 #ONLY If you didn't already use it or have your own custom config
 soar defconfig --external
 soar sync
-soar list 'pkgforge-cargo'
+soar list 'pkgforge-go'
 ```
 {% endcode %}
 {% endhint %}
@@ -58,13 +58,13 @@ mkdir -pv "~/.config/soar" &&\
 ```
 {% endcode %}
 
-* [x] Add the repo config (For other hosts, see [supported list](https://github.com/pkgforge-cargo/builder#-hosts).)
+* [x] Add the repo config (For other hosts, see [supported list](https://github.com/pkgforge-go/builder#-hosts).)
 
 {% code overflow="wrap" %}
 ```toml
 [[repositories]]
-name = "pkgforge-cargo"
-url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
+name = "pkgforge-go"
+url = "https://meta.pkgforge.dev/external/pkgforge-go/x86_64-Linux.json.zstd"
 ```
 {% endcode %}
 
@@ -73,7 +73,7 @@ url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
 {% code overflow="wrap" %}
 ```bash
 soar sync
-soar list 'pkgforge-cargo'
+soar list 'pkgforge-go'
 ```
 {% endcode %}
 {% endhint %}
@@ -88,8 +88,8 @@ soar list 'pkgforge-cargo'
 mkdir -pv "~/.config/soar" &&\
 tee -a "~/.config/soar/config.toml" <<EOF
 [[repositories]]
-name = "pkgforge-cargo"
-url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
+name = "pkgforge-go"
+url = "https://meta.pkgforge.dev/external/pkgforge-go/x86_64-Linux.json.zstd"
 EOF
 ```
 {% endcode %}
@@ -98,7 +98,7 @@ EOF
 
 ```bash
 soar sync
-soar list 'pkgforge-cargo'
+soar list 'pkgforge-go'
 ```
 {% endhint %}
 
