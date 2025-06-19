@@ -119,7 +119,7 @@
   * [Package-Request](repositories/pkgcache/package-request.md)
   * [Security](repositories/pkgcache/security.md)
 * [external](repositories/external/README.md)
-  * [pkgforge-cargo](repositories/external/cargo-bins-1.md)
+  * [pkgforge-cargo](repositories/external/pkgforge-cargo.md)
   * [pkgforge-go](repositories/external/pkgforge-go.md)
   * [cargo-bins](repositories/external/cargo-bins.md)
   * [AM](repositories/external/am.md)
