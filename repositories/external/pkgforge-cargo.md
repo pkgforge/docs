@@ -31,13 +31,17 @@ On a scale of <mark style="color:orange;">**1-10**</mark>, we had rate this sour
 
 ### Add
 
+{% hint style="success" %}
+A fresh/new install of soar will have this repository enabled by default.
+{% endhint %}
+
 {% hint style="info" %}
 [Using <mark style="color:orange;">**`soar defconfig`**</mark>](#user-content-fn-2)[^2]  (<mark style="color:green;">**Recommended**</mark>)&#x20;
 
 {% code overflow="wrap" %}
 ```bash
 #ONLY If you didn't already use it or have your own custom config
-soar defconfig --external
+soar defconfig
 soar sync
 soar list 'pkgforge-cargo'
 ```
@@ -64,7 +68,7 @@ mkdir -pv "~/.config/soar" &&\
 ```toml
 [[repositories]]
 name = "pkgforge-cargo"
-url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
+url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.sdb.zstd"
 ```
 {% endcode %}
 
@@ -89,7 +93,7 @@ mkdir -pv "~/.config/soar" &&\
 tee -a "~/.config/soar/config.toml" <<EOF
 [[repositories]]
 name = "pkgforge-cargo"
-url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.json.zstd"
+url = "https://meta.pkgforge.dev/external/pkgforge-cargo/x86_64-Linux.sdb.zstd"
 EOF
 ```
 {% endcode %}
