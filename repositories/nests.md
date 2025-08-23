@@ -68,8 +68,22 @@ jobs:
 4. Update your <mark style="color:blue;">**README**</mark> to include a one-liner
 
 ```bash
-soar nest add "https://github.com/YOUR-USERNAME/YOUR-ORG"
+soar nest add github:owner/repo nestname
 ```
+
+* When performing operations, the **nest name** must be **prepended with `nest-`**.
+  For example:
+
+  ```bash
+  soar ls nest-nestname
+  ```
+* Instead of adding a GitHub repo, users may also directly provide a link to a **compatible SQLite database** or a **JSON metadata file**.
+  Example:
+
+  ```bash
+  soar nest add https://example.com/metadata.json.zstd mynest
+  soar nest add https://example.com/packages.db mynest
+  ```
 
 {% hint style="warning" %}
 * All values must be **lowercase** : [https://github.com/oras-project/oras/discussions/930](https://github.com/oras-project/oras/discussions/930) , the workflow will forcefully change all values to match this.
