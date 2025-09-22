@@ -68,7 +68,7 @@ jobs:
 4. Update your <mark style="color:blue;">**README**</mark> to include a one-liner
 
 ```bash
-soar nest add github:owner/repo nestname
+soar nest add nestname github:owner/repo
 ```
 
 * When performing operations, the **nest name** must be **prepended with `nest-`**.
@@ -81,8 +81,8 @@ soar nest add github:owner/repo nestname
   Example:
 
   ```bash
-  soar nest add https://example.com/metadata.json.zstd mynest
-  soar nest add https://example.com/packages.db mynest
+  soar nest add mynest https://example.com/metadata.json.zstd
+  soar nest add mynest https://example.com/packages.db
   ```
 
 {% hint style="warning" %}
