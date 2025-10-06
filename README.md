@@ -21,7 +21,7 @@ layout:
 
 # PkgForge (Core)
 
-{% embed url="https://soar.pkgforge.dev/gif?tmp.kYr2cyabFj=tmp.9WvaqcTNhM" %}
+{% embed url="https://soar.pkgforge.dev/gif?tmp.oZa55PXKEC=tmp.o3kSwRag8F" %}
 
 ## About
 
