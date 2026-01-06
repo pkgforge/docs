@@ -1,12 +1,12 @@
 ---
 icon: triangle-exclamation
-description: Common Issues
+description: Common Issues with Portable Packages
 ---
 
 # Errors & Quirks
 
 Common issues when running portable packages:
 
-- [FUSE](fuse.md) - Filesystem in Userspace issues
-- [Fonts](fonts.md) - Font rendering problems
-- [Namespaces](namespaces.md) - User namespace restrictions
+* [**Fuse**](fuse.md): Required for mounting Filesystems & Images
+* [**Fonts**](fonts.md): Required to display/render Non-English Chars, Emojis, Symbols etc.
+* [**Kernel User NameSpaces**](namespaces.md): Required for Sandboxing, Security & Performance

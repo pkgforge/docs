@@ -1,9 +1,13 @@
 ---
 icon: shield-halved
-description: Namespace Issues
+description: Required for Sandboxing, Security & Performance
 ---
 
-# Namespaces
+# Kernel User NameSpaces
+
+{% hint style="info" %}
+Required for Sandboxing, Security & Performance
+{% endhint %}
 
 Some portable packages use user namespaces for sandboxing, which may be restricted on certain systems.
 

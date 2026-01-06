@@ -1,9 +1,15 @@
 ---
 icon: hard-drive
-description: FUSE Issues
+description: Required for mounting Filesystems & Images
 ---
 
 # FUSE
+
+{% hint style="info" %}
+Required for mounting Filesystems & Images
+
+Can still be run with `--appimage-extract-and-run` | `APPIMAGE_EXTRACT_AND_RUN=1`
+{% endhint %}
 
 AppImages and similar formats use FUSE (Filesystem in Userspace) to mount themselves.
 
@@ -38,8 +44,18 @@ sudo pacman -S fuse2
 
 ### Extract Instead
 
-Most AppImages support `--appimage-extract`:
+Most AppImages support extraction as fallback:
 
+```bash
+./app.AppImage --appimage-extract-and-run
+```
+
+Or set the environment variable:
+```bash
+APPIMAGE_EXTRACT_AND_RUN=1 ./app.AppImage
+```
+
+Manual extraction:
 ```bash
 ./app.AppImage --appimage-extract
 ./squashfs-root/AppRun
