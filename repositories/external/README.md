@@ -1,13 +1,29 @@
 ---
 icon: truck-clock
-description: External Sources & Third party Repositories
+description: Custom Repositories
 ---
 
-# external
+# External
 
-{% hint style="warning" %}
-* [x] PkgForge **does NOT create/maintain** any packages listed in the external repositories
-* [x] PkgForge **has no control** over any of these in any way
-* [x] PkgForge **simply distributes upstream source as-i**s, please check the <mark style="color:orange;">**`notes`**</mark> & <mark style="color:orange;">**`logs`**</mark> for each package for more details
-* [x] It is **up to users to exercise caution** when using these repositories.
-{% endhint %}
+Soar supports adding custom repositories. You can either use an existing third-party repo or build your own.
+
+## Adding a Custom Repo
+
+Edit `~/.config/soar/config.toml`:
+
+```toml
+[[repositories]]
+name = "my-repo"
+url = "https://example.com/metadata.json"
+```
+
+Then sync:
+
+```bash
+soar sync
+soar list 'my-repo'
+```
+
+## Building Your Own Repo
+
+To create a compatible repository, generate metadata in the same format as [soarpkgs metadata](../soarpkgs/metadata.md). Host the JSON file anywhere accessible via URL.
