@@ -10,7 +10,6 @@ description: SBUILD Examples
 {% code overflow="wrap" %}
 ```yaml
 #!/SBUILD ver @v1.0.0
-_disabled: false
 pkg: "86box"
 pkgver: "v4.2.1"
 description: "Emulator of x86-based machines"
@@ -23,10 +22,10 @@ x_exec:
   run: |
     case "$(uname -m)" in
       aarch64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${PKG}" --yes && chmod +x "./${PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${PKG}" --yes
         ;;
       x86_64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${PKG}" --yes && chmod +x "./${PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${PKG}" --yes
         ;;
     esac
 ```
@@ -37,12 +36,11 @@ x_exec:
 {% code overflow="wrap" %}
 ```yaml
 #!/SBUILD ver @v1.0.0
-_disabled: false
 
 pkg: "86box"
 pkg_id: "github.com.86Box.86Box"
 pkg_type: "AppImage"
-pkgver: "v4.2.1" #fixed version; use "pkgver:--" to fetch via x_exec.pkgver
+pkgver: "v4.2.1" #fixed version; omit for dynamic versioning
 #ghcr_pkg: "86box" #optional: set fixed ghcr path
 
 app_id: "net._86box._86Box"
@@ -56,7 +54,7 @@ homepage:
   - "https://86box.net"
 license:
   - id: "GPL-2.0"
-    url: "https://github.com/86Box/86Box/raw/ae5b6909a2a8d3b2098d5467a86fefcf81c20e30/COPYING"
+    url: "https://github.com/86Box/86Box/raw/main/COPYING"
 maintainer:
   - "Azathothas (https://github.com/Azathothas)"
 note:
@@ -79,11 +77,33 @@ x_exec:
   run: |
     case "$(uname -m)" in
       aarch64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${PKG}" --yes && chmod +x "./${PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,arm64" --exclude "x64,x86,zsync" -o "./${PKG}" --yes
         ;;
       x86_64)
-        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${PKG}" --yes && chmod +x "./${PKG}"
+        soar dl "https://github.com/86Box/86Box" --match "appimage,x86_64" --exclude "aarch64,arm,zsync" -o "./${PKG}" --yes
         ;;
     esac
+```
+{% endcode %}
+
+## Rolling Build
+
+For packages without versioned releases (nightly, git HEAD):
+
+{% code overflow="wrap" %}
+```yaml
+#!/SBUILD ver @v1.0.0
+
+pkg: "example-nightly"
+_rolling: true
+description: "Nightly build example"
+src_url:
+  - "https://github.com/example/repo"
+x_exec:
+  shell: "bash"
+  pkgver: |
+    echo "nightly-$(date +%Y%m%d)"
+  run: |
+    # build from git HEAD
 ```
 {% endcode %}

@@ -1,16 +1,36 @@
 ---
-icon: not-equal
-description: Comparing Soar with all the major pre-existing Package Managers
+icon: rocket
+description: Soar Package Manager
 ---
 
-# Comparisons
+# Soar
 
-{% hint style="info" %}
-Why would you ever use [**Soar**](https://github.com/pkgforge/soar) over <mark style="color:orange;">**xyz**</mark>? Well, you wouldn't. \
-We just hope you will go through these & form your own conclusions.
-{% endhint %}
+[Soar](https://github.com/pkgforge/soar) is a fast package manager written in Rust for installing portable packages and static binaries on Linux.
 
-1. [**Candidates**](candidates.md): All Package Managers we compared & evaluated
-2. [**Dependencies**](dependencies.md): The Overall Install & Setup Steps as well as the Dependencies that are needed to use each Selected Package Managers
-3. [**Packages**](packages.md): The Overall Package Ecosystem of each Selected Package Managers
-4. [**Security**](security.md): The Overall Security Posture of each Selected Package Managers
+## Installation
+
+```bash
+curl -fsSL "https://soar.qaidvoid.dev/install.sh" | sh
+```
+
+## Usage
+
+```bash
+soar install package_name    # Install a package
+soar search query            # Search packages
+soar update                  # Update packages
+soar remove package_name     # Remove a package
+soar log package_name        # View build log
+```
+
+## Features
+
+- **No dependencies**: Single static binary
+- **No sudo required**: Installs to user directory
+- **Portable packages**: Works across Linux distributions
+- **Prebuilt cache**: No compilation needed
+
+## Documentation
+
+- [Packages](packages.md) - Supported package types
+- [Security](security.md) - Security model

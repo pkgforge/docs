@@ -1,6 +1,6 @@
 ---
 icon: box-archive
-description: The main Organization Inside PkgForge
+description: Package Forge
 cover: .gitbook/assets/pkgforge (1).png
 coverY: 0
 layout:
@@ -19,10 +19,25 @@ layout:
     visible: true
 ---
 
-# PkgForge (Core)
-
-{% embed url="https://soar.pkgforge.dev/gif?tmp.T8cejqbouL=tmp.zCz9xm0XHw" %}
+# PkgForge
 
 ## About
 
-Welcome to [Package Forge](https://github.com/pkgforge), Improving Package Management for `*Unix` Systems with [Thousands](https://pkgs.pkgforge.dev/) of [Statically Compiled Binaries](formats/binaries/), [Portable Packages like AppImage & More](formats/packages/) and a [Package Manager written in Blazingly 🚀🚀 Fast 🦀 Rust](https://github.com/pkgforge/soar)
+[PkgForge](https://github.com/pkgforge) provides portable packages and static binaries for Linux, along with [Soar](https://github.com/pkgforge/soar) - a fast package manager written in Rust.
+
+## Quick Start
+
+```bash
+# Install Soar
+curl -fsSL "https://soar.qaidvoid.dev/install.sh" | sh
+
+# Install a package
+soar install pkg_name
+```
+
+## Resources
+
+- [Soar Documentation](soar/readme/)
+- [Package Formats](formats/packages/)
+- [SBUILD Specification](sbuild/introduction.md)
+- [Package Search](https://pkgs.pkgforge.dev/)

@@ -1,17 +1,11 @@
 ---
 icon: box-open
-description: Static/Dynamic Binaries
+description: Binary Types
 ---
 
 # Binaries
 
-These are usually **CLI Applications** :&#x20;
+Binary types for CLI applications:
 
-{% content-ref url="static/" %}
-[static](static/)
-{% endcontent-ref %}
-
-{% content-ref url="dynamic.md" %}
-[dynamic.md](dynamic.md)
-{% endcontent-ref %}
-
+- [Static](static/) - Statically linked binaries (no dependencies)
+- [Dynamic](dynamic.md) - Dynamically linked binaries
