@@ -4,12 +4,9 @@
 
 * [PkgForge](README.md)
   * [About](orgs/pkgforge-core/about.md)
-  * [People](orgs/pkgforge-core/people.md)
 * [PkgForge-Community](orgs/pkgforge-community.md)
 * [PkgForge-Dev](orgs/pkgforge-dev/README.md)
-  * [Projects](orgs/pkgforge-dev/projects/README.md)
-    * [Anylinux-AppImages](orgs/pkgforge-dev/projects/anylinux-appimages.md)
-  * [People](orgs/pkgforge-dev/people.md)
+  * [Anylinux-AppImages](orgs/pkgforge-dev/projects/anylinux-appimages.md)
 
 ## Soar
 
