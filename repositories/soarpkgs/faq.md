@@ -7,7 +7,7 @@ description: Frequently Asked Questions
 
 ### Is this an AUR?
 
-Soarpkgs is inspired by the AUR concept but with a curated approach. Packages are reviewed by maintainers before inclusion, unlike AUR's open submission model.
+Soarpkgs is inspired by the AUR concept but with a curated approach. Packages are reviewed by maintainers before inclusion.
 
 ---
 
@@ -34,11 +34,9 @@ MUSL binaries use [mimalloc](https://github.com/microsoft/mimalloc) for performa
 
 ---
 
-### External Sources
+### Custom Repositories
 
-Soar integrates with external sources:
-* [appimage.github.io](https://docs.pkgforge.dev/repositories/external/appimage.github.io)
-* [AM](https://docs.pkgforge.dev/repositories/external/am)
+Soar supports adding [custom repositories](../external/). You can use third-party repos or create your own.
 
 ---
 

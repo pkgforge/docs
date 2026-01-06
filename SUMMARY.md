@@ -6,6 +6,10 @@
   * [About](orgs/pkgforge-core/about.md)
   * [People](orgs/pkgforge-core/people.md)
 * [PkgForge-Community](orgs/pkgforge-community.md)
+* [PkgForge-Dev](orgs/pkgforge-dev/README.md)
+  * [Projects](orgs/pkgforge-dev/projects/README.md)
+    * [Anylinux-AppImages](orgs/pkgforge-dev/projects/anylinux-appimages.md)
+  * [People](orgs/pkgforge-dev/people.md)
 
 ## Soar
 
@@ -26,6 +30,10 @@
   * [RunImage](formats/packages/runimage/README.md)
   * [NixAppImage](formats/packages/nixappimage/README.md)
   * [Archive](formats/packages/archive/README.md)
+  * [Errors & Quirks](formats/packages/errors-and-quirks/README.md)
+    * [FUSE](formats/packages/errors-and-quirks/fuse.md)
+    * [Fonts](formats/packages/errors-and-quirks/fonts.md)
+    * [Namespaces](formats/packages/errors-and-quirks/namespaces.md)
 
 ## SBUILD
 
@@ -62,6 +70,7 @@
 * [soarpkgs](repositories/soarpkgs/README.md)
   * [Metadata](repositories/soarpkgs/metadata.md)
   * [Contribution](repositories/soarpkgs/contribution.md)
+  * [Package Request](repositories/soarpkgs/package-request.md)
   * [Security](repositories/soarpkgs/security.md)
   * [FAQ](repositories/soarpkgs/faq.md)
 * [bincache](repositories/bincache/README.md)

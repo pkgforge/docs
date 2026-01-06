@@ -13,3 +13,7 @@ Portable package formats for GUI applications:
 - [RunImage](runimage/) - Container-based portable apps
 - [NixAppImage](nixappimage/) - Nix-based AppImages
 - [Archive](archive/) - Compressed archives
+
+## Troubleshooting
+
+See [Errors & Quirks](errors-and-quirks/) for common issues (FUSE, fonts, namespaces).
