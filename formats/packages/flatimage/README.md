@@ -11,23 +11,10 @@ description: A hybrid of Flatpak sandboxing with AppImage portability
 
 ***
 
-### Schema
+### In soarpkgs
 
 {% hint style="info" %}
-[<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}-${BASE_DISTRO_IMAGE}`**</mark>
-
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`flatimage`**</mark>
-
-<mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}-${BASE_DISTRO_IMAGE}.flatimage`**</mark>
-
-{% code overflow="wrap" %}
-```bash
-!#Examples
-firefox-alpine.FlatImage --> Created using alpine as base BaseImage/RootFS
-steam-cachyos.FlatImage --> Created using CachyOs as BaseImage/RootFS
-librewolf-alpine-nix.FlatImage --> Created using alpine as BaseImage/RootFS with Nix on top of it
-```
-{% endcode %}
+Soar installs this format from a [repository](../../../repositories/external/), a URL, or a local file, and a [recipe](../../../packaging/recipe.md) can name it as its `type`. No package in soarpkgs happens to use it at the moment.
 {% endhint %}
 
 ***

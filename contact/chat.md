@@ -1,20 +1,21 @@
 ---
 icon: telegram
-description: IRC/Chat Groups
+description: Chat groups
 ---
 
 # Chat
 
-* [**Discord**](https://discord.gg/djJUs48Zbu) : [**https://discord.gg/djJUs48Zbu**](https://discord.gg/djJUs48Zbu) (<mark style="color:green;">**`Active`**</mark>**&#x20;&&#x20;**<mark style="color:green;">**`Instant Response`**</mark>) \[<mark style="color:purple;">**`Primary`**</mark>]
-* [~~**Telegram**~~](https://t.me/official_loonix/63949) ~~**:**~~ [~~https://t.me/official\_loonix/63949~~](https://t.me/official_loonix/63949) (<mark style="color:orange;">**`Late Response`**</mark>)  \[<mark style="color:red;">**`Abandoned`**</mark>]
-* [~~**Matrix**~~](https://matrix.to/#/#loonix:matrix.org) ~~:~~ [~~https://matrix.to/#/#loonix:matrix.org~~](https://matrix.to/#/#loonix:matrix.org) (<mark style="color:orange;">**`Late Response`**</mark>) \[<mark style="color:red;">**`Abandoned`**</mark>]
-
-{% hint style="warning" %}
-We have tried [Libera](https://libera.chat/), [Signal](https://signal.org/) & More. None offered us the better file sharing ability than [Telegram](https://telegram.org/faq), & none offered us as many features as [Discord](https://discord.com/). If you are concerned about Privacy, _the chat itself is public_, so is irrelevant for our needs. Thus, **please stop asking us to switch platforms**.
-{% endhint %}
+* [**Discord**](https://discord.gg/djJUs48Zbu) (<mark style="color:green;">**`Active`**</mark> and <mark style="color:green;">**`Instant Response`**</mark>) \[<mark style="color:purple;">**`Primary`**</mark>]
+* [~~**Telegram**~~](https://t.me/official_loonix/63949) (<mark style="color:orange;">**`Late Response`**</mark>) \[<mark style="color:red;">**`Abandoned`**</mark>]
+* [~~**Matrix**~~](https://matrix.to/#/#loonix:matrix.org) (<mark style="color:orange;">**`Late Response`**</mark>) \[<mark style="color:red;">**`Abandoned`**</mark>]
 
 {% hint style="info" %}
-If you had like to use other channels or email us, check this page for more info: [https://docs.pkgforge.dev/orgs/pkgforge-core/people](https://docs.pkgforge.dev/orgs/pkgforge-core/people)
+For anything specific to a repository, an issue is usually faster than chat:
 
-**However, do note, it may go unanswered or get sent to Spam**
+* [pkgforge/soar](https://github.com/pkgforge/soar/issues) for the package manager
+* [pkgforge/soarpkgs](https://github.com/pkgforge/soarpkgs/issues) for packages, including [requests](../repositories/soarpkgs/package-request.md)
+{% endhint %}
+
+{% hint style="warning" %}
+We have tried [Libera](https://libera.chat/), [Signal](https://signal.org/) and more. None offered better file sharing than [Telegram](https://telegram.org/faq), and none offered as many features as [Discord](https://discord.com/). If you are concerned about privacy, the chat itself is public, so it is irrelevant for our needs. Please stop asking us to switch platforms.
 {% endhint %}

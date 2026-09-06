@@ -1,47 +1,62 @@
 ---
 icon: message-question
-description: Frequently Asked Questions
+description: Frequently asked questions
 ---
 
 # FAQ
 
 ### Is this an AUR?
 
-Soarpkgs is inspired by the AUR concept but with a curated approach. Packages are reviewed by maintainers before inclusion.
+It borrows the idea of a community tree of package definitions, but not the model. AUR recipes build on your machine; soarpkgs never builds anything on yours, and nothing in the tree executes at all. A package is a URL and a hash, reviewed in a pull request before it is merged.
 
----
+***
 
-### Cache
+### Are there other repositories I should add?
 
-Cache refers to prebuilts from pkgforge's CI that Soar uses by default.
+No. soarpkgs is the only repository PkgForge publishes, and it is enabled by default, so there is nothing extra to add.
 
-* [Bincache](../bincache/): Prebuilt static binaries
-* [Pkgcache](../pkgcache/): Prebuilt GUI apps
+Soar itself is not tied to it. If you find a third party repository, or want to [run your own](../external/), Soar will happily use it.
 
----
+***
 
-### GLIBC vs MUSL
+### What happened to bincache and pkgcache?
 
-MUSL binaries use [mimalloc](https://github.com/microsoft/mimalloc) for performance parity with GLIBC. We also apply LTO and PIE optimizations.
+They were the two prebuilt caches soarpkgs generated metadata for, one for static binaries and one for GUI applications. Both are gone. soarpkgs now publishes a single index per host, and the distinction between the two lives in the package's `type` field instead.
 
----
+***
 
-### Portability
+### What happened to SBUILD?
 
-* Prebuilt packages are provided via cache to avoid build dependencies
-* Heavy builds requiring containers are marked with a note
-* Portable packages are tagged with `[PORTABLE]` in notes
+It was retired along with the caches. SBUILD was a YAML build script, and a package's hash was whatever the build happened to produce. Packages are now [declared in TOML](../../packaging/), pinning upstream's own release artifact by hash. See [packaging](../../packaging/) for the format that replaced it.
 
----
+***
 
-### Custom Repositories
+### Where do packages actually come from?
 
-Soar supports adding [custom repositories](../external/). You can use third-party repos or create your own.
+Nearly all of them come straight from an upstream release: the recipe names the asset and pins its hash. The exceptions are built in [pkgforge/builds](../../packaging/builds.md), which publishes ordinary GitHub releases that soarpkgs then pins like anyone else's.
 
----
+A package is built there only when pinning upstream is impossible, usually because upstream ships glibc-linked binaries, serves only some architectures, or publishes no releases at all.
 
-### History
+***
 
-* **July 2023**: Toolpacks created
-* **Sep 2024**: PkgCache created
-* **Nov 2024**: Soarpkgs created
+### glibc or musl?
+
+Static packages are musl-linked wherever upstream offers the choice, since a glibc-linked binary is not portable across distributions in the way this whole project depends on. Where we build a package ourselves, musl is required rather than preferred, and a dynamically linked result fails the build.
+
+***
+
+### Which architectures are supported?
+
+`x86_64-linux`, `aarch64-linux` and `riscv64-linux`. Whether a given package serves all three depends on what upstream ships, and riscv64 in particular is thinner than the other two.
+
+***
+
+### How do I know a download was not tampered with?
+
+The index is signed with minisign, and every artifact carries a blake3 hash that was committed and reviewed. Soar checks both, and independently, so a validly signed index carrying a wrong hash still fails at install. See [security](security.md).
+
+***
+
+### Where did all this come from?
+
+See [history](../../orgs/pkgforge-core/history.md).

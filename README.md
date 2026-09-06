@@ -23,21 +23,24 @@ layout:
 
 ## About
 
-[PkgForge](https://github.com/pkgforge) provides portable packages and static binaries for Linux, along with [Soar](https://github.com/pkgforge/soar) - a fast package manager written in Rust.
+[PkgForge](https://github.com/pkgforge) provides portable packages and static binaries for Linux, along with [Soar](https://github.com/pkgforge/soar), a fast package manager written in Rust.
 
-## Quick Start
+Packages live in [soarpkgs](repositories/soarpkgs/), where each one is a declarative TOML file pinning an upstream release by URL and hash. Nothing in that tree executes, so a package is verified against something a reviewer approved rather than something a build produced.
+
+## Quick start
 
 ```bash
 # Install Soar
 curl -fsSL "https://soar.qaidvoid.dev/install.sh" | sh
 
 # Install a package
-soar install pkg_name
+soar install ripgrep
 ```
 
 ## Resources
 
-- [Soar Documentation](soar/readme/)
-- [Package Formats](formats/packages/)
-- [SBUILD Specification](sbuild/introduction.md)
-- [Package Search](https://pkgs.pkgforge.dev/)
+* [Soar](soar/readme/), what it is and how to use it
+* [Packaging](packaging/), how a package is declared
+* [soarpkgs](repositories/soarpkgs/), the official repository
+* [Package formats](formats/packages/), AppImage, onelf and the rest
+* [Package search](https://soarpkgs.qaidvoid.dev)

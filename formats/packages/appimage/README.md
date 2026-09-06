@@ -8,18 +8,14 @@ description: https://en.wikipedia.org/wiki/AppImage
 {% hint style="info" %}
 <mark style="color:purple;">**Sources**</mark>
 
-* Upstream prebuilt if it exists & is actively maintained
-* Community created prebuilts if official prebuilt doesn't exist & we can't build from source
+* Upstream's own AppImage where it exists and is actively maintained
+* Otherwise one built by [pkgforge-dev](../../../orgs/pkgforge-dev/), most often through [Anylinux-AppImages](../../../orgs/pkgforge-dev/projects/anylinux-appimages.md)
 {% endhint %}
 
-### Schema
+### In soarpkgs
 
 {% hint style="info" %}
-[<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
-
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`appimage`**</mark>
-
-<mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.appimage`**</mark>
+[`type`](../../../packaging/recipe.md) is <mark style="color:green;">**`appimage`**</mark>. The artifact is the package, so a recipe normally installs nothing out of it and the AppImage is simply pinned by URL and hash.
 {% endhint %}
 
 ***
@@ -37,8 +33,13 @@ description: https://en.wikipedia.org/wiki/AppImage
 ### Sandbox
 
 {% hint style="danger" %}
-* AppImages have no built-in sandboxing
-* There exists third party tools like [<mark style="color:blue;">**aisap**</mark>](https://github.com/mgord9518/aisap) , but we <mark style="color:red;">**DO NOT RECOMMEND**</mark> it as it is not actively maintained
+AppImages have no built-in sandboxing. An AppImage you run has whatever access your user does.
+{% endhint %}
+
+{% hint style="info" %}
+[**simple-appimage-sandbox**](https://github.com/Samueru-sama/simple-appimage-sandbox) wraps one in [bubblewrap](https://github.com/containers/bubblewrap) from POSIX shell, and is the one we would point you at.
+
+[aisap](https://github.com/mgord9518/aisap) exists and does the same job, but is no longer actively maintained.
 {% endhint %}
 
 ***

@@ -1,28 +1,23 @@
 ---
 icon: plus
-description: Request a Package
+description: Request a package
 ---
 
 # Package Request
 
-## Request a New Package
+## Request a new package
 
-1. Check if the package already exists: [pkgs.pkgforge.dev](https://pkgs.pkgforge.dev/)
-2. Open an issue: [github.com/pkgforge/soarpkgs/issues/new](https://github.com/pkgforge/soarpkgs/issues/new/choose)
+1. Check whether it already exists: [soarpkgs.qaidvoid.dev](https://soarpkgs.qaidvoid.dev)
+2. Open an [issue](https://github.com/pkgforge/soarpkgs/issues/new/choose)
 
-Include:
-- Package name and homepage
-- Why you want it added
-- Link to source/releases
+Include the package name, its homepage, a link to its releases, and what you want it for.
 
-## Add a Package Yourself
+## Add it yourself
 
-See the [contribution guide](contribution.md) and [SBUILD specification](../../sbuild/specification/).
+See the [contribution guide](contribution.md) and the [recipe reference](../../packaging/recipe.md). Most packages are a short `pkg.toml` and nothing else.
 
-## Criteria
+## What gets accepted
 
-Packages should:
-- Have an active upstream
-- Be open source (preferably)
-- Not duplicate existing packages
-- Have clear licensing
+Packages should have an active upstream, clear licensing, and no existing equivalent already in the repository. Open source is strongly preferred.
+
+The format also asks something of the package: it has to be pinnable. A project that publishes a release artifact per architecture is a few lines. One that publishes nothing, or ships glibc-linked binaries only, has to be built in [pkgforge/builds](../../packaging/builds.md) first, which is a larger ask and is why that repository stays small.

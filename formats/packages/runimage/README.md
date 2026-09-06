@@ -11,14 +11,10 @@ description: Portable single-file Linux container, Similar to FlatImage
 
 ***
 
-### Schema
+### In soarpkgs
 
 {% hint style="info" %}
-[<mark style="color:purple;">**`.pkg`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:orange;">**`${PKG_NAME}`**</mark>
-
-[<mark style="color:purple;">**`.pkg_type`**</mark>](../../../sbuild/specification/2.pkg.md): <mark style="color:green;">**`runimage`**</mark>
-
-<mark style="color:blue;">**`${SBUILD_PKG}`**</mark> : <mark style="color:green;">**`${PKG_NAME}.runimage`**</mark>
+Soar installs this format from a [repository](../../../repositories/external/), a URL, or a local file, and a [recipe](../../../packaging/recipe.md) can name it as its `type`. No package in soarpkgs happens to use it at the moment.
 {% endhint %}
 
 ***
