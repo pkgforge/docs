@@ -17,7 +17,7 @@ Soar itself runs anywhere Linux does. What you can install through it is a quest
 |---|---|
 | [Static binaries](../../formats/binaries/static/) | Statically linked, needing no libc on the host. |
 | [AppImages](../../formats/packages/appimage/) | Self-contained applications, mounted or extracted at run time. |
-| [onelf](../../formats/packages/onelf/) | A self-extracting ELF carrying a binary and its libraries. |
+| [onelf](../../formats/packages/onelf/) | A single executable carrying a binary and its libraries. |
 | [Other portable formats](../../formats/packages/) | AppBundle, FlatImage, RunImage, NixAppImage and archives. |
 
 Soar handles all of them the same way, whether they arrive from a repository, a URL, or a local file. Which ones you find in a given repository depends on what its upstreams publish.

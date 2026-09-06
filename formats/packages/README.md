@@ -8,7 +8,7 @@ description: Portable package formats
 Self-contained formats that carry an application and everything it needs, so it runs on any Linux distribution without being installed into one.
 
 * [AppImage](appimage/), single-file portable applications
-* [onelf](onelf/), directories packed into self-extracting executables
+* [onelf](onelf/), directories packed into self-contained executables
 * [AppBundle](appbundle/), portable app bundles
 * [FlatImage](flatimage/), Flatpak-style sandboxing with AppImage portability
 * [RunImage](runimage/), single-file containers
